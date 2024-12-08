@@ -113,13 +113,13 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-20">
         {/* Left content remains the same */}
         <div className="flex-1 text-center md:text-left z-10">
-          <h1 ref={nigerianRef} className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary min-h-[2.5rem]">
+          <h1 ref={nigerianRef} className="text-3xl md:text-3xl lg:text-4xl font-bold text-secondary min-h-[2.5rem]">
             Nigerian
           </h1>
-          <h1 ref={corporateRef} className="text-2xl md:text-3xl lg:text-4xl font-bold text-black min-h-[2.5rem]">
+          <h1 ref={corporateRef} className="text-3xl md:text-3xl lg:text-4xl font-bold text-black min-h-[2.5rem]">
             Corporate
           </h1>
-          <h1 ref={registryRef} className="text-2xl md:text-3xl lg:text-4xl font-bold text-black min-h-[2.5rem]">
+          <h1 ref={registryRef} className="text-3xl md:text-3xl lg:text-4xl font-bold text-black min-h-[2.5rem]">
             Registry
           </h1>
           <p ref={paragraphRef} className="mt-4 text-sm md:text-base text-black max-w-prose">
