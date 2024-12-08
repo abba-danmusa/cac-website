@@ -56,7 +56,7 @@ const Header: React.FC = () => {
             left-0 md:left-auto
             right-0 md:right-auto
             flex-col md:flex-row
-            bg-secondary md:bg-secondary
+            bg-accent md:bg-accent
             p-4 md:p-0
             space-y-4 md:space-y-0
             md:space-x-6
