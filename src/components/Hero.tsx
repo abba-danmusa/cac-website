@@ -104,7 +104,10 @@ const HeroSection: React.FC = () => {
   }, [animateNews]); // Re-create interval when index changes
 
   return (
-    <section ref={containerRef} className="bg-primary min-h-dvh py-6 md:py-10 relative overflow-hidden">
+    <section
+      ref={containerRef}
+      className="bg-primary min-h-dvh py-6 md:py-10 relative overflow-hidden px-12"
+    >
       <div className="bg-accent h-48 w-48 md:h-72 md:w-80 absolute -left-20 md:-left-28 rounded-full"></div>
       
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-20">
