@@ -20,12 +20,17 @@ const Footer: React.FC = () => {
           <a href="#" className="mt-2 hover:cursor-pointer hover:text-secondary">FOI Portal</a>
         </div>
         <div className="mt-4 md:mt-0">
+          <div className="flex flex-col">
+            <h3 className="font-bold">Get in touch with us</h3>
+            <a href="mailto:cservice@cac.gov.ng">cservice@cac.gov.ng</a>
+            <a href="tel:+2348095521924">+2348095521924</a>
+          </div>
           <h3 className="font-bold">Follow us on Social Media</h3>
           {/* Add icons here if available */}
         </div>
       </div>
       <div className="bg-secondary flex items-center justify-center mt-4">
-        <p className="text-sm text-complimentary py-2">© 2024 CAC | All Rights Reserved</p>
+        <p className="text-xs text-complimentary py-2 font-sans font-thin">© Copyright 2019 - 2024 | CAC | All Rights Reserved | Powered by CAC Corporate Affairs Commission</p>
       </div>
     </footer>
   );
