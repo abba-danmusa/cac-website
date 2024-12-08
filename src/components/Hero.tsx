@@ -82,7 +82,7 @@ const HeroSection: React.FC = () => {
     // Create an interval for automatic sliding
     const slideInterval = setInterval(() => {
       animateNews('next');
-    }, 1000); // Slides every 5 seconds
+    }, 3000); // Slides every 5 seconds
 
     // Cleanup interval on component unmount
     return () => clearInterval(slideInterval);
