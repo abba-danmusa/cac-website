@@ -15,16 +15,16 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-accent shadow py-4">
-      <div className="container mx-auto px-4">
+    <header className="bg-accent shadow-lg mt-4">
+      <div className="container mx-auto px-2">
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image
               src="/images/logo.png"
               alt="CAC Logo"
-              width={100}
-              height={60}
-              className="w-20 h-12 md:w-24 md:h-20 object-contain"
+              width={300}
+              height={150}
+              className="w-28 h-16 md:w-24 md:h-20 object-contain"
             />
           </Link>
 
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
                 setActiveTab('home');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans ${activeTab == 'home' ? isActive : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'home' ? isActive : ''}`}
             >Home</a>
             <a
               href="#about"
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                 setActiveTab('about');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans ${activeTab == 'about' ? isActive : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'about' ? isActive : ''}`}
             >About Us</a>
             <a
               href="#services"
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
                 setActiveTab('services');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans ${activeTab == 'services' ? isActive : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'services' ? isActive : ''}`}
             >Services</a>
             <a
               href="#resources"
@@ -92,12 +92,12 @@ const Header: React.FC = () => {
                 setActiveTab('resources');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans ${activeTab == 'resources' ? isActive : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'resources' ? isActive : ''}`}
             >Resources</a>
             <a
               href="#report"
               onClick={() => setIsMenuOpen(false)}
-              className="text-white bg-green-700 px-4 py-2 rounded hover:bg-green-800 font-sans text-center" 
+              className="text-white bg-green-700 px-4 py-2 rounded hover:bg-green-800 font-sans text-sm text-center" 
             >Reportgov.ng</a>
           </nav>
         </div>

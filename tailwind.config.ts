@@ -11,7 +11,7 @@ export default {
     extend: {
       colors: {
         primary: "#fff",
-        secondary: '#4D6C4A',
+        secondary: "#4D6C4A",
         accent: "#E7EFE7",
         complimentary: "#04E824",
         // accent: "#113E21",
@@ -21,7 +21,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ["Ligo", ...defaultTheme.fontFamily.sans],
+        sans: ["Frank Ruhl Libre", ...defaultTheme.fontFamily.sans],
       },
     },
   },
