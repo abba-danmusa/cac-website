@@ -5,6 +5,8 @@ import React, { useRef, useState, useEffect, useCallback } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
+import mapURL from '../../public/svg/map.svg?url';
+// import MapSVG from './MapSVG';
 
 gsap.registerPlugin(useGSAP, TextPlugin);
 
@@ -103,15 +105,45 @@ const HeroSection: React.FC = () => {
     return () => clearInterval(slideInterval);
   }, [animateNews]); // Re-create interval when index changes
 
+  // Pointer Breathing Animation
+  useEffect(() => {
+    const pointers = document.querySelectorAll(".state-pointer");
+
+    // Apply GSAP breathing animation to all pointers
+    gsap.to(pointers, {
+      scale: 1.2,
+      repeat: -1,
+      yoyo: true,
+      duration: 1.5,
+      ease: "power1.inOut",
+    });
+  }, []);
+
   return (
     <section
       ref={containerRef}
-      className="bg-primary min-h-dvh py-6 md:py-10 relative overflow-hidden px-12"
+      className="bg-primary min-h-dvh py-6 md:py-10 relative overflow-hidden"
     >
-      <div className="bg-accent h-48 w-48 md:h-72 md:w-80 absolute -left-20 md:-left-28 rounded-full"></div>
+      <div
+        className="absolute left-32 
+        h-[90%] w-1/3 
+        sm:w-2/5 md:w-1/2 
+        z-0 overflow-hidden"
+      >
+        <Image
+          src={mapURL}
+          fill
+          className="object-contain opacity-70 scale-125"
+          alt="Map"
+          priority
+        />
+      </div>
+
+
       
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-20">
-        {/* Left content remains the same */}
+      <div 
+      className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-20">
+        
         <div className="flex-1 text-center md:text-left z-10">
           <h1 ref={nigerianRef} className="text-3xl md:text-3xl lg:text-4xl font-bold text-secondary min-h-[2.5rem]">
             Nigerian
@@ -130,14 +162,19 @@ const HeroSection: React.FC = () => {
           </button>
         </div>
 
-        <div ref={imageRef} className="flex-1 w-full md:w-auto mt-6 md:mt-0 relative">
-          <div className="relative h-48 sm:h-60 md:h-72 w-full">
+        <div
+          ref={imageRef}
+          className="flex-1 w-full md:w-auto mt-6 md:mt-0 relative"
+        >
+          <div
+            className="bg-secondary relative h-96 sm:h-80 md:h-[450px] w-full"
+          >
             <Image
               src="/images/cac.png"
               alt="Hero Image"
               className="h-full w-full rounded shadow-md relative z-10 object-cover"
-              width={600} 
-              height={600}
+              width={500} 
+              height={500}
               priority
             />
             <div className="absolute inset-0 bg-secondary/30 rounded shadow-md z-20" />
