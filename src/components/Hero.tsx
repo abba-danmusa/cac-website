@@ -121,97 +121,94 @@ const HeroSection: React.FC = () => {
 
   return (
     <section
-      ref={containerRef}
-      className="bg-primary min-h-dvh py-6 md:py-10 relative overflow-hidden"
+  ref={containerRef}
+  className="bg-secondary min-h-dvh py-6 md:py-10 relative overflow-hidden"
+>
+  {/* Map Section */}
+  {/* <div
+    className="absolute left-0 top-0 h-[100%] w-[100%] md:w-1/2 lg:w-[40%] z-0 overflow-hidden"
+  >
+  </div> */}
+  <Image
+    src={'/svg/map.svg'}
+    // objectFit='fill'
+    className="absolute -top-20 left-20 object-contain opacity-70"
+    width={500}
+    height={400}
+    alt="Map"
+    priority
+  />
+
+  <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-20">
+    {/* Text Content */}
+    <div className="flex-1 text-center md:text-left z-10">
+      <h1 ref={nigerianRef} className="text-3xl md:text-4xl font-bold text-secondary min-h-[2.5rem]">
+        Nigerian
+      </h1>
+      <h1 ref={corporateRef} className="text-3xl md:text-4xl font-bold text-black min-h-[2.5rem]">
+        Corporate
+      </h1>
+      <h1 ref={registryRef} className="text-3xl md:text-4xl font-bold text-black min-h-[2.5rem]">
+        Registry
+      </h1>
+      <p ref={paragraphRef} className="mt-4 text-sm md:text-base text-black max-w-prose">
+        The Commission is responsible for managing all aspects of company operations, including formation, incorporation, management, and winding up. It maintains company registries across all states, ensuring they are well-equipped to handle their duties.
+      </p>
+      <button ref={buttonRef} className="w-full md:w-auto mt-6 bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
+        Start Your Application
+      </button>
+    </div>
+
+    {/* Image Section */}
+    <div
+      ref={imageRef}
+      className="flex-1 w-full md:w-auto mt-6 md:mt-0 relative"
     >
-      <div
-        className="absolute left-32 
-        h-[90%] w-1/3 
-        sm:w-2/5 md:w-1/2 
-        z-0 overflow-hidden"
-      >
+      <div className="bg-secondary relative h-60 md:h-80 lg:h-[300px] w-full">
         <Image
-          src={'/svg/map.svg'}
-          fill
-          className="object-contain opacity-70 scale-125"
-          alt="Map"
+          src="/images/cac.png"
+          alt="Hero Image"
+          className="h-full w-full rounded shadow-md relative z-10 object-cover"
+          width={500}
+          height={500}
           priority
         />
-      </div>
-
-
-      
-      <div 
-      className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-20">
+        <div className="absolute inset-0 bg-secondary/30 rounded shadow-md z-20" />
         
-        <div className="flex-1 text-center md:text-left z-10">
-          <h1 ref={nigerianRef} className="text-3xl md:text-3xl lg:text-4xl font-bold text-secondary min-h-[2.5rem]">
-            Nigerian
-          </h1>
-          <h1 ref={corporateRef} className="text-3xl md:text-3xl lg:text-4xl font-bold text-black min-h-[2.5rem]">
-            Corporate
-          </h1>
-          <h1 ref={registryRef} className="text-3xl md:text-3xl lg:text-4xl font-bold text-black min-h-[2.5rem]">
-            Registry
-          </h1>
-          <p ref={paragraphRef} className="mt-4 text-sm md:text-base text-black max-w-prose">
-            The Commission is responsible for managing all aspects of company operations, including formation, incorporation, management, and winding up. It maintains company registries across all states, ensuring they are well-equipped to handle their duties.
+        {/* News Slider */}
+        <div className="absolute top-0 bottom-0 left-0 right-0 bg-secondary/50 flex items-center z-30">
+          <button 
+            onClick={() => animateNews('prev')}
+            className="px-3 py-4 text-white hover:bg-secondary/50 transition-colors z-40"
+          >
+            ←
+          </button>
+          <p 
+            ref={newsRef}
+            className="flex-1 text-white text-xs md:text-base font-thin text-center px-4 py-3"
+          >
+            {newsItems[currentNewsIndex]} {" "}
+            <br />
+            <button className="
+              text-white font-sans font-thin
+              text-xs md:text-base
+              border border-accent
+              p-1 mt-4
+              bg-secondary"
+            >Read More</button>
           </p>
-          <button ref={buttonRef} className="w-full md:w-auto mt-6 bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
-            Start Your Application
+          <button 
+            onClick={() => animateNews('next')}
+            className="px-3 py-4 text-white hover:bg-secondary/50 transition-colors z-40"
+          >
+            →
           </button>
         </div>
-
-        <div
-          ref={imageRef}
-          className="flex-1 w-full md:w-auto mt-6 md:mt-0 relative"
-        >
-          <div
-            className="bg-secondary relative h-96 sm:h-80 md:h-[450px] w-full"
-          >
-            <Image
-              src="/images/cac.png"
-              alt="Hero Image"
-              className="h-full w-full rounded shadow-md relative z-10 object-cover"
-              width={500} 
-              height={500}
-              priority
-            />
-            <div className="absolute inset-0 bg-secondary/30 rounded shadow-md z-20" />
-            
-            {/* News Slider with Navigation */}
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-secondary/50 flex items-center z-30">
-              <button 
-                onClick={() => animateNews('prev')}
-                className="px-3 py-4 text-white hover:bg-secondary/50 transition-colors z-40"
-              >
-                ←
-              </button>
-              <p 
-                ref={newsRef}
-                className="flex-1 text-white text-xs md:text-base font-thin text-center px-4 py-3"
-              >
-                {newsItems[currentNewsIndex]} {" "}
-                <br />
-                <button className="
-                  text-white font-sans font-thin
-                  text-xs md:text-base
-                  border border-accent
-                  p-1 mt-4
-                  bg-secondary"
-                >Read More</button>
-              </p>
-              <button 
-                onClick={() => animateNews('next')}
-                className="px-3 py-4 text-white hover:bg-secondary/50 transition-colors z-40"
-              >
-                →
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
   );
 };
 
