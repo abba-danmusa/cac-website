@@ -122,7 +122,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
   ref={containerRef}
-  className="bg-secondary min-h-dvh py-6 md:py-10 relative overflow-hidden"
+  className="bg-primary min-h-dvh py-6 md:py-10 relative overflow-hidden"
 >
   {/* Map Section */}
   {/* <div
