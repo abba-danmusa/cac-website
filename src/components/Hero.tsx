@@ -5,7 +5,7 @@ import React, { useRef, useState, useEffect, useCallback } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
-import mapURL from '../../public/svg/map.svg?url';
+// import mapURL from '../../public/svg/map.svg?url';
 // import MapSVG from './MapSVG';
 
 gsap.registerPlugin(useGSAP, TextPlugin);
@@ -131,7 +131,7 @@ const HeroSection: React.FC = () => {
         z-0 overflow-hidden"
       >
         <Image
-          src={mapURL}
+          src={'/svg/map.svg'}
           fill
           className="object-contain opacity-70 scale-125"
           alt="Map"
