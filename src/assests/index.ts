@@ -6,6 +6,7 @@ import morale  from './Morale.png'
 import effort from './Effort.png'
 import pdf from './PDF.png'
 import clip2 from './Clip2.png'
+import youtube from './YouTube.png'
 
 export {
     clip,
@@ -16,4 +17,5 @@ export {
     effort,
     pdf,
     clip2,
+    youtube,
 }
