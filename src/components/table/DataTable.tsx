@@ -1,6 +1,6 @@
 import React from 'react';
 // import { TableRowData } from '../../types';
-import TableHeader from './TableHeader';
+// import TableHeader from './TableHeader';
 import TableRow from './TableRow';
 
 interface TableRowData {

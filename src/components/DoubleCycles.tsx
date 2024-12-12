@@ -1,14 +1,11 @@
 import React from 'react'
 
 interface Props {
-    top?: string | '',
     bottom?: string | '',
     left?: string | '',
-    right?: string | '',
-    z?: string | ''
 }
 
-const DoubleCycles: React.FC<Props> = ({bottom, left, right,top, z}) => {
+const DoubleCycles: React.FC<Props> = ({bottom, left}) => {
   return (
     <div className={`absolute top-[-5.5rem] bottom-[${bottom}] left-[${left}] right-[-6rem]`}>
         <div className="relative ">
