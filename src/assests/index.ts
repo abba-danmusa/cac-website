@@ -4,6 +4,8 @@ import like from './Facebook Like.png'
 import adminster from './Administrative Tools.png'
 import morale  from './Morale.png'
 import effort from './Effort.png'
+import pdf from './PDF.png'
+import clip2 from './Clip2.png'
 
 export {
     clip,
@@ -12,4 +14,6 @@ export {
     adminster,
     morale,
     effort,
+    pdf,
+    clip2,
 }
