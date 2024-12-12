@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const IncorporatedTR = () => {
+    
   return (
     <div className='bg-primary flex flex-col '>
     <Header />
