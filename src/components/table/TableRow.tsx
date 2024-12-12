@@ -17,10 +17,10 @@ const TableRow = ({ item, index }: TableRowProps) => (
   <tr
     className={`
       ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}
-      hover:bg-gray-50 transition-colors duration-150 text-black text-[13px] md:text-[18px]
+      hover:bg-gray-50 transition-colors duration-150 flex justify-between z-10 text-black text-[13px] md:text-[18px]
     `}
   >
-    <td className="px-6 py-4 border-t ">
+    <td className="px-6 py-4 border-t z-10 ">
       <div className="flex items-center gap-3 ">
         <span className="flex items-center justify-center w-6 h-6  text-black rounded-full text-sm">
           {index + 1}
@@ -28,8 +28,8 @@ const TableRow = ({ item, index }: TableRowProps) => (
         {item.column1}
       </div>
     </td>
-    <td className="px-4 py-4 border-t">{item.column2}</td>
-    <td className="px-6 py-4 border-t">{item.column3}</td>
+    <td className="px-4 py-4 border-t z-10">{item.column2}</td>
+    <td className="px-6 py-4 border-t z-10 self-start">{item.column3}</td>
   </tr>
 );
 
