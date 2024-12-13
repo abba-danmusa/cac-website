@@ -2,7 +2,7 @@ import { clip2, group } from '@/assests'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { generateTableData } from '@/data/tableData'
-import {  Search } from 'lucide-react'
+import { Search } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
