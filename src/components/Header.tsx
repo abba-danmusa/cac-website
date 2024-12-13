@@ -3,16 +3,18 @@
 import React from "react";
 import Image from 'next/image';
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header: React.FC = () => {
-  const [activeTab, setActiveTab] = React.useState('home');
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const isActive = 'border-b-2 border-secondary';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+    const location = usePathname()
+
+    console.log(location);
+    
 
   return (
     <header className="bg-accent shadow-lg mt-4">
@@ -24,7 +26,7 @@ const Header: React.FC = () => {
               alt="CAC Logo"
               width={300}
               height={150}
-              className="w-28 h-16 md:w-24 md:h-20 object-contain"
+              className="w-28 h-16 md:w-[280px] md:h-[130px] object-contain"
             />
           </Link>
 
@@ -59,45 +61,42 @@ const Header: React.FC = () => {
             bg-accent md:bg-accent
             p-4 md:p-0
             space-y-4 md:space-y-0
+            items-center
             md:space-x-6
             z-50
           `}>
-            <a
-              href="#"
+            <Link
+              href="/"
               onClick={() => {
-                setActiveTab('home');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'home' ? isActive : ''}`}
-            >Home</a>
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location == '/' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
+            >Home</Link>
             <a
-              href="#about"
+              href="/who"
               onClick={() => {
-                setActiveTab('about');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'about' ? isActive : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/who' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
             >About Us</a>
             <a
-              href="#services"
+              href="/revised"
               onClick={() => {
-                setActiveTab('services');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'services' ? isActive : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/revised' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
             >Services</a>
             <a
-              href="#resources"
+              href="/resources"
               onClick={() => {
-                setActiveTab('resources');
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${activeTab == 'resources' ? isActive : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/resources' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
             >Resources</a>
             <a
               href="#report"
               onClick={() => setIsMenuOpen(false)}
-              className="text-white bg-green-700 px-4 py-2 rounded hover:bg-green-800 font-sans text-sm text-center" 
+              className="text-[#04E824] bg-secondary px-4 py-2 rounded hover:bg-green-800 font-sans text-sm text-center" 
             >Reportgov.ng</a>
           </nav>
         </div>
