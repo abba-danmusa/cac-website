@@ -7,7 +7,7 @@ import React from 'react'
 const IncorporatedTR = () => {
     
   return (
-    <div className='bg-primary flex flex-col '>
+    <div className='bg-primary flex flex-col'>
     <Header />
     <div className="relative flex flex-col items-center overflow-hidden ">
     <div className="absolute top-[2rem] lg:top-[2rem] right-[-4rem] lg:right-[0rem]">
