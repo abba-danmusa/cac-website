@@ -46,8 +46,8 @@ const News = () => {
                         <p className="lg:text-[16px] lg:w-[620px] text-black">The Commission announced its intention to strike off companies believed to be inactive or dormant due to failing to file annual returns for 10 years. A statutory 90-day notice period was provided for affected companies to comply or respond.</p>
                     </section>
                     <section className="grid ml-4 grid-rows-3 self-start gap-[4rem] z-10 ">
-                        {list.map((item: any, index: number) => (
-                            <div className="flex items-center gap-x-4 ">
+                        {list.map((item: {title: string, subtitle: string, text: string}, index: number) => (
+                            <div key={index} className="flex items-center gap-x-4 ">
                                 <div className="w-[137px] h-[144px] rounded-lg  bg-[#D9D9D9]"/>
                                 <div className="flex flex-col gap-2 text-black">
                                     <p className="text-[20px] leading-6">{item.title}</p>

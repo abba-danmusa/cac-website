@@ -13,9 +13,9 @@ const Who = () => {
             <div className="relative  ml-[-5rem] md:ml-0 ">
                 <div className="flex flex-col  items-center ">
                     <p className="md:text-[2.5rem] text-[25px]  z-30 text-black">Welcome to <span className=" text-secondary">CAC</span></p>
-                    <p className="text-black z-30 font-normal text-base md:text-[20px]">Nigeria's Corporate Registry</p>
+                    <p className="text-black z-30 font-normal text-base md:text-[20px]">Nigeria&apos;s Corporate Registry</p>
                 </div>
-                <DoubleCycles   z='-20' />
+                <DoubleCycles   />
             </div>
             <div className="flex flex-col md:flex-row gap-6 mt-[7rem] w-full">
               <div className="">
