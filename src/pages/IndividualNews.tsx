@@ -54,7 +54,7 @@ const IndividualNews = () => {
                             <div className="absolute right-8 top-2">
                                 <Search />
                             </div>
-                            <input type="text" placeholder='Search' className='w-[341px] pl-3 text-black h-[42px] border border-secondary rounded-lg ' />
+                            <input type="text" placeholder='Search' className='w-[341px] pl-3 text-black h-[42px] border md:mb-0 mb-8 border-secondary rounded-lg ' />
                         </div>
                 <div className=" mb-[12rem] relative flex flex-col gap-8 lg:flex-row lg:w-full   lg:ml-[6rem]">
                 <div className="absolute top-[38rem] lg:top-[30rem] left-[-4rem]">

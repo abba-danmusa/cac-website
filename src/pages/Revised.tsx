@@ -25,8 +25,8 @@ const Revised = () => {
     <div className="absolute top-[-2rem] lg:top-[-3rem] right-[-1rem] lg:right-[-3rem]">
         <Image src={group} alt='group' />
       </div>
-        <p className="text-[25px] md:text-[2.5rem] z-10 text-black">REVISED SERVICE TIMELINES</p>
-        <div className="flex flex-col w-full mt-[5rem] ">
+        <p className="text-[22px] md:text-[2.5rem] z-10 text-black">REVISED SERVICE TIMELINES</p>
+        <div className="flex flex-col w-full mt-[5rem] z-10 ">
         <div className="w-full  bg-white  overflow-hidden">
             <DataTable data={data} visibleRows={visibleRows} />
         </div>
@@ -36,7 +36,7 @@ const Revised = () => {
         />
         </div>
         <div className="mt-[4rem] self-start text-black z-10">
-            <p className="lg:w-[888px] md:w-[679px] w-[494px]">Applications will be processed promptly upon receipt of all relevant documents, either via email or physical submission through courier services, and after compliance with any issued or raised queries. To expedite processing, customers are advised to strictly adhere to the commission&apos;s checklist and guidelines and ensure correct fee payment.</p>
+            <p className="lg:w-[888px] md:w-[679px] w-auto">Applications will be processed promptly upon receipt of all relevant documents, either via email or physical submission through courier services, and after compliance with any issued or raised queries. To expedite processing, customers are advised to strictly adhere to the commission&apos;s checklist and guidelines and ensure correct fee payment.</p>
         </div>
         <div className="absolute bottom-[-3rem]  left-[-3rem]">
             <Image src={clip2} alt='clip' />

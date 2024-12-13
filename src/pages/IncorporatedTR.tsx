@@ -7,14 +7,14 @@ import React from 'react'
 const IncorporatedTR = () => {
     
   return (
-    <div className='bg-primary flex flex-col '>
+    <div className='bg-primary flex flex-col'>
     <Header />
     <div className="relative flex flex-col items-center overflow-hidden ">
     <div className="absolute top-[2rem] lg:top-[2rem] right-[-4rem] lg:right-[0rem]">
         <Image src={group} alt='group' />
       </div>
     <div className="flex flex-col  items-center mt-[10rem] mx-[2rem] md:mx-0 mb-[4rem]  md:my-[10rem]  ">
-                <p className="md:text-[2.5rem] text-[25px]  z-30 text-black">Incorporated Trustees Registration</p>
+                <p className="md:text-[2.5rem] text-[20px]  z-30 text-black">Incorporated Trustees Registration</p>
                 <p className="text-black text-center  z-30 font-normal text-[13px] md:text-[18px]">
                 Step by step Guide
                 </p>
