@@ -7,6 +7,7 @@ import effort from './Effort.png'
 import pdf from './PDF.png'
 import clip2 from './Clip2.png'
 import youtube from './YouTube.png'
+import ellipse from './Ellipse 5.png'
 
 export {
     clip,
@@ -18,4 +19,5 @@ export {
     pdf,
     clip2,
     youtube,
+    ellipse
 }
