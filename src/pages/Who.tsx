@@ -7,7 +7,7 @@ import React from 'react'
 
 const Who = () => {
   return (
-    <div className='bg-primary flex flex-col'>
+    <div className='bg-primary flex flex-col overflow-hidden'>
         <Header />
         <section className='flex flex-col mt-[10rem] gap-4 mx-8  items-center py-4'>
             <div className="relative  ml-[-5rem] md:ml-0 ">

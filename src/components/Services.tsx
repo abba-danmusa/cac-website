@@ -87,7 +87,7 @@ const ServicesSection: React.FC = () => {
   });
 
   return (
-    <section id="services" className="bg-primary relative">
+    <section id="services" className="bg-primary relative overflow-hidden">
       <Image
         width={400}
         height={400}

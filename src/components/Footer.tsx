@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-accent text-black pt-6">
+    <footer className="bg-accent text-black md:pt-6">
       <div className="container px-4 md:px-auto flex flex-row md:justify-between items-center">
         <div className="flex flex-col md:flex-col">
           <Image src={'/svg/coat-of-arms.svg'} alt="Coat of Arms" width={100} height={100} />
@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <p className="md:text-[20px] text-secondary">Plot 420, Tigris Crescent, <br /> Off Aguiyi Ironsi Street, <br /> Maitama, Abuja, Nigeria.</p>
         </div>
        <div className="flex flex-col md:flex-row md:justify-between">
-       <div className="flex flex-col items-end md:items-baseline mt-40 md:mt-4">
+       <div className="flex flex-col items-end md:items-baseline mt-8 md:mt-4">
           <a href="postis" className="mt-2 hover:cursor-pointer text-end md:text-justify  hover:text-secondary">FAQs on customer Registration Portal</a>
           <a href="/revised" className="mt-2 hover:cursor-pointer hover:text-secondary">Services</a>
           <a href="/who" className="mt-2 hover:cursor-pointer hover:text-secondary">About Us</a>

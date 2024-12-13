@@ -122,7 +122,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
   ref={containerRef}
-  className="bg-primary min-h-dvh py-6 md:py-10 relative overflow-hidden"
+  className="bg-primary md:min-h-dvh py-6 md:py-10 relative overflow-hidden"
 >
   {/* Map Section */}
   {/* <div
@@ -139,9 +139,9 @@ const HeroSection: React.FC = () => {
     priority
   />
 
-  <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-20">
+  <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-start md:items-center gap-8 md:gap-20">
     {/* Text Content */}
-    <div className="flex-1 text-center md:text-left z-10">
+    <div className="flex-1 text-left z-10">
       <h1 ref={nigerianRef} className="text-3xl md:text-4xl font-bold text-secondary min-h-[2.5rem]">
         Nigerian
       </h1>
@@ -154,7 +154,7 @@ const HeroSection: React.FC = () => {
       <p ref={paragraphRef} className="mt-4 text-sm md:text-base text-black max-w-prose">
         The Commission is responsible for managing all aspects of company operations, including formation, incorporation, management, and winding up. It maintains company registries across all states, ensuring they are well-equipped to handle their duties.
       </p>
-      <button ref={buttonRef} className="w-full md:w-auto mt-6 bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
+      <button ref={buttonRef} className=" md:w-auto mt-6 bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
         Start Your Application
       </button>
     </div>

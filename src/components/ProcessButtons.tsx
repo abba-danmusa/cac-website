@@ -10,7 +10,7 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({ icon, title }) => {
   return (
     <div className="flex items-center space-x-4 border-2 border-secondary p-4 rounded-lg hover:bg-secondary hover:text-primary hover:cursor-pointer transition duration-300">
       {icon}
-      <h3 className="text-black font-sans font-semibold hover:text-primary">{title}</h3>
+      <h3 className="text-black font-sans font-semibold text-[13px] md:text-base hover:text-primary">{title}</h3>
     </div>
   );
 };
