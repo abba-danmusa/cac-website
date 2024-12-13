@@ -5,6 +5,7 @@ import React, { useRef, useState, useEffect, useCallback } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
+import { ellipse } from '@/assests';
 // import mapURL from '../../public/svg/map.svg?url';
 // import MapSVG from './MapSVG';
 
@@ -101,7 +102,6 @@ const HeroSection: React.FC = () => {
       animateNews('next');
     }, 3000); // Slides every 5 seconds
 
-    // Cleanup interval on component unmount
     return () => clearInterval(slideInterval);
   }, [animateNews]); // Re-create interval when index changes
 
@@ -132,22 +132,32 @@ const HeroSection: React.FC = () => {
   <Image
     src={'/svg/map.svg'}
     // objectFit='fill'
-    className="absolute -top-20 left-20 object-contain opacity-70"
+    className="absolute top-[13em]  z-10 left-0 object-contain opacity-70"
     width={500}
     height={400}
     alt="Map"
     priority
   />
+  <Image
+    src={ellipse}
+    // objectFit='fill'
+    className="absolute top-[13rem] left-0 object-contain opacity-70"
+    alt="Map"
+    priority
+  />
+
 
   <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-start md:items-center gap-8 md:gap-20">
     {/* Text Content */}
     <div className="flex-1 text-left z-10">
+      <div className="flex gap-2 md:gap-0 md:flex-col ">
       <h1 ref={nigerianRef} className="text-3xl md:text-4xl font-bold text-secondary min-h-[2.5rem]">
         Nigerian
       </h1>
       <h1 ref={corporateRef} className="text-3xl md:text-4xl font-bold text-black min-h-[2.5rem]">
         Corporate
       </h1>
+      </div>
       <h1 ref={registryRef} className="text-3xl md:text-4xl font-bold text-black min-h-[2.5rem]">
         Registry
       </h1>
