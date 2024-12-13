@@ -102,7 +102,6 @@ const HeroSection: React.FC = () => {
       animateNews('next');
     }, 3000); // Slides every 5 seconds
 
-    // Cleanup interval on component unmount
     return () => clearInterval(slideInterval);
   }, [animateNews]); // Re-create interval when index changes
 
