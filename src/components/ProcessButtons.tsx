@@ -17,7 +17,7 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({ icon, title }) => {
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 px-8 py-8">
+    <div className="flex flex-col md:grid md:grid-cols-2 gap-4 px-8 py-8">
       <ServiceButton
         icon={<Image className="bg-primary hover:text-primary" src="/svg/company-registration.svg" alt="Company Registration" width={40} height={40} />}
         title="Company Registration"

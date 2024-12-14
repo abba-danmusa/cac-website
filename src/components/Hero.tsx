@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ellipse } from '@/assests';
+import Link from 'next/link';
 // import mapURL from '../../public/svg/map.svg?url';
 // import MapSVG from './MapSVG';
 
@@ -162,12 +163,15 @@ const HeroSection: React.FC = () => {
       <h1 ref={registryRef} className="text-3xl md:text-4xl font-bold text-black min-h-[2.5rem]">
         Registry
       </h1>
-      <p ref={paragraphRef} className="mt-4 text-sm md:text-base text-black max-w-prose">
+      <p ref={paragraphRef} className="my-4 text-sm md:text-base text-black max-w-prose">
         The Commission is responsible for managing all aspects of company operations, including formation, incorporation, management, and winding up. It maintains company registries across all states, ensuring they are well-equipped to handle their duties.
       </p>
-      <button ref={buttonRef} className=" md:w-auto mt-6 bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
-        Start Your Application
-      </button>
+      <Link ref={buttonRef} href="https://pre.cac.gov.ng" className="  md:w-auto mt-[3rem] bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
+      Start Your Application
+      </Link>
+      {/* <button ref={buttonRef}  className=" md:w-auto mt-6 bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
+       
+      </button> */}
     </div>
 
     {/* Image Section */}
