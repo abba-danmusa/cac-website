@@ -61,7 +61,7 @@ const Who = () => {
             </div>
             <div className="flex flex-col justify-center w-full mb-[8rem] ">
             <p className="text-[32px] md:text-[2.5rem] mb-4 text-black font-semibold text-center">Our core Values</p>
-              <ul className="flex gap-[0.5rem] justify-center z-10 mx-[1rem] md:mx-0">
+              <ul className="md:flex grid grid-cols-2 gap-4 md:gap-[0.5rem] justify-center z-10 mx-[1rem] md:mx-0">
                 <li className="flex flex-col gap-4 items-center ">
                   <div className="w-[4.75rem] h-[4.75rem] flex justify-center items-center rounded-full border border-secondary">
                     <Image src={effort} alt='#' />

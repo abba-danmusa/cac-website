@@ -57,9 +57,9 @@ const PostIS = () => {
         <Image src={group} alt='group' />
       </div>
         <p className="text-[25px] md:text-[2.5rem] z-10 text-black">Post Incorporation services</p>
-        <p className="text-black text-center  z-30 font-normal text-[13px] md:text-[18px]">
+        <a href='https://post.cac.gov.ng' className="text-black text-center underline z-30 font-normal text-[13px] md:text-[18px]">
                 Step by step Guide
-                </p>
+                </a>
                 <div className="w-full mt-[7rem] bg-white  overflow-hidden">
                    
                     <table className="w-full border-collapse">
