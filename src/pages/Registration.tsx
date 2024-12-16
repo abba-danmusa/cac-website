@@ -21,11 +21,11 @@ const Registration = () => {
                     <div className="md:w-[517px] text-center  border border-secondary rounded-lg flex-col px-[1rem] py-4">
                         <p className="text-[20px] md:text-[30px] text-secondary">How to Register a Private/ <br />public Company</p>
                         <p className="text-black text-[13px] mt-8 ">
-                            1. Check for availability of proposed company name (click here) Read more <br />
-                             about name reservation and Reserve a new Name   (click here) <br />
-                            2. Complete pre-registration form and upload relevant documents (Online <br /> using Company Registration Portal) <br />
-                           3. Pay filing and Stamp duty fees  Check the fees for our Services here <br />
-                            Now registration is end-to-end on the COMPANY REGISTRATION <br /> PORTAL (CRP) <br />
+                            1. Check for availability of proposed company name <a href="https://publicsearch.cac.gov.ng" className='underline font-bold'>(click here)</a>{" "}<a href="https://services.cac.gov.ng/login" className='underline font-bold'>Read more <br />
+                             about name reservation</a> and Reserve a new Name   <a href="https://services.cac.gov.ng" className='underline font-bold'>(click here)</a> <br />
+                            2. Complete pre-registration form and upload relevant documents <a href="https://services.cac.gov.ng" className='underline font-bold'>(Online <br /> using Company Registration Portal)</a> <br />
+                           3. Pay filing and Stamp duty fees  <a href="https://cac.gov.ng/schedule-of-fees/" className='underline font-bold'>Check the fees for our Services here </a> <br />
+                            Now registration is end-to-end on the <a href="https://services.cac.gov.ng" className='underline font-bold'>COMPANY REGISTRATION <br /> PORTAL (CRP)</a> <br />
                             with electronic Certificate of Registration and Certified Extract of <br /> Registration information</p>
                       
                     </div>
@@ -33,8 +33,8 @@ const Registration = () => {
                     
                     <p className="text-[20px] md:text-[30px] text-secondary">How to Register a <br /> Limited Guarantee</p>
                     <p className="text-black text-[13px] mt-8 ">
-                   1. Reserve a Name   (click here) <br />
-                    2. Fill Registration Form and upload relevant documents (Online using <br /> Company Registration Portal) <br />
+                   1. Reserve a Name   <a href="https://services.cac.gov.ng" className='underline font-bold'>(click here)</a> <br />
+                    2. Fill Registration Form and upload relevant documents <a href="https://services.cac.gov.ng" className='underline font-bold'>(Online using <br /> Company Registration Portal) </a> <br />
                    3. Pay filing fee and Stamp Duty <br />
                    4. The Commission is obliged to obtain approval of the Attorney General of <br /> the Federation before registration of the Company Limited by Guarantee.</p>
                     </div>

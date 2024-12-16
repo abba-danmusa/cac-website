@@ -19,10 +19,10 @@ const IncorporatedTR = () => {
                 Step by step Guide
                 </p>
                  <p className="text-black text-center mt-[4rem] z-30 font-normal text-[13px] md:text-[18px]">
-                1. Check for availability of proposed company name (click here) Read more about name reservation and Reserve a new Name   (click <br /> here) <br />
-                2. Complete pre-registration form and upload relevant documents (Online using Company Registration Portal) <br />
-              3.  Pay filing and Stamp duty fees  Check the fees for our Services here <br />
-                Now registration is end-to-end on the COMPANY REGISTRATION PORTAL (CRP) <br />
+                1. Check for availability of proposed company name <a href="https://publicsearch.cac.gov.ng" className='underline font-bold'>(click here) </a><a href="https://services.cac.gov.ng/login" className='underline font-bold'>Read more about name reservation</a> and Reserve a new Name   <a href="https://services.cac.gov.ng" className='underline font-bold'>(click <br /> here)</a> <br />
+                2. Complete pre-registration form and upload relevant documents <a href="https://services.cac.gov.ng" className='underline font-bold'>(Online using Company Registration Portal)</a> <br />
+              3.  Pay filing and Stamp duty fees  <a href="https://cac.gov.ng/schedule-of-fees/" className='underline font-bold'>Check the fees for our Services here</a> <br />
+                Now registration is end-to-end on the <a href="https://services.cac.gov.ng" className='underline font-bold'>COMPANY REGISTRATION PORTAL (CRP)</a> <br />
                 with electronic Certificate of Registration and Certified Extract of Registration information
                 </p>
         </div>
