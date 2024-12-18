@@ -24,11 +24,11 @@ const Resources = () => {
                     <Image src={group} alt='group' />
                     </div>
                 <div className="flex lg:flex-col flex-row z-10 mb-16 lg:mb-0 gap-2 md:gap-4 pb-8 lg:pb-0 md:pr-8 border-b border-b-[#4D6C4A] lg:border-b-0 lg:border-r border-r-[#4D6C4A]  ">
-                    <div onClick={() => setIsActive('first')} className={`rounded-md cursor-pointer ${isActive === 'first' ? 'border' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-4 md:px-8 py-4`}>
-                        <p className="text-[15px] md:text-[20px] text-black font-bold">Corporate Governance and Regulatory Framework: Key Legal and Operational Documents</p>
+                    <div onClick={() => setIsActive('first')} className={`rounded-md cursor-pointer ${isActive === 'first' ? 'border' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-2 md:px-8 py-4`}>
+                        <p className="text-[13px] md:text-[20px] text-black font-medium md:font-bold">Corporate Governance and Regulatory Framework: Key Legal and Operational Documents</p>
                     </div>
-                    <div onClick={() => setIsActive('second')} className={`rounded-md cursor-pointer ${isActive === 'second' ? 'border' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-4 md:px-8 py-4`}>
-                        <p className="text-[15px] md:text-[20px] text-black font-bold">Corporate Administration and Compliance Forms: Applications, Notices, and Returns</p>
+                    <div onClick={() => setIsActive('second')} className={`rounded-md cursor-pointer ${isActive === 'second' ? 'border' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-2 md:px-8 py-4`}>
+                        <p className="text-[13px] md:text-[20px] text-black font-medium md:font-bold">Corporate Administration and Compliance Forms: Applications, Notices, and Returns</p>
                     </div>
                 </div>
                 <div className="md:ml-8  z-10  flex flex-col">
@@ -36,7 +36,7 @@ const Resources = () => {
                         {list.map((item: string, index: number) => (
                             <div key={index} className="flex flex-col gap-4 cursor-pointer  items-center">
                                 <Image src={pdf} alt='' width={202} />
-                                <p className="text-[18px] text-black">{item}</p>
+                                <p className="md:text-[18px] text-[13px] text-center text-black">{item}</p>
                             </div>
                         ))}
                     </div>
@@ -54,19 +54,19 @@ const Resources = () => {
             <p className="lg:text-[2.5rem] text-[25px] md:text-[30px] z-10 text-black">Procedures for <br /> New Service Delivery</p>
             <p className="lg:text-[18px] text-[13px] md:text-[15px] z-10 lg:w-[870px] mt-8 text-black">Pursuant to the earlier notice on the implementation of the new service delivery framework dated 6th August 2020, the general public and our esteemed customers are reminded that the physical presence of customers will be dispensed within the following offices: <br />
             Lagos (Alausa), Wuse Zone 5 as well as the Head office  with effect from the 31  st <br /> August 2020 except on appointment.</p>
-            <button className='text-[24px] z-10 text-black w-[174px] lg:h-[42px] rounded-[8px] mt-8  lg:self-center border-[#4D6C4A] border-2 '>Procedures</button>
+            <button className='md:text-[24px] text-[14px] z-10 text-black w-[174px] lg:h-[42px] rounded-[8px] mt-8  lg:self-center border-[#4D6C4A] border-2 '>Procedures</button>
         </section>
 
         <section className="text-black z-10 my-[10rem] flex flex-col mx-[3rem] items-center lg:mx-[5rem]">
         <p className="lg:text-[2.5rem] text-[25px] md:text-[30px] z-10 text-black">Important Links</p>
-            <div className="grid grid-cols-3 lg:gap-[8rem] justify-between">
-                <p className="lg:text-[20px] md:text-[18px] text-[13px] lg:w-[258px]">2022 National Inherent Risk  Assessment (NIRA) of Legal Persons & Legal Arrangements in Nigeria</p>
-                <p className="lg:text-[20px] md:text-[18px] text-[13px] lg:w-[258px]">Publication of Nigeria NIRA reports on Money Laundering, Terrorist Financing, Proliferation Financing, Legal Persons & Legal Arrangements and Money Laundering & Terrorist Financing in the Extractive Sector</p>
-                <p className="lg:text-[20px] md:text-[18px] text-[13px] lg:w-[258px]">Registration Reports</p>
+            <div className="md:grid flex flex-col gap-8 grid-cols-3 lg:gap-[8rem] justify-between">
+                <a className="lg:text-[20px] underline md:text-[18px] text-[13px] lg:w-[258px]">2022 National Inherent Risk  Assessment (NIRA) of Legal Persons & Legal Arrangements in Nigeria</a>
+                <a className="lg:text-[20px] underline md:text-[18px] text-[13px] lg:w-[258px]">Publication of Nigeria NIRA reports on Money Laundering, Terrorist Financing, Proliferation Financing, Legal Persons & Legal Arrangements and Money Laundering & Terrorist Financing in the Extractive Sector</a>
+                <a className="lg:text-[20px] underline md:text-[18px] text-[13px] lg:w-[258px]">Registration Reports</a>
             </div>
             <div className="mt-[5rem]  border text-center rounded-md border-secondary w-[334px] h-[212px] flex flex-col justify-between py-4 px-2">
-                <p className="text-[20px]">Same day Post <br /> Incorporation</p>
-                <p className="text-[18px] text-center">Desk Officer: Abdulrazak A. Galadima <br />
+                <p className="text-[18px] md:text-[20px]">Same day Post <br /> Incorporation</p>
+                <p className="md:text-[18px] text-[14px] text-center">Desk Officer: Abdulrazak A. Galadima <br />
                     email: samedaypost@cac.gov.ng <br />
                     Phone: 08090555542</p>
             </div>
