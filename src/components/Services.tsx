@@ -5,7 +5,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import background from '../../public/svg/services.svg';
+// import background from '../../public/svg/services.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,13 +88,7 @@ const ServicesSection: React.FC = () => {
 
   return (
     <section id="services" className="bg-primary relative overflow-hidden">
-      <Image
-        width={400}
-        height={400}
-        src={background}
-        alt=""
-        className="absolute top-10 left-0 z-0"
-      />
+     
       <div className="container mx-auto p-10 justify-items-center">
         <h2
           ref={headerRef}
