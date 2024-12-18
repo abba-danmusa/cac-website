@@ -26,7 +26,7 @@ const Header: React.FC = () => {
               alt="CAC Logo"
               width={300}
               height={150}
-              className="w-28 h-16 md:w-[280px] md:h-[130px] object-contain"
+              className="w-28 h-16 md:w-[180px] md:h-[100px] object-contain"
             />
           </Link>
 
@@ -70,28 +70,28 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location == '/' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location == '/' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
             >Home</Link>
             <a
               href="/who"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/who' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/who' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
             >About Us</a>
             <a
               href="/revised"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/revised' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/revised' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
             >Services</a>
             <a
               href="/resources"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/resources' ? 'border-2 p-1 text-secondary border-secondary' : ''}`}
+              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/resources' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
             >Resources</a>
             <a
               href="#report"

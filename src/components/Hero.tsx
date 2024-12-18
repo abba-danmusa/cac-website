@@ -133,7 +133,7 @@ const HeroSection: React.FC = () => {
   <Image
     src={'/svg/map.svg'}
     // objectFit='fill'
-    className="absolute top-[13em]  z-10 left-0 object-contain opacity-70"
+    className="absolute top-[13em] md:top-[-12rem] md:w-[700px]  z-10 md:left-[15rem] left-0 object-contain opacity-70"
     width={500}
     height={400}
     alt="Map"
@@ -142,7 +142,7 @@ const HeroSection: React.FC = () => {
   <Image
     src={ellipse}
     // objectFit='fill'
-    className="absolute top-[13rem] left-0 object-contain opacity-70"
+    className="absolute block md:hidden top-[13rem] left-0 object-contain opacity-70"
     alt="Map"
     priority
   />
