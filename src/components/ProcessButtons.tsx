@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <div className="flex flex-col md:grid md:grid-cols-2 gap-4 px-8 py-8">
       <ServiceButton
-        to="https://pre.cac.gov.ng"
+        to="/business"
         icon={<Image className="bg-primary hover:text-primary" src="/svg/company-registration.svg" alt="Company Registration" width={40} height={40} />}
         title="Company Registration"
       />
@@ -31,7 +31,7 @@ const Services = () => {
         title="Business Name Registration"
       />
       <ServiceButton
-        to="https://post.cac.gov.ng"
+        to="/tr"
         icon={<Image className="bg-primary hover:text-primary" src="/svg/incorporated-trustees.svg" alt="Incorporated Trustees" width={40} height={40} />}
         title="Incorporated Trustees"
       />

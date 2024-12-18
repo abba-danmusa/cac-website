@@ -12,7 +12,7 @@ const Foi = () => {
     <div className="absolute top-[2rem] lg:top-[2rem] right-[-4rem] lg:right-[0rem]">
         <Image src={group} alt='group' />
       </div>
-    <div className="flex flex-col  items-center mt-[10rem] mb-[4rem]  md:my-[10rem]  ">
+    <div className="flex flex-col  items-center mt-[10rem] mb-[4rem] px-4 md:px-0  md:my-[10rem]  ">
                 <p className="md:text-[2.5rem] text-[25px]  z-30 text-black">Freedom Of Information Act </p>
                 <p className="text-black text-center mt-[2rem] z-30 font-normal text-[13px] md:text-[18px]">
                 The Freedom of Information Act is an Act to make public records and information more freely available, provide for <br /> public access to public records and information, protect public records and information to the extent consistent with <br /> public interest and protection of personal privacy, protect serving public officers from adverse consequences of <br /> disclosing certain information without authorization and establish procedures for the achievement of those purposes <br /> and, for matters related therewith. <br />
@@ -30,11 +30,11 @@ const Foi = () => {
                         </div>
             <div className="flex w-full lg:flex-row flex-col gap-8 px-[2rem] md:px-[7rem] lg:justify-between z-10 mt-[8rem] mb-[2rem]">
                     <div className="md:w-[517px] text-center h-[191px] lg:h-auto border border-secondary rounded-lg flex-col px-[1rem] py-4">
-                        <p className="text-[20px] md:text-[30px] text-secondary">2020 Procurement plan</p>
+                        <p className="text-[18px] md:text-[30px] text-secondary">2020 Procurement plan</p>
                       
                     </div>
                     <div className="md:w-[517px]  border text-center border-secondary rounded-lg px-[1rem] py-4">
-                    <p className="text-[20px] md:text-[20px] text-secondary">EXPRESSION OF INTEREST: DESIGN, DEVELOPMENT & IMPLEMENTATION OF ENTERPRISE REGISTRY SOFTWARE AND PROVISION OF MANAGED DEDICATED INFRASTRUCTURE FOR THE HOSTING OF THE COMMISSION ONLINE SERVICES</p>
+                    <p className="text-[16px] md:text-[20px] text-secondary">EXPRESSION OF INTEREST: DESIGN, DEVELOPMENT & IMPLEMENTATION OF ENTERPRISE REGISTRY SOFTWARE AND PROVISION OF MANAGED DEDICATED INFRASTRUCTURE FOR THE HOSTING OF THE COMMISSION ONLINE SERVICES</p>
                     </div>
                 </div>
             </section>

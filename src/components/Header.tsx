@@ -94,7 +94,7 @@ const Header: React.FC = () => {
               className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/resources' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
             >Resources</a>
             <a
-              href="#report"
+              href="https://reportgov.ng"
               onClick={() => setIsMenuOpen(false)}
               className="text-[#04E824] bg-secondary px-4 py-2 rounded hover:bg-green-800 font-sans text-sm text-center" 
             >Reportgov.ng</a>
