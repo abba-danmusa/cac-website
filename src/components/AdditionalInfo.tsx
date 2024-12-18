@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 const AdditionalInfo = () => {
   return (
@@ -17,18 +18,18 @@ const AdditionalInfo = () => {
       </div>
       <div className="bg-primary flex flex-col space-y-4 z-10 md:w-96 h-72 p-3 md:p-4">
         <ul className="list-disc  md:pl-5 py-10 space-y-8 text-black">
-          <li className="flex cursor-pointer text-[16px] justify-between items-center ">
+          <Link href='/revised' className="flex cursor-pointer text-[16px] justify-between items-center ">
             <div className="h-4 w-4 rounded-full  mr-4 bg-secondary"/>
             Our Revised Service Timelines <span>→</span>
-          </li>
-          <li className="flex cursor-pointer text-[16px] justify-between items-center">
+          </Link>
+          <Link href='/fees' className="flex cursor-pointer text-[16px] justify-between items-center">
           <div className="h-4 w-4 rounded-full mr-4 bg-secondary"/>
             Summary of Our Service Fees <span>→</span>
-          </li>
-          <li className="flex cursor-pointer text-[16px] justify-between items-center">
+          </Link>
+          <Link href='/reg' className="flex cursor-pointer text-[16px] justify-between items-center">
           <div className="h-4 w-4 rounded-full mr-4 bg-secondary"/>
             How to Use Our Company <br /> Registration Portal <span>→</span>
-          </li>
+          </Link>
         </ul>
       </div>
     </div>
