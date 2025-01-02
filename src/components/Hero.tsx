@@ -5,18 +5,15 @@ import React, { useRef, useState, useEffect, useCallback } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
-import { ellipse } from '@/assests';
+import { ellipse, rg } from '@/assests';
 import Link from 'next/link';
-// import mapURL from '../../public/svg/map.svg?url';
-// import MapSVG from './MapSVG';
 
 gsap.registerPlugin(useGSAP, TextPlugin);
 
 const newsItems = [
-  "CAC Introduces 24-hour Company Registration",
-  "New Guidelines for Business Name Registration Released",
-  "Online Filing System Upgrade Completed",
-  "Corporate Affairs Commission Launches Mobile App"
+  "“The Registry’s mantra goes here”",
+  "CONGRATULATIONS TO THE NEWLY APPOINTED HONORABLE MINISTER INDUSTRY TRADE AND INVESTMENT",
+  
 ];
 
 const HeroSection: React.FC = () => {
@@ -124,22 +121,14 @@ const HeroSection: React.FC = () => {
   return (
     <section
   ref={containerRef}
-  className="bg-primary md:min-h-dvh py-6 md:py-10 relative overflow-hidden"
+  className="bg-primary mb-[8rem] py-6 md:py-10 relative overflow-hidden"
 >
   {/* Map Section */}
   {/* <div
     className="absolute left-0 top-0 h-[100%] w-[100%] md:w-1/2 lg:w-[40%] z-0 overflow-hidden"
   >
   </div> */}
-  <Image
-    src={'/svg/map.svg'}
-    // objectFit='fill'
-    className="absolute top-[13em] md:top-[-12rem] md:w-[700px]  z-10 md:left-[15rem] left-0 object-contain opacity-70"
-    width={500}
-    height={400}
-    alt="Map"
-    priority
-  />
+ 
   <Image
     src={ellipse}
     // objectFit='fill'
@@ -149,7 +138,7 @@ const HeroSection: React.FC = () => {
   />
 
 
-  <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-start md:items-center gap-8 md:gap-20">
+  <div className=" mx-auto px-4 flex flex-col-reverse md:flex-row items-start md:items-center gap-8 md:gap-20">
     {/* Text Content */}
     <div className="flex-1 text-left z-10">
       <div className="flex gap-2 md:gap-0 md:flex-col ">
@@ -166,9 +155,10 @@ const HeroSection: React.FC = () => {
       <p ref={paragraphRef} className="my-4 text-sm md:text-base text-black max-w-prose">
         The Commission is responsible for managing all aspects of company operations, including formation, incorporation, management, and winding up. It maintains company registries across all states, ensuring they are well-equipped to handle their duties.
       </p>
-      <Link ref={buttonRef} href="https://pre.cac.gov.ng" className="  md:w-auto mt-[3rem] bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
+      <Link ref={buttonRef} href="https://pre.cac.gov.ng" className="  md:w-auto mt-[3rem] bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary gradient-hover  transition duration-300">
       Start Your Application
       </Link>
+     
       {/* <button ref={buttonRef}  className=" md:w-auto mt-6 bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary hover:bg-secondary hover:text-white transition duration-300">
        
       </button> */}
@@ -176,48 +166,47 @@ const HeroSection: React.FC = () => {
 
     {/* Image Section */}
     <div
-      ref={imageRef}
-      className="flex-1 w-full md:w-auto mt-6 md:mt-0 relative"
+     
+      className="flex-1 rounded-lg  backl w-full md:w-auto mt-6 md:mt-0 relative"
     >
-      <div className="bg-secondary relative h-60 md:h-80 lg:h-[300px] w-full">
-        <Image
-          src="/images/cac.png"
-          alt="Hero Image"
-          className="h-full w-full rounded shadow-md relative z-10 object-cover"
-          width={500}
-          height={500}
-          priority
-        />
-        <div className="absolute inset-0 bg-secondary/30 rounded shadow-md z-20" />
-        
-        {/* News Slider */}
-        <div className="absolute top-0 bottom-0 left-0 right-0 bg-secondary/50 flex items-center z-30">
-          <button 
-            onClick={() => animateNews('prev')}
-            className="px-3 py-4 text-white hover:bg-secondary/50 transition-colors z-40"
-          >
-            ←
-          </button>
-          <p 
+      <div  ref={imageRef} className=" relative  h-60 md:h-80 lg:h-[300px] w-full">
+        <div className="absolute top-0 bottom-0 left-0 right-0  flex items-center z-30">
+      
+          <div 
             ref={newsRef}
-            className="flex-1 text-white text-xs md:text-base font-thin text-center px-4 py-3"
+            className="flex-1 text-white text-xs   md:text-base font-thin text-center px-4 py-3"
           >
-            {newsItems[currentNewsIndex]} {" "}
+            <span className='flex  justify-center'>  
+            {currentNewsIndex === 0 ? (
+            <span className="flex flex-col ml-[2rem] w-full items-start">
+            <Image
+            src={rg}
+            // objectFit='fill'
+            // className='shadow-lg'
+            // className="absolute block md:hidden top-[13rem] left-0 object-contain opacity-70"
+            alt="Map"
+            priority
+            width={150}
+            />
+            <p className="text-white text-[20px]">Hussaini Ishaq Magaji, SAN</p>
+            <p className="text-[#E7EFE7] text-[14px]">RG/CEO Corporate Affairs Commission</p>
+            </span>
+            ) : null} 
+
+          <span className={`${currentNewsIndex === 0 ? 'mt-[2rem] -ml-[8rem] text-start text-[25px] text-[#E7EFE7] ' : ''}`}>  {newsItems[currentNewsIndex]}</span> {" "}
+            </span>
             <br />
-            <button className="
-              text-white font-sans font-thin
-              text-xs md:text-base
-              border border-accent
-              p-1 mt-4
-              bg-secondary"
-            >Read More</button>
-          </p>
-          <button 
-            onClick={() => animateNews('next')}
-            className="px-3 py-4 text-white hover:bg-secondary/50 transition-colors z-40"
-          >
-            →
-          </button>
+            {currentNewsIndex === 1 ? (
+              <button className="
+                text-white font-sans font-thin
+                text-xs md:text-base
+                border border-[accent] rounded-lg
+                p-1 mt-4
+                "
+              >Read More</button>
+
+            ) : null} 
+          </div>
         </div>
       </div>
     </div>

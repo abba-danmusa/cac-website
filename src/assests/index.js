@@ -10,6 +10,7 @@ import youtube from './YouTube.png'
 import ellipse from './Ellipse 5.png'
 import home from './Home.svg'
 import map from './map.svg'
+import rg from './rg1.png'
 
 export {
     clip,
@@ -23,5 +24,5 @@ export {
     youtube,
     ellipse,
     home,
-    map
+    map, rg
 }
