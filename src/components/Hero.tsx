@@ -178,7 +178,7 @@ const HeroSection: React.FC = () => {
           >
             <span className='flex  justify-center'>  
             {currentNewsIndex === 0 ? (
-            <span className="flex flex-col ml-[2rem] w-full items-start">
+            <span className="flex flex-col ml-[1rem] w-full items-start">
             <Image
             src={rg}
             // objectFit='fill'
