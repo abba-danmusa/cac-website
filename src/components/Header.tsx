@@ -26,9 +26,9 @@ const Header: React.FC = () => {
     
 
   return (
-    <header className=" mt-4 flex justify-center pb-8 w-full">
-      <div className={`container bg-accent rounded-[15px] ${isMenuOpen ? 'h-[21rem]' : 'shadow1 '}   w-[83.0625rem] mx-auto px-2`}>
-        <div className="flex justify-between items-center">
+    <header className=" mt-4 flex  justify-center pb-8 w-full ">
+      <div className={` bg-accent rounded-[15px] z-50 ${isMenuOpen ? 'h-[21rem]' : 'shadow1 '} w-full  lg:w-[83.0625rem]  lg:px-2`}>
+        <div className="flex justify-between w-full items-center">
           <Link href="/">
             <Image
               src="/images/logo.png"

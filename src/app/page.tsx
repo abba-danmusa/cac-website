@@ -4,12 +4,25 @@ import HeroSection from "@/components/Hero";
 import ProcessSection from "@/components/Processes";
 import ServicesSection from "@/components/Services";
 import AdditionalInfo from "@/components/AdditionalInfo"
+import Image from "next/image";
+import { map } from "@/assests";
 
 export default function Home() {
   return (
-    <div className="bg-primary pt-2">
+    <div className=" bg-primary pt-2">
+    <div className="relative px-0 md:px-[4rem]">
+     <Image
+    src={map}
+    // objectFit='fill'
+    className="absolute top-[13em] md:top-[-12rem] md:w-[700px]  z-10 md:left-[10rem] left-0 object-contain opacity-70"
+    width={500}
+    height={400}
+    alt="Map"
+    priority
+  />
       <Header />
       <HeroSection />
+     </div>
       <ServicesSection />
       <ProcessSection />
       <div>
