@@ -8,6 +8,8 @@ import pdf from './PDF.png'
 import clip2 from './Clip2.png'
 import youtube from './YouTube.png'
 import ellipse from './Ellipse 5.png'
+import home from './Home.svg'
+import map from './map.svg'
 
 export {
     clip,
@@ -19,5 +21,7 @@ export {
     pdf,
     clip2,
     youtube,
-    ellipse
+    ellipse,
+    home,
+    map
 }
