@@ -1,12 +1,21 @@
 'use client';
 
-import React from "react";
+import React, { useState } from "react";
 import Image from 'next/image';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [dropdownVisible, setDropdownVisible] = useState(false);
+  
+    const showDropdown = () => {
+      setDropdownVisible(true);
+    };
+  
+    const hideDropdown = () => {
+      setDropdownVisible(false);
+    };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,8 +26,8 @@ const Header: React.FC = () => {
     
 
   return (
-    <header className="bg-accent shadow-lg mt-4">
-      <div className="container mx-auto px-2">
+    <header className=" mt-4 flex justify-center pb-8 w-full">
+      <div className="container bg-accent rounded-[15px] shadow1 w-[83.0625rem] mx-auto px-2">
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image
@@ -70,28 +79,44 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location == '/' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
+              className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans text-[27px] ${location == '/' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
             >Home</Link>
             <a
               href="/who"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/who' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
+              className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans text-[27px] ${location === '/who' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
             >About Us</a>
-            <a
+            <li 
+            onMouseOver={showDropdown} 
+            onMouseOut={hideDropdown}
+            className="dropdown"
+          >
+            <a href="#"
+            className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans text-[27px] ${location === '/revised' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
+            >Services</a>
+            {dropdownVisible && (
+              <ul className="dropdown-menu">
+                <li><a href="/companies">Companies</a></li>
+                <li><a href="/business-names">Business Names</a></li>
+                <li><a href="/incorporated-trustees">Incorporated Trustees</a></li>
+              </ul>
+            )}
+          </li>
+            {/* <a
               href="/revised"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
               className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/revised' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
-            >Services</a>
+            >Services</a> */}
             <a
               href="/resources"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/resources' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
+              className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans lg:text-[27px] ${location === '/resources' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
             >Resources</a>
             <a
               href="https://reportgov.ng"
