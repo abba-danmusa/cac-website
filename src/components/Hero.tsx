@@ -182,18 +182,18 @@ const HeroSection: React.FC = () => {
             <Image
             src={rg}
             // objectFit='fill'
-            // className='shadow-lg'
+            className='lg:w-[150px] w-[150px]'
             // className="absolute block md:hidden top-[13rem] left-0 object-contain opacity-70"
             alt="Map"
             priority
             width={150}
             />
-            <p className="text-white text-[20px]">Hussaini Ishaq Magaji, SAN</p>
-            <p className="text-[#E7EFE7] text-[14px]">RG/CEO Corporate Affairs Commission</p>
+            <p className="text-white lg:text-[20px]">Hussaini Ishaq Magaji, SAN</p>
+            <p className="text-[#E7EFE7] text-[10px] lg:text-[14px]">RG/CEO Corporate Affairs Commission</p>
             </span>
             ) : null} 
 
-          <span className={`${currentNewsIndex === 0 ? 'mt-[2rem] -ml-[8rem] text-start text-[25px] text-[#E7EFE7] ' : ''}`}>  {newsItems[currentNewsIndex]}</span> {" "}
+          <span className={`${currentNewsIndex === 0 ? 'mt-[2rem] lg:-ml-[8rem] text-start text-base lg:text-[25px] text-[#E7EFE7] ' : ''}`}>  {newsItems[currentNewsIndex]}</span> {" "}
             </span>
             <br />
             {currentNewsIndex === 1 ? (
