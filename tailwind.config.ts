@@ -23,6 +23,13 @@ export default {
       fontFamily: {
         sans: ["Frank Ruhl Libre", ...defaultTheme.fontFamily.sans],
       },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1350px', // Changed from default 1024px to 1440px
+        xl: '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],

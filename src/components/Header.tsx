@@ -27,7 +27,7 @@ const Header: React.FC = () => {
 
   return (
     <header className=" mt-4 flex justify-center pb-8 w-full">
-      <div className="container bg-accent rounded-[15px] shadow1 w-[83.0625rem] mx-auto px-2">
+      <div className={`container bg-accent rounded-[15px] ${isMenuOpen ? 'h-[21rem]' : 'shadow1 '}   w-[83.0625rem] mx-auto px-2`}>
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-black"
+            className="lg:hidden text-black"
             onClick={toggleMenu}
           >
             <svg 
@@ -61,17 +61,17 @@ const Header: React.FC = () => {
           {/* Navigation Menu */}
           <nav className={`
             ${isMenuOpen ? 'flex' : 'hidden'} 
-            md:flex
-            absolute md:relative
-            top-16 md:top-0
-            left-0 md:left-auto
-            right-0 md:right-auto
-            flex-col md:flex-row
-            bg-accent md:bg-accent
-            p-4 md:p-0
-            space-y-4 md:space-y-0
+            lg:flex
+            absolute lg:relative
+            top-[5rem] lg:top-0
+            left-0 lg:left-auto
+            right-0 lg:right-auto
+            flex-col lg:flex-row
+             p-4 lg:p-0 lg:gap-[16px]
+            space-y-4 lg:space-y-0
             items-center
-            md:space-x-6
+            lg:space-x-6
+            lg:items-center
             z-50
           `}>
             <Link
@@ -79,22 +79,22 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans text-[27px] ${location == '/' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
+              className={`text-[#4D6C4A] hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location == '/' ? 'border-b-[4px] pb-3 text-secondary border-[#04E824]' : ''}`}
             >Home</Link>
             <a
               href="/who"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans text-[27px] ${location === '/who' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
+              className={`text-[#4D6C4A] hover:border-b-2 pb-3 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/who' ? 'border-b-[4px] pb-3 text-secondary border-[#04E824]' : ''}`}
             >About Us</a>
             <li 
             onMouseOver={showDropdown} 
             onMouseOut={hideDropdown}
-            className="dropdown"
+            className={`text-[#4D6C4A] dropdown hidden md:block hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/revised' ? 'border-b-[4px] pb-3  text-secondary border-[#04E824]' : ''}`}
+
           >
             <a href="#"
-            className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans text-[27px] ${location === '/revised' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
             >Services</a>
             {dropdownVisible && (
               <ul className="dropdown-menu">
@@ -104,19 +104,12 @@ const Header: React.FC = () => {
               </ul>
             )}
           </li>
-            {/* <a
-              href="/revised"
-              onClick={() => {
-                setIsMenuOpen(false);
-              }}
-              className={`text-black hover:border-b-2 hover:border-secondary font-sans text-sm ${location === '/revised' ? 'border-b-2 p-1 text-secondary border-secondary' : ''}`}
-            >Services</a> */}
             <a
               href="/resources"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] hover:border-b-2 hover:border-secondary font-sans lg:text-[27px] ${location === '/resources' ? 'border-b-2 p-1 text-secondary border-[#04E824]' : ''}`}
+              className={`text-[#4D6C4A] hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/resources' ? 'border-b-[4px] pb-3  text-secondary border-[#04E824]' : ''}`}
             >Resources</a>
             <a
               href="https://reportgov.ng"

@@ -42,9 +42,6 @@ body {
   z-index: 1;
 }
 
-.dropdown-menu li {
-  padding: 4px 6px;
-}
 
 .dropdown-menu li a {
   color: black;
