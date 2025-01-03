@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [dropdownVisible, setDropdownVisible] = useState(false);
-  
+  // const location = usePathname()
     const showDropdown = () => {
       setDropdownVisible(true);
     };
@@ -22,12 +22,12 @@ const Header: React.FC = () => {
   };
     const location = usePathname()
 
-    console.log(location);
+    // console.log(location);
     
 
   return (
-    <header className=" mt-4 flex px-4 justify-center pb-4 w-full ">
-      <div className={` bg-accent rounded-[15px] z-50 ${isMenuOpen ? 'h-[23rem]' : 'shadow1 '} w-full  lg:w-[83.0625rem]  lg:px-2`}>
+    <header className=" mt-4 flex  justify-center pb-4 w-full ">
+      <div className={` bg-accent rounded-[15px] z-50 ${isMenuOpen ? 'h-[23rem]' : 'shadow1 '} ${location === '/' ? "" : "mx-[2rem]"} w-full    lg:px-2`}>
         <div className="flex justify-between w-full items-center px-4 lg:px-0">
           <Link href="/">
             <Image
@@ -79,25 +79,25 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location == '/' ? 'border-b-[4px] pb-3 text-secondary border-[#04E824]' : ''}`}
+              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[23px] ${location == '/' ? 'border-b-[4px] pb-3 text-secondary border-[#4D6C4A]' : ''}`}
             >Home</Link>
             <a
               href="/who"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] hover:border-b-2 pb-3 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/who' ? 'border-b-[4px] pb-3 text-secondary border-[#04E824]' : ''}`}
+              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-3 hover:border-secondary font-sans text-sm lg:text-[23px] ${location === '/who' ? 'border-b-[4px] pb-3 text-secondary border-[#4D6C4A]' : ''}`}
             >About Us</a>
             <li 
             onMouseOver={showDropdown} 
             onMouseOut={hideDropdown}
-            className={`text-[#4D6C4A] dropdown hidden lg:block hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/revised' ? 'border-b-[4px] pb-3  text-secondary border-[#04E824]' : ''}`}
+            className={`text-[#4D6C4A] font-merriweather dropdown hidden lg:block hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[23px] ${location === '/revised' ? 'border-b-[4px] pb-3  text-secondary border-[#4D6C4A]' : ''}`}
 
           >
             <a href="#"
             >Services</a>
             {dropdownVisible && (
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu mt-2">
                 <li><a href="/companies">Companies</a></li>
                 <li><a href="/business-names">Business Names</a></li>
                 <li><a href="/incorporated-trustees">Incorporated Trustees</a></li>
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/resources' ? 'border-b-[4px] pb-3  text-secondary border-[#04E824]' : ''}`}
+              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[23px] ${location === '/resources' ? 'border-b-[4px] pb-3  text-secondary border-[#4D6C4A]' : ''}`}
             >Resources</a>
             <a
               href="https://reportgov.ng"

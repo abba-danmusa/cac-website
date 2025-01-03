@@ -121,7 +121,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
   ref={containerRef}
-  className="bg-primary mb-[3rem] py-6 md:py-10 relative overflow-hidden"
+  className="bg-primary mb-[8rem] py-6 md:py-10 relative overflow-hidden"
 >
   <Image
     src={ellipse}
@@ -130,24 +130,24 @@ const HeroSection: React.FC = () => {
     priority
   />
 
-  <div className=" mx-auto px-4 flex flex-col-reverse md:flex-row items-start md:items-center gap-8 md:gap-20">
+  <div className="  flex flex-col-reverse md:flex-row items-start md:items-center gap-8 md:gap-20">
     {/* Text Content */}
     <div className="flex-1 text-left z-10">
       <div className="flex gap-2 md:gap-0 md:flex-col ">
-      <h1 ref={nigerianRef} className="text-3xl md:text-4xl font-bold text-secondary min-h-[2.5rem]">
+      <h1 ref={nigerianRef} className="text-3xl font-merriweather md:text-4xl font-bold text-secondary min-h-[2.5rem]">
         Nigerian
       </h1>
-      <h1 ref={corporateRef} className="text-3xl md:text-4xl font-bold text-black min-h-[2.5rem]">
+      <h1 ref={corporateRef} className="text-3xl font-merriweather md:text-4xl font-bold text-black min-h-[2.5rem]">
         Corporate
       </h1>
       </div>
-      <h1 ref={registryRef} className="text-3xl md:text-4xl font-bold text-black min-h-[2.5rem]">
+      <h1 ref={registryRef} className="text-3xl font-merriweather md:text-4xl font-bold text-black min-h-[2.5rem]">
         Registry
       </h1>
-      <p ref={paragraphRef} className="my-4 text-sm md:text-base text-black max-w-prose">
+      <p ref={paragraphRef} className="my-4 font-roboto text-sm md:text-base md:w-[328px] mb-[2rem]  text-black max-w-prose">
         The Commission is responsible for managing all aspects of company operations, including formation, incorporation, management, and winding up. It maintains company registries across all states, ensuring they are well-equipped to handle their duties.
       </p>
-      <Link ref={buttonRef} href="https://pre.cac.gov.ng" className="  md:w-auto mt-[3rem] bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary gradient-hover  transition duration-300">
+      <Link ref={buttonRef} href="https://pre.cac.gov.ng" className="  font-merriweather font-bold md:w-auto  bg-transparent text-black px-4 md:px-6 py-2 md:py-3 rounded border-2 border-secondary gradient-hover  transition duration-300">
       Start Your Application
       </Link>
      
@@ -159,7 +159,7 @@ const HeroSection: React.FC = () => {
     {/* Image Section */}
     <div
      
-      className="flex-1 rounded-lg overflow-hidden  backl w-full md:w-auto mt-6 md:mt-0 relative"
+      className="flex-1 rounded-lg z-10 overflow-hidden  backl w-full md:w-auto mt-6 md:mt-0 relative"
     >
       <div  ref={imageRef} className=" relative  h-60 md:h-80 lg:h-[300px] w-full">
         <div className="absolute top-0 bottom-0 left-0 right-0  flex items-center z-30">
@@ -177,12 +177,12 @@ const HeroSection: React.FC = () => {
             alt="Map"
             width={150}
             />
-            <p className="text-white lg:text-[20px]">Hussaini Ishaq Magaji, SAN</p>
-            <p className="text-[#E7EFE7] text-[10px] lg:text-[14px]">RG/CEO Corporate Affairs Commission</p>
+            <p className="text-white lg:text-[20px] font-merriweather">Hussaini Ishaq Magaji, SAN</p>
+            <p className="text-[#E7EFE7] text-[10px] lg:text-[14px] font-roboto">RG/CEO Corporate Affairs Commission</p>
             </span>
             ) : null} 
 
-          <span className={`${currentNewsIndex === 0 ? 'mt-[2rem] lg:-ml-[8rem] text-start text-base lg:text-[25px] text-[#E7EFE7] ' : ''}`}>  {newsItems[currentNewsIndex]}</span> {" "}
+          <span className={`${currentNewsIndex === 0 ? 'mt-[2rem] lg:-ml-[8rem] text-start text-base lg:text-[25px] font-merriweather text-[#E7EFE7] ' : ' font-merriweather'}`}>  {newsItems[currentNewsIndex]}</span> {" "}
             </span>
             <br />
             {currentNewsIndex === 1 ? (
