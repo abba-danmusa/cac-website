@@ -1,4 +1,4 @@
-import { adminster, clip, effort, group, like, morale } from '@/assests'
+import { adminster, clip, effort, group, like, morale } from '../../public/assests'
 import DoubleCycles from '@/components/DoubleCycles'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'

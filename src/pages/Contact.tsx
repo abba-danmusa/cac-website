@@ -1,4 +1,4 @@
-import { clip2, group } from '@/assests'
+import { clip2, group } from '../../public/assests'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Image from 'next/image'
