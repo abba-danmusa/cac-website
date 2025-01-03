@@ -3,10 +3,10 @@ import Link from "next/link";
 import { build1, build2, hand1, hand2, people1, people2, person1, person2 } from "@/assests";
 
 interface ServiceButtonProps {
-  icon: {object: string, src: string};
+  icon: {src: string};
   title: string;
   to: string,
-  img: {object: string, src: string}
+  img: {src: string}
 }
 
 const ServiceButton: React.FC<ServiceButtonProps> = ({ icon, title, to, img }) => {
