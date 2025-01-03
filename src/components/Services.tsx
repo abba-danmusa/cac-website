@@ -93,12 +93,12 @@ const ServicesSection: React.FC = () => {
   const { src: hand2Src } = hand2;
 
   return (
-    <section id="services" className="bg-primary relative ">
+    <section id="services" className="bg-primary relative  ">
      <Image src={clip2} 
      alt="as"
      className="absolute top-8 left-0 z-0"
      />
-      <div className="container z-10 mx-auto p-10 pt-0 justify-items-center">
+      <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
           className="text-2xl  font-bold text-center text-black z-10"
