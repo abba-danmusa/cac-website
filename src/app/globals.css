@@ -68,12 +68,9 @@ body {
 .gradient-hover {
   background-color: transparent; /* No background by default */
   color: #000; /* Default text color */
-  padding: 10px 20px; /* Add some padding (optional) */
   border-radius: 5px; /* Rounded corners (optional) */
   cursor: pointer; /* Pointer cursor for interactive elements */
   transition: all 0.3s ease-in-out; /* Smooth transitions for hover/click effects */
-  display: inline-block; /* Ensure proper alignment for non-block elements */
-  text-align: center; /* Center text inside the element */
 }
 
 /* Hover effect */

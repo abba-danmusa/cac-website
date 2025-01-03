@@ -5,6 +5,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { clip2, hand1, hand2, tools1, tools2 } from "@/assests";
 // import background from '../../public/svg/services.svg';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -16,8 +17,8 @@ const services = [
     icon: "/images/business-registration.png",
   },
   {
-    title: "Post Incorporation",
-    description: "Change of names, conversion of private companies to public, etc.",
+    title: "Post  Incorporation  Services",
+    description: "Change of names, conversion of private companies to public, e.t.c.",
     icon: "/images/post-incorporation.png",
   },
 ];
@@ -87,39 +88,75 @@ const ServicesSection: React.FC = () => {
   });
 
   return (
-    <section id="services" className="bg-primary relative overflow-hidden">
-     
-      <div className="container mx-auto p-10 justify-items-center">
+    <section id="services" className="bg-primary relative ">
+     <Image src={clip2} 
+     alt="as"
+     className="absolute top-8 left-0 z-0"
+     />
+      <div className="container z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
-          className="text-2xl font-bold text-center text-black z-10"
+          className="text-2xl  font-bold text-center text-black z-10"
         >
           Services We Offer
         </h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-24">
-          <div
-            ref={leftBoxRef}
-            className="w-64 h-56 rounded border-2 border-secondary p-6 hover:shadow-lg transition duration-300 z-10"
-          >
+          <div 
+          ref={leftBoxRef}
+          className="flex flex-col items-start hover:border-none h-[284] w-[308px] p-5 pt-3  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">
             <Image
-              src={services[0].icon} 
+              src={tools2.src} 
               alt={services[0].title} 
               width={48}
               height={48}
-              className="h-12 w-14 align-middle mx-auto mb-4"
+              className="h-[101px] w-[105px] hidden group-hover:block self-start text-white mb-4"
+            />
+            <Image
+              src={tools1.src} 
+              alt={services[0].title} 
+              width={48}
+              height={48}
+              className="h-[101px] w-[105px] self-start block group-hover:hidden text-white mb-4"
             />
             <div className="hover:cursor-pointer">
-              <h3 className="text-lg mb-6 font-sans font-semibold text-black">
+              <h3 className="text-[27px] leading-8 font-sans group-hover:text-white font-bold text-black">
                 {services[0].title}
               </h3>
-              <p className="text-black font-sans text-sm">
+              <p className="text-black leading-6 group-hover:text-white font-sans text-[24px]">
                 {services[0].description}
               </p>
             </div>
           </div>
-          <div
+          <div 
+          ref={rightBoxRef}
+          className="flex flex-col items-start h-[284] w-[308px] p-5 pt-3 hover:border-none  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">
+             <Image
+              src={hand2.src} 
+              alt={services[1].title} 
+              width={48}
+              height={48}
+              className="h-[101px] w-[105px] self-start hidden group-hover:block text-white mb-4"
+            />
+             <Image
+              src={hand1.src} 
+              alt={services[1].title} 
+              width={48}
+              height={48}
+              className="h-[101px] w-[105px] self-start block group-hover:hidden text-white mb-4"
+            />
+            <div className="hover:cursor-pointer">
+            <h3 className="text-[27px] leading-8 font-sans group-hover:text-white font-bold text-black">
+                {services[1].title}
+              </h3>
+              <p className="text-black leading-6 group-hover:text-white font-sans text-[24px]">
+                {services[1].description}
+              </p>
+            </div>
+          </div>
+        
+          {/* <div
             ref={rightBoxRef}
-            className="w-64 h-56 rounded border-2 border-secondary p-6 hover:shadow-lg transition duration-300 z-10"
+            className=" h-56 rounded border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10"
           >
             <Image
               src={services[1].icon} 
@@ -129,14 +166,14 @@ const ServicesSection: React.FC = () => {
               className="h-12 w-14 align-middle mx-auto mb-4"
             />
             <div className="hover:cursor-pointer">
-              <h3 className="text-lg mb-6 font-sans font-semibold text-black">
+              <h3 className="text-lg mb-6 font-sans group-hover:text-white font-semibold text-black">
                 {services[1].title}
               </h3>
-              <p className="text-black font-sans text-sm">
+              <p className="text-black group-hover:text-white font-sans text-sm">
                 {services[1].description}
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

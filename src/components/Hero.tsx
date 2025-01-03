@@ -120,7 +120,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
   ref={containerRef}
-  className="bg-primary mb-[8rem] py-6 md:py-10 relative overflow-hidden"
+  className="bg-primary mb-[3rem] py-6 md:py-10 relative overflow-hidden"
 >
   <Image
     src={ellipse}
