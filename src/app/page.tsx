@@ -18,6 +18,7 @@ export default function Home() {
     width={500}
     height={400}
     alt="Map"
+    onError={(e: any) => (e.target.src = '../../public/assests/map.svg')}
   />
       <Header />
       <HeroSection />
