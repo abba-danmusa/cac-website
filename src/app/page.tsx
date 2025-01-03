@@ -5,15 +5,13 @@ import ProcessSection from "@/components/Processes";
 import ServicesSection from "@/components/Services";
 import AdditionalInfo from "@/components/AdditionalInfo"
 import Image from "next/image";
-import { map } from "../../public/assests";
 
 export default function Home() {
-    const {src} = map;
   return (
     <div className=" bg-primary pt-2">
     <div className="relative px-0 md:px-[1rem] lg:px-4rem">
      <Image
-    src={src}
+    src={'/assests/map.svg'}
     className="absolute top-[13em] md:top-[-13rem] md:w-[700px]  z-10 md:left-[4rem] lg:left-[10rem] left-0 object-contain opacity-70"
     width={500}
     height={400}

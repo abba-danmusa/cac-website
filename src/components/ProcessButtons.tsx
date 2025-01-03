@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { build1, build2, hand1, hand2, people1, people2, person1, person2 } from "../../public/assests";
-
+  
 interface ServiceButtonProps {
   icon: string;
   title: string;
@@ -23,38 +22,30 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({ icon, title, to, img }) =
 };
 
 const Services = () => {
-  const buildSrc = build1.src;
-  const personSrc = person1.src;
-  const peopleSrc = people1.src;
-  const handSrc = hand1.src;
-  const buildSrc2 = build2.src;
-  const personSrc2 = person2.src;
-  const peopleSrc2 = people2.src;
-  const handSrc2 = hand2.src;
   return (
     <div className="grid grid-cols-2 gap-4  py-4">
       <ServiceButton
         to="/business"
-        icon={buildSrc}
-        img={buildSrc2}
+        icon={'/assests/build1.svg'}
+        img={'/assests/biuld2.svg'}
         title="Company Registration"
       />
       <ServiceButton
         to="https://pre.cac.gov.ng"
-        icon={personSrc}
-        img={personSrc2}
+        icon={'/assests/person1.svg'}
+        img={'/assests/person2.svg'}
         title="Business Name Registration"
       />
       <ServiceButton
         to="/tr"
-        icon={peopleSrc}
-        img={peopleSrc2}
+        icon={'/assests/people1.svg'}
+        img={'/assests/people2.svg'}
         title="Incorporated Trustees"
       />
       <ServiceButton
         to="https://post.cac.gov.ng"
-        icon={handSrc}
-        img={handSrc2}
+        icon={'/assests/hand1.svg'}
+        img={'/assests/hand2.svg'}
         title="Post Incorporation Services"
       />
     </div>

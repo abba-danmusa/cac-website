@@ -91,7 +91,7 @@ const Header: React.FC = () => {
             <li 
             onMouseOver={showDropdown} 
             onMouseOut={hideDropdown}
-            className={`text-[#4D6C4A] dropdown hidden md:block hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/revised' ? 'border-b-[4px] pb-3  text-secondary border-[#04E824]' : ''}`}
+            className={`text-[#4D6C4A] dropdown hidden lg:block hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[27px] ${location === '/revised' ? 'border-b-[4px] pb-3  text-secondary border-[#04E824]' : ''}`}
 
           >
             <a href="#"
