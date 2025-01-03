@@ -123,20 +123,12 @@ const HeroSection: React.FC = () => {
   ref={containerRef}
   className="bg-primary mb-[8rem] py-6 md:py-10 relative overflow-hidden"
 >
-  {/* Map Section */}
-  {/* <div
-    className="absolute left-0 top-0 h-[100%] w-[100%] md:w-1/2 lg:w-[40%] z-0 overflow-hidden"
-  >
-  </div> */}
- 
   <Image
     src={ellipse}
-    // objectFit='fill'
     className="absolute block md:hidden top-[13rem] left-0 object-contain opacity-70"
     alt="Map"
     priority
   />
-
 
   <div className=" mx-auto px-4 flex flex-col-reverse md:flex-row items-start md:items-center gap-8 md:gap-20">
     {/* Text Content */}
@@ -167,7 +159,7 @@ const HeroSection: React.FC = () => {
     {/* Image Section */}
     <div
      
-      className="flex-1 rounded-lg  backl w-full md:w-auto mt-6 md:mt-0 relative"
+      className="flex-1 rounded-lg overflow-hidden  backl w-full md:w-auto mt-6 md:mt-0 relative"
     >
       <div  ref={imageRef} className=" relative  h-60 md:h-80 lg:h-[300px] w-full">
         <div className="absolute top-0 bottom-0 left-0 right-0  flex items-center z-30">
@@ -181,11 +173,8 @@ const HeroSection: React.FC = () => {
             <span className="flex flex-col ml-[1rem] w-full items-start">
             <Image
             src={rg}
-            // objectFit='fill'
             className='lg:w-[150px] w-[150px]'
-            // className="absolute block md:hidden top-[13rem] left-0 object-contain opacity-70"
             alt="Map"
-            priority
             width={150}
             />
             <p className="text-white lg:text-[20px]">Hussaini Ishaq Magaji, SAN</p>
