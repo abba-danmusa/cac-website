@@ -97,11 +97,11 @@ const ServicesSection: React.FC = () => {
       <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
-          className="text-2xl  font-bold text-center text-black z-10"
+          className="text-2xl font-merriweather font-bold text-center text-black z-10"
         >
           Services We Offer
         </h2>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-24">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-[10rem] z-20">
           <div 
           ref={leftBoxRef}
           className="flex flex-col items-start hover:border-none h-[284] w-[308px] p-5 pt-3  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">
@@ -120,10 +120,10 @@ const ServicesSection: React.FC = () => {
               className="h-[101px] w-[105px] self-start block group-hover:hidden text-white mb-4"
             />
             <div className="hover:cursor-pointer">
-              <h3 className="text-[27px] leading-8 font-sans group-hover:text-white font-bold text-black">
+              <h3 className="text-[27px] leading-8 font-merriweather group-hover:text-white font-bold text-black">
                 {services[0].title}
               </h3>
-              <p className="text-black leading-6 group-hover:text-white font-sans text-[24px]">
+              <p className="text-black leading-6 group-hover:text-white font-roboto text-[20px]">
                 {services[0].description}
               </p>
             </div>
@@ -146,10 +146,10 @@ const ServicesSection: React.FC = () => {
               className="h-[101px] w-[105px] self-start block group-hover:hidden text-white mb-4"
             />
             <div className="hover:cursor-pointer">
-            <h3 className="text-[27px] leading-8 font-sans group-hover:text-white font-bold text-black">
+            <h3 className="text-[27px] leading-8 font-merriweather group-hover:text-white font-bold text-black">
                 {services[1].title}
               </h3>
-              <p className="text-black leading-6 group-hover:text-white font-sans text-[24px]">
+              <p className="text-black leading-6 group-hover:text-white font-roboto text-[20px]">
                 {services[1].description}
               </p>
             </div>

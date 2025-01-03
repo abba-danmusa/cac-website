@@ -5,8 +5,8 @@ const ProcessSection = () => {
   return (
     <div className="bg-transparent">
       <SectionHeader/>
-      <div className="grid bg-transparent  gap-8 ">
-        <div className="md:col-span-2  z-10 mx-4   lg:mx-[7rem] ">
+      <div className="grid md:mt-14 bg-transparent md:mx-[4rem]  gap-8 ">
+        <div className="md:col-span-2  z-10  ">
           <Services />
         </div>
       </div>

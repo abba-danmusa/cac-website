@@ -9,22 +9,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className=" bg-primary pt-2">
-    <div className="relative px-0 md:px-[1rem] lg:px-4rem">
+    <div className="relative px-4 md:px-[1rem] lg:px-[2rem]">
      <Image
-    src={'/assests/map.svg'}
-    className="absolute top-[13em] md:top-[-13rem] md:w-[700px]  z-10 md:left-[4rem] lg:left-[10rem] left-0 object-contain opacity-70"
+    src={'/assests/map.svg'}  
+    className="absolute top-[13em] md:top-[-17rem] md:w-[800px]  z-10 md:left-[4rem] lg:left-[10rem] left-0 object-contain opacity-70"
     width={500}
     height={400}
     alt="Map"
   />
       <Header />
       <HeroSection />
-     </div>
       <ServicesSection />
       <ProcessSection />
-      <div>
         <AdditionalInfo />
-      </div>
+     </div>
       <Footer />
     </div>
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
