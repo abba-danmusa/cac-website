@@ -5,7 +5,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { clip2, hand1, hand2, tools1, tools2 } from "@/assests";
+import { clip2, hand1, hand2, tools1, tools2 } from "../../public/assests";
 // import background from '../../public/svg/services.svg';
 
 gsap.registerPlugin(ScrollTrigger);

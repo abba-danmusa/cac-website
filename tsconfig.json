@@ -28,6 +28,6 @@
     "**/*.tsx", 
     ".next/types/**/*.ts",
     "svgr.d.ts"
-, "src/assests/index.ts"  ],
+, "public/assests/index.ts"  ],
   "exclude": ["node_modules"]
 }

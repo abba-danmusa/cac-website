@@ -5,7 +5,7 @@ import React, { useRef, useState, useEffect, useCallback } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
-import { ellipse, rg } from '@/assests';
+import { ellipse, rg } from '../../public/assests';
 import Link from 'next/link';
 
 gsap.registerPlugin(useGSAP, TextPlugin);
