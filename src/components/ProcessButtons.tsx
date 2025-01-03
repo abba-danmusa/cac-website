@@ -1,4 +1,3 @@
-import { JSX } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { build1, build2, hand1, hand2, people1, people2, person1, person2 } from "@/assests";
