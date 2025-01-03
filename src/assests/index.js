@@ -11,6 +11,18 @@ import ellipse from './Ellipse 5.png'
 import home from './Home.svg'
 import map from './map.svg'
 import rg from './rg1.png'
+import tools1 from './tools1.svg'
+import tools2 from './tools2.svg'
+
+import hand1 from './hand1.svg'
+import hand2 from './hand2.svg'
+import build1 from './build1.svg'
+import build2 from './biuld2.svg'
+import people1 from './people1.svg'
+import people2 from './people2.svg'
+
+import person1 from './person1.svg'
+import person2 from './person2.svg'
 
 export {
     clip,
@@ -24,5 +36,11 @@ export {
     youtube,
     ellipse,
     home,
-    map, rg
+    map, rg, tools1, hand1, hand2, tools2,
+    build1,
+    build2,
+    people1,
+    people2,
+    person1,
+    person2,
 }
