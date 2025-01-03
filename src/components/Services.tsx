@@ -87,6 +87,11 @@ const ServicesSection: React.FC = () => {
     );
   });
 
+  const { src: tools1Src } = tools1;
+  const { src: tools2Src } = tools2;
+  const { src: hand1Src } = hand1;
+  const { src: hand2Src } = hand2;
+
   return (
     <section id="services" className="bg-primary relative ">
      <Image src={clip2} 
@@ -105,14 +110,14 @@ const ServicesSection: React.FC = () => {
           ref={leftBoxRef}
           className="flex flex-col items-start hover:border-none h-[284] w-[308px] p-5 pt-3  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">
             <Image
-              src={tools2.src} 
+              src={tools2Src} 
               alt={services[0].title} 
               width={48}
               height={48}
               className="h-[101px] w-[105px] hidden group-hover:block self-start text-white mb-4"
             />
             <Image
-              src={tools1.src} 
+              src={tools1Src} 
               alt={services[0].title} 
               width={48}
               height={48}
@@ -131,14 +136,14 @@ const ServicesSection: React.FC = () => {
           ref={rightBoxRef}
           className="flex flex-col items-start h-[284] w-[308px] p-5 pt-3 hover:border-none  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">
              <Image
-              src={hand2.src} 
+              src={hand2Src} 
               alt={services[1].title} 
               width={48}
               height={48}
               className="h-[101px] w-[105px] self-start hidden group-hover:block text-white mb-4"
             />
              <Image
-              src={hand1.src} 
+              src={hand1Src} 
               alt={services[1].title} 
               width={48}
               height={48}
