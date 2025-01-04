@@ -70,7 +70,7 @@ const PostIS = () => {
                         </tbody>
                     </table>
         </div>
-        <div className="absolute bottom-[-3rem]  left-[-3rem]">
+        <div className="absolute bottom-[-2rem]  left-[-3rem]">
             <Image src={clip2} alt='clip' />
             </div>
         </section>

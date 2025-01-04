@@ -4,10 +4,10 @@ import Link from "next/link";
 const AdditionalInfo = () => {
   return (
     <div className="flex flex-col md:flex-row md:justify-around space-y-16 mt-[3rem]  py-8 relative">
-      <div className="flex flex-row absolute right-0 -top-4">
+      <div className="flex flex-row absolute -right-8 -top-4 ">
         <Image src="/assests/clips.svg" alt="info" className="hidden md:block  " width={665} height={570} />
       </div>
-      <div className="flex flex-col w-auto justify-between items-start  border-2 border-secondary p-4 md:w-[374px] md:h-[471px] rounded-md   transition duration-300">
+      <div className="flex flex-col w-auto z-50 justify-between items-start  border-2 border-black p-4 md:w-[374px] md:h-[471px] rounded-md   transition duration-300">
         <h3 className="text-xl md:text-[50px] leading-[62px] font-merriweather  font-bold text-black group-hover:text-primary">Additional Information</h3>
         <p className="text-[#4D6C4A] font-roboto md:text-[20px] group-hover:text-primary">
           Have some questions? {" "}

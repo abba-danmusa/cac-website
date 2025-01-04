@@ -25,7 +25,7 @@ const Foi = () => {
         </div>
             </div>
             <section className='relative flex mb-[12.5rem]'>
-            <div className="absolute top-[5rem] lg:-top-[2rem] left-[-3rem]">
+            <div className="absolute top-[5rem] lg:-top-[2rem] left-[0rem]">
                         <Image src={clip2} alt='clip' />
                         </div>
             <div className="flex w-full lg:flex-row flex-col gap-8 px-[2rem] md:px-[7rem] lg:justify-between z-10 mt-[8rem] mb-[2rem]">

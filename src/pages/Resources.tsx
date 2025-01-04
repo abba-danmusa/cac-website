@@ -48,7 +48,7 @@ const Resources = () => {
             </div>
         </section>
         <section className="relative flex flex-col mt-[5rem] mx-[3rem]">
-        <div className="absolute -top-16 lg:-top-8 left-[-9rem]">
+        <div className="absolute -top-16 lg:-top-8 left-[-3rem]">
             <Image src={clip2} alt='clip' />
           </div>
             <p className="lg:text-[2.5rem] text-[25px] md:text-[30px] z-10 text-black">Procedures for <br /> New Service Delivery</p>
