@@ -92,7 +92,7 @@ const ServicesSection: React.FC = () => {
     <section id="services" className="bg-primary relative  ">
      <Image src={clip2} 
      alt="as"
-     className="absolute top-8 left-0 z-0"
+     className="absolute top-8 -left-[2rem] z-0"
      />
       <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
@@ -101,7 +101,7 @@ const ServicesSection: React.FC = () => {
         >
           Services We Offer
         </h2>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-[10rem] z-20">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-[8rem] lg:gap-[10rem] z-20">
           <div 
           ref={leftBoxRef}
           className="flex flex-col items-start hover:border-none h-[284] w-[308px] p-5 pt-3  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">

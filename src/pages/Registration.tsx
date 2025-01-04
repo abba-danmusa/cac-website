@@ -42,7 +42,7 @@ const Registration = () => {
         </div>
             </div>
             <section className='relative flex mb-[12.5rem] h-[20rem]'>
-            <div className="absolute top-[5rem] lg:-top-[2rem] left-[-3rem]">
+            <div className="absolute top-[-6rem] lg:-top-[6rem] left-[0rem]">
                         <Image src={clip2} alt='clip' />
                         </div>
            
