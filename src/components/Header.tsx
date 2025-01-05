@@ -79,19 +79,19 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[23px] ${location == '/' ? 'border-b-[4px] pb-3 text-secondary border-[#4D6C4A]' : ''}`}
+              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[20px] ${location == '/' ? 'border-b-[4px] pb-3 text-secondary border-[#4D6C4A]' : ''}`}
             >Home</Link>
             <a
               href="/who"
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-3 hover:border-secondary font-sans text-sm lg:text-[23px] ${location === '/who' ? 'border-b-[4px] pb-3 text-secondary border-[#4D6C4A]' : ''}`}
+              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-3 hover:border-secondary font-sans text-sm lg:text-[20px] ${location === '/who' ? 'border-b-[4px] pb-3 text-secondary border-[#4D6C4A]' : ''}`}
             >About Us</a>
             <li 
             onMouseOver={showDropdown} 
             onMouseOut={hideDropdown}
-            className={`text-[#4D6C4A] font-merriweather dropdown hidden lg:block hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[23px] ${location === '/revised' ? 'border-b-[4px] pb-3  text-secondary border-[#4D6C4A]' : ''}`}
+            className={`text-[#4D6C4A] font-merriweather dropdown hidden lg:block hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[20px] ${location === '/revised' ? 'border-b-[4px] pb-3  text-secondary border-[#4D6C4A]' : ''}`}
 
           >
             <a href="#"
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[23px] ${location === '/resources' ? 'border-b-[4px] pb-3  text-secondary border-[#4D6C4A]' : ''}`}
+              className={`text-[#4D6C4A] font-merriweather hover:border-b-2 pb-4 hover:border-secondary font-sans text-sm lg:text-[20px] ${location === '/resources' ? 'border-b-[4px] pb-3  text-secondary border-[#4D6C4A]' : ''}`}
             >Resources</a>
             <a
               href="https://reportgov.ng"
