@@ -50,38 +50,38 @@ const Who = () => {
             <div className="absolute top-[2rem] md:-top-8 right-[-4rem] md:right-[-20rem]">
             <Image src={group} alt='group' />
           </div>
-              <div className="border text-center z-20 w-[17.625rem] border-secondary rounded-md pt-8 pb-4 px-4 flex flex-col gap-8 ">
-                <p className="text-xl text-secondary">Our Vision</p>
-                <p className="text-base text-black text-center ">To be a world-class company’s registry providing excellent registration and regulatory services.</p>
+              <div className="border text-center gradient-hover group z-20 w-[17.625rem] border-secondary rounded-md pt-8 pb-4 px-4 flex flex-col gap-8 ">
+                <p className="text-xl text-secondary group-hover:text-white">Our Vision</p>
+                <p className="text-base text-black text-center  group-hover:text-white">To be a world-class company’s registry providing excellent registration and regulatory services.</p>
               </div>
-              <div className="border text-center z-20 w-[17.625rem] border-secondary rounded-md pt-8 pb-4 px-4 flex flex-col gap-8 ">
-                <p className="text-xl text-secondary z-10">Our Mission </p>
-                <p className="text-base text-black text-center z-10 ">Delivering reliable registration and regulatory services to meet stakeholder expectations and drive economic growth.</p>
+              <div className="border text-center gradient-hover group z-20 w-[17.625rem] border-secondary rounded-md pt-8 pb-4 px-4 flex flex-col gap-8 ">
+                <p className="text-xl text-secondary z-10 group-hover:text-white">Our Mission </p>
+                <p className="text-base text-black text-center z-10 group-hover:text-white ">Delivering reliable registration and regulatory services to meet stakeholder expectations and drive economic growth.</p>
               </div>
             </div>
             <div className="flex flex-col justify-center w-full mb-[8rem] ">
             <p className="text-[32px] md:text-[2.5rem] mb-4 text-black font-semibold text-center">Our core Values</p>
               <ul className="md:flex grid grid-cols-2 gap-4 md:gap-[0.5rem] justify-center z-10 mx-[1rem] md:mx-0">
                 <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] h-[4.75rem] flex justify-center items-center rounded-full border border-secondary">
+                  <div className="w-[4.75rem] gradient-hover h-[4.75rem] flex justify-center items-center rounded-full border border-secondary">
                     <Image src={effort} alt='#' />
                   </div>
                   <p className="text-[23px] md:text-[2.5rem] text-black">Dedication</p>
                 </li>
                 <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] h-[4.75rem] flex justify-center items-center rounded-full border border-secondary">
+                  <div className="w-[4.75rem] h-[4.75rem] gradient-hover gradient-hover flex justify-center items-center rounded-full border border-secondary">
                     <Image src={like} alt='#' />
                   </div>
                   <p className="text-[23px] md:text-[2.5rem] text-black">Courtesy</p>
                 </li>
                 <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] h-[4.75rem] flex justify-center items-center rounded-full border border-secondary">
+                  <div className="w-[4.75rem] h-[4.75rem] gradient-hover flex justify-center items-center rounded-full border border-secondary">
                     <Image src={morale} alt='#' />
                   </div>
                   <p className="text-[23px] md:text-[2.5rem] text-black">Integrity </p>
                 </li>
                 <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] h-[4.75rem] flex justify-center items-center rounded-full border border-secondary">
+                  <div className="w-[4.75rem] h-[4.75rem] gradient-hover flex justify-center items-center rounded-full border border-secondary">
                     <Image src={adminster} alt='#' />
                   </div>
                   <p className="text-[23px] md:text-[2.5rem] text-black">Efficiency</p>

@@ -16,7 +16,7 @@ interface TableRowProps {
 const TableRow = ({ item, index }: TableRowProps) => (
   <tr
     className={`
-      ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}
+      bg-[#E7EFE7] cursor-pointer
       hover:bg-gray-50 transition-colors duration-150 flex justify-between z-10 text-black text-[13px] md:text-[18px]
     `}
   >

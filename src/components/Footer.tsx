@@ -13,12 +13,12 @@ const Footer: React.FC = () => {
         </div>
        <div className="flex flex-col md:flex-row md:justify-between items-center">
        <div className="flex flex-col items-end md:items-baseline text-[12px] md:text-[14px] lg:text-[20px] mt-8 md:mt-4 font-roboto">
-          <a href="postis" className="mt-2 hover:cursor-pointer leading-6 text-end md:text-justify  hover:text-secondary">FAQs on customer Registration Portal</a>
-          <a href="/revised" className="mt-2 hover:cursor-pointer leading-6 hover:text-secondary">Services</a>
-          <a href="/who" className="mt-2 hover:cursor-pointer leading-6 hover:text-secondary">About Us</a>
-          <a href="/news" className="mt-2 hover:cursor-pointer leading-6 hover:text-secondary">News</a>
-          <a href="/resources" className="mt-2 hover:cursor-pointer leading-6 hover:text-secondary">Resources</a>
-          <a href="/foi" className="mt-2 hover:cursor-pointer leading-6 hover:text-secondary">FOI Portal</a>
+          <a href="postis" className="mt-2 hover:cursor-pointer leading-6 text-end md:text-justify  hover:text-[#04E824]">FAQs on customer Registration Portal</a>
+          <a href="/revised" className="mt-2 hover:cursor-pointer leading-6 hover:text-[#04E824]">Services</a>
+          <a href="/who" className="mt-2 hover:cursor-pointer leading-6 hover:text-[#04E824]">About Us</a>
+          <a href="/news" className="mt-2 hover:cursor-pointer leading-6 hover:text-[#04E824]">News</a>
+          <a href="/resources" className="mt-2 hover:cursor-pointer leading-6 hover:text-[#04E824]">Resources</a>
+          <a href="/foi" className="mt-2 hover:cursor-pointer leading-6 hover:text-[#04E824]">FOI Portal</a>
         </div>
         <div className="mt-4 md:mt-0 text-end  md:text-center">
           <div className="flex flex-col items-end md:items-center">

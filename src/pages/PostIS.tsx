@@ -25,8 +25,8 @@ interface TableRowProps {
 const TableRow = ({ item, index, show, setShow }: TableRowProps) => (
     <tr
     className={`
-      ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}
-      hover:bg-gray-50 cursor-pointer transition-colors duration-150 flex flex-col  z-10 text-black text-[13px] md:text-[18px]
+      bg-[#E7EFE7]
+       cursor-pointer transition-colors duration-150 flex flex-col  z-10 text-black text-[13px] md:text-[18px]
     `}
   >
     <td className="px-6 py-4 border-t z-10 " onClick={() => setShow(index)}>
@@ -37,7 +37,7 @@ const TableRow = ({ item, index, show, setShow }: TableRowProps) => (
         {item.column1}
       </div>
     </td>
-    <td className={`${show === index ? 'block' : 'hidden'} px-6 py-4 border-t z-10 `}>
+    <td className={`${show === index ? 'block' : 'hidden'} px-6 py-4 bg-[#FFFFFF] z-50 border-t  `}>
       <div className="flex items-center gap-3 ">
         {item.column1}
       </div>
@@ -57,10 +57,10 @@ const PostIS = () => {
         <Image src={group} alt='group' />
       </div>
         <p className="text-[25px] md:text-[2.5rem] z-10 text-black">Post Incorporation services</p>
-        <a href='https://post.cac.gov.ng' className="text-black text-center underline z-30 font-normal text-[13px] md:text-[18px]">
+        <p className="text-black text-center  z-30 font-normal text-[13px] md:text-[18px]">
                 Step by step Guide
-                </a>
-                <div className="w-full mt-[7rem] bg-white  overflow-hidden">
+                </p>
+                <div className="w-full mt-[7rem] bg-[#E7EFE7]  overflow-hidden">
                    
                     <table className="w-full border-collapse">
                     <tbody>

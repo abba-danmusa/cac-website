@@ -97,10 +97,10 @@ const Header: React.FC = () => {
             <a href="#"
             >Services</a>
             {dropdownVisible && (
-              <ul className="dropdown-menu mt-2">
-                <li><a href="/companies">Companies</a></li>
-                <li><a href="/business-names">Business Names</a></li>
-                <li><a href="/incorporated-trustees">Incorporated Trustees</a></li>
+              <ul className="dropdown-menu flex flex-col mt-2 py-2 gap-4 px-4">
+                <li><a href="/companies" className="gradient-hover">Companies</a></li>
+                <li><a href="/business-names" className="gradient-hover">Business Names</a></li>
+                <li><a href="/incorporated-trustees" className="gradient-hover">Incorporated Trustees</a></li>
               </ul>
             )}
           </li>
