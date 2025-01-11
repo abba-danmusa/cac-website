@@ -16,7 +16,7 @@ const Resources = () => {
             <div className="relative flex">
             <div className="absolute -top-7 hidden lg:block  -left-5 rounded-full bg-accent w-[80px] h-[80px]"/>
             <div className=" flex z-20">
-            <p className="text-[20px] md:text[2.5rem] font-bold text-black ">Resources</p>
+            <p className="text-[20px] md:text[4rem] font-bold text-black ">Resources</p>
             </div>
             </div>
             <div className="mt-[4rem] w-full overflow-hidden flex flex-col items-center  lg:flex-row self-start px-[3rem] relative">
@@ -24,11 +24,11 @@ const Resources = () => {
                     <Image src={group} alt='group' />
                     </div>
                 <div className="flex lg:flex-col flex-row z-10 mb-16 lg:mb-0 gap-2 md:gap-4 pb-8 lg:pb-0 md:pr-8 border-b border-b-[#4D6C4A] lg:border-b-0 lg:border-r border-r-[#4D6C4A]  ">
-                    <div onClick={() => setIsActive('first')} className={`rounded-md cursor-pointer ${isActive === 'first' ? 'border' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-2 md:px-8 py-4`}>
-                        <p className="text-[13px] md:text-[20px] text-black font-medium md:font-bold">Corporate Governance and Regulatory Framework: Key Legal and Operational Documents</p>
+                    <div onClick={() => setIsActive('first')} className={`rounded-md gradient-hover  group  cursor-pointer ${isActive === 'first' ? 'border bkls text-white' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-2 md:px-8 py-4`}>
+                        <p className={`"text-[13px] md:text-[20px] text-black  group-hover:text-white font-medium md:font-bold ${isActive === 'first' ? ' text-white' : ''}`}>Corporate Governance and Regulatory Framework: Key Legal and Operational Documents</p>
                     </div>
-                    <div onClick={() => setIsActive('second')} className={`rounded-md cursor-pointer ${isActive === 'second' ? 'border' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-2 md:px-8 py-4`}>
-                        <p className="text-[13px] md:text-[20px] text-black font-medium md:font-bold">Corporate Administration and Compliance Forms: Applications, Notices, and Returns</p>
+                    <div onClick={() => setIsActive('second')} className={`rounded-md gradient-hover  group  cursor-pointer ${isActive === 'second' ? 'border bkls text-white' : ''} border-secondary md:w-[16.4375rem] md:h-[244px] px-2 md:px-8 py-4`}>
+                        <p className={`"text-[13px] md:text-[20px] text-black  group-hover:text-white font-medium md:font-bold ${isActive === 'second' ? ' text-white' : ''}`}>Corporate Administration and Compliance Forms: Applications, Notices, and Returns</p>
                     </div>
                 </div>
                 <div className="md:ml-8  z-10  flex flex-col">
@@ -54,15 +54,15 @@ const Resources = () => {
             <p className="lg:text-[2.5rem] text-[25px] md:text-[30px] z-10 text-black">Procedures for <br /> New Service Delivery</p>
             <p className="lg:text-[18px] text-[13px] md:text-[15px] z-10 lg:w-[870px] mt-8 text-black">Pursuant to the earlier notice on the implementation of the new service delivery framework dated 6th August 2020, the general public and our esteemed customers are reminded that the physical presence of customers will be dispensed within the following offices: <br />
             Lagos (Alausa), Wuse Zone 5 as well as the Head office  with effect from the 31  st <br /> August 2020 except on appointment.</p>
-            <button className='md:text-[24px] text-[14px] z-10 text-black w-[174px] lg:h-[42px] rounded-[8px] mt-8  lg:self-center border-[#4D6C4A] border-2 '>Procedures</button>
+            <button className='md:text-[24px] text-[14px] z-10 text-black w-[174px] lg:h-[42px] rounded-[8px] mt-8  lg:self-center border-[#4D6C4A] border-2 gradient-hover   '>Procedures</button>
         </section>
 
         <section className="text-black z-10 my-[10rem] flex flex-col mx-[3rem] items-center lg:mx-[5rem]">
         <p className="lg:text-[2.5rem] text-[25px] md:text-[30px] z-10 text-black">Important Links</p>
             <div className="md:grid flex flex-col gap-8 grid-cols-3 lg:gap-[8rem] justify-between">
-                <a className="lg:text-[20px] underline md:text-[18px] text-[13px] lg:w-[258px]">2022 National Inherent Risk  Assessment (NIRA) of Legal Persons & Legal Arrangements in Nigeria</a>
-                <a className="lg:text-[20px] underline md:text-[18px] text-[13px] lg:w-[258px]">Publication of Nigeria NIRA reports on Money Laundering, Terrorist Financing, Proliferation Financing, Legal Persons & Legal Arrangements and Money Laundering & Terrorist Financing in the Extractive Sector</a>
-                <a className="lg:text-[20px] underline md:text-[18px] text-[13px] lg:w-[258px]">Registration Reports</a>
+                <a className="lg:text-[20px] underline cursor-pointer hover:text-red-500  md:text-[18px] text-[13px] lg:w-[258px]">2022 National Inherent Risk  Assessment (NIRA) of Legal Persons & Legal Arrangements in Nigeria</a>
+                <a className="lg:text-[20px] underline  cursor-pointer hover:text-red-500 md:text-[18px] text-[13px] lg:w-[258px]">Publication of Nigeria NIRA reports on Money Laundering, Terrorist Financing, Proliferation Financing, Legal Persons & Legal Arrangements and Money Laundering & Terrorist Financing in the Extractive Sector</a>
+                <a className="lg:text-[20px] underline cursor-pointer hover:text-red-500  md:text-[18px] text-[13px] lg:w-[258px]">Registration Reports</a>
             </div>
             <div className="mt-[5rem]  border text-center rounded-md border-secondary w-[334px] h-[212px] flex flex-col justify-between py-4 px-2">
                 <p className="text-[18px] md:text-[20px]">Same day Post <br /> Incorporation</p>

@@ -58,12 +58,10 @@ body {
 .dropdown-menu li a {
   color: black;
   text-decoration: none;
-  display: block;
   font-size: 14px;
 }
 
 .dropdown-menu li a:hover {
-  background-color: #ddd;
   width: 100%;
   
 }
@@ -77,7 +75,6 @@ body {
 .gradient-hover {
   background-color: transparent; /* No background by default */
   color: #000; /* Default text color */
-  border-radius: 5px; /* Rounded corners (optional) */
   cursor: pointer; /* Pointer cursor for interactive elements */
   transition: all 0.3s ease-in-out; /* Smooth transitions for hover/click effects */
 }
@@ -92,4 +89,9 @@ body {
 .gradient-hover:active {
   background-color: #4D6C4A; /* Solid color on click */
   color: #fff; /* Keep text color white */
+}
+
+.bkls {
+  background: linear-gradient(244.04deg, #2BC016 32.35%, #37A229 47.37%, #418838 61.44%, #4D6C4A 82.24%);
+
 }

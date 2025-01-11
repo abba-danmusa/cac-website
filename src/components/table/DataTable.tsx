@@ -16,9 +16,9 @@ interface DataTableProps {
 }
 
 const DataTable = ({ data, visibleRows }: DataTableProps) => (
-  <table className="w-full border-collapse">
+  <table className="w-full border-collapse ">
     {/* <TableHeader /> */}
-    <tbody>
+    <tbody >
       {data.slice(0, visibleRows).map((item, index) => (
         <TableRow key={item.id} item={item} index={index} />
       ))}
