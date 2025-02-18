@@ -8,23 +8,29 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" bg-primary pt-2">
-    <div className="relative px-4 md:px-[2rem] lg:px-[2rem]">
-     <Image
-    src={'/assests/map.svg'}  
-    className="absolute top-[13em] md:top-[-17rem] md:w-[750px] lg:w-[800]  z-10 md:left-[1rem] lg:left-[10rem] left-0 object-contain opacity-70"
-    width={500}
-    height={400}
-    alt="Map"
-  />
-      <Header />
+    <>
       <HeroSection />
-      <ServicesSection />
+      {/* <ServicesSection />
       <ProcessSection />
-        <AdditionalInfo />
-     </div>
-      <Footer />
-    </div>
+      <AdditionalInfo /> */}
+    </>
+    // <div className=" bg-primary pt-2">
+    // <div className="relative px-4 md:px-[2rem] lg:px-[2rem]">
+    //   <Image
+    //     src={'/assests/map.svg'}  
+    //     className="absolute top-[13em] md:top-[-17rem] md:w-[750px] lg:w-[800]  z-10 md:left-[1rem] lg:left-[10rem] left-0 object-contain opacity-70"
+    //     width={500}
+    //     height={400}
+    //     alt="Map"
+    //   />
+    //   {/* <Header /> */}
+    //   <HeroSection />
+    //   <ServicesSection />
+    //   <ProcessSection />
+    //   <AdditionalInfo />
+    //  </div>
+    //   <Footer />
+    // </div>
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     //   <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
     //     <Image
