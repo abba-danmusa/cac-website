@@ -59,7 +59,7 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
             <div key={index} className="w-full min-w-full flex flex-col items-center justify-center p-6 text-center">
               <i className={`text-5xl text-blue-600 ${item.icon}`}></i>
               <h2 className="mt-6 text-xl font-semibold text-gray-800 uppercase">{item.caption}</h2>
-              <p className="mt-3 text-gray-600 max-w-md">{item.text}</p>
+              <p className="mt-3 text-gray-600 max-w-md line-clamp-3">{item.text}</p>
             </div>
           ))}
         </div>
