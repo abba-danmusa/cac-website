@@ -59,10 +59,10 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
           {items.map((item, index) => (
             <div key={index} className="w-full min-w-full flex flex-col items-center justify-center p-6 text-center">
               <i className={`text-5xl text-blue-600 ${item.icon}`}></i>
-              <h2 className="mt-6 text-xl font-semibold text-gray-800 uppercase">{item.caption}</h2>
-              <p className="mt-3 text-gray-600 max-w-md line-clamp-3">{item.text}</p>
-              <p>{item.date}</p>
-              <button className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Read More</button>
+              <h2 className="mt-6 text-lg font-semibold text-secondary uppercase">{item.caption}</h2>
+              <p className="mt-3 text-black max-w-md line-clamp-3 text-xs">{item.text}</p>
+              <p className="mt-3 text-xs text-black font-extrabold">{item.date}</p>
+              <button className="mt-6 px-4 py-2 bg-primary text-black border-secondary border-2 rounded-full hover:text-primary hover:bg-gradient-to-r hover:from-secondary hover:to-complimentary focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Read More</button>
             </div>
           ))}
         </div>
@@ -83,7 +83,7 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
               }
             }}
             className={`w-3 h-3 rounded-full transition-all ${
-              activeIndex === index ? "bg-blue-600 scale-110" : "bg-gray-400 hover:bg-gray-500"
+              activeIndex === index ? "bg-secondary scale-110" : "bg-gray-400 hover:bg-gray-500"
             }`}
           />
         ))}

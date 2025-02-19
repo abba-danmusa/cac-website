@@ -83,9 +83,9 @@ const NigeriaMap = () => {
         const stateName = randomPath.getAttribute("data-state"); // Get state name
         const stateAddress = randomPath.getAttribute("data-address"); // Get state address
         const tooltipContent = `
-          <h4 className="font-bold">${stateName}</h4>
-          <br/>
-          <hr className="my-6" />
+          <h4 className="font-extrabold text-secondary">${stateName}</h4>
+          <br"/>
+          <hr className="my-6 className="bg-complimentary" />
           <br/>
           <p className="text-sm">${stateAddress}</p>
         `; // Tooltip content
@@ -93,7 +93,7 @@ const NigeriaMap = () => {
         // Create a new tooltip element
         const tooltip = document.createElement("div");
         tooltip.className =
-          "tooltip absolute max-w-[150px] bg-gradient-to-r from-complimentary to-secondary text-white-800 p-2 rounded-lg shadow-lg text-center text-xs border border-gray-200 transform -translate-y-2 opacity-0";
+          "tooltip absolute max-w-[150px] text-black bg-primary p-2 rounded-lg shadow-lg text-center text-xs border border-gray-200 transform -translate-y-2 opacity-0";
         tooltip.innerHTML = `<div className="tooltip-content">${tooltipContent}</div>`;
         document.body.appendChild(tooltip);
 
@@ -154,9 +154,9 @@ const NigeriaMap = () => {
         const stateName = path.getAttribute("data-state"); // Get state name
         const stateAddress = path.getAttribute("data-address"); // Get state address
         const tooltipContent = `
-          <h4 className="font-bold">${stateName}</h4>
+          <h4 className="font-bold text-secondary">${stateName}</h4>
           <br/>
-          <hr className="my-6" />
+          <hr className="my-6 text-complimentary" />
           <br/>
           <p className="text-sm">${stateAddress}</p>
         `; // Tooltip content
@@ -201,7 +201,7 @@ const NigeriaMap = () => {
       {/* Hover Tooltip */}
       <div
         ref={hoverTooltipRef}
-        className="tooltip absolute max-w-[150px] bg-complimentary text-gray-800 p-2 rounded-lg shadow-lg text-center text-xs border border-gray-200 transform -translate-y-2 opacity-0"
+        className="tooltip absolute max-w-[150px] bg-primary p-2 rounded-lg shadow-xl text-center text-xs border transform -translate-y-2 opacity-0"
         style={{ zIndex: 20 }}
       ></div>
 
@@ -927,6 +927,7 @@ const NigeriaMap = () => {
         </g>
         
       </svg>
+      
     </div>
   );
 };
