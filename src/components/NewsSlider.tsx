@@ -8,6 +8,7 @@ interface NewsSliderProps {
     icon: string;
     caption: string;
     text: string;
+    date: string;
   }[];
 }
 
@@ -60,6 +61,8 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
               <i className={`text-5xl text-blue-600 ${item.icon}`}></i>
               <h2 className="mt-6 text-xl font-semibold text-gray-800 uppercase">{item.caption}</h2>
               <p className="mt-3 text-gray-600 max-w-md line-clamp-3">{item.text}</p>
+              <p>{item.date}</p>
+              <button className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Read More</button>
             </div>
           ))}
         </div>

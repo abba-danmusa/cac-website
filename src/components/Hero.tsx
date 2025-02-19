@@ -15,11 +15,13 @@ const newsItems = [
     icon: "fa fa-newspaper-o",
     caption: "NOTICE OF STRIKING OFF COMPANIES FROM THE REGISTER OF COMPANIES",
     text: "The General public may recall that the Commission issued Notice of Intention to strike off names of Companies which the Commission has reasonable cause to believe are not carrying out business or are otherwise dormant by reason of not filing Annual Returns fora period of 10 years.Statutory Period of 90 days was given to such companies to file the requisite Annual Returns and send activation email to activation@cac.gov.ng. Companies that have complied with the advisory have been removed from the list. The Commission pursuant to its powers granted in Section 692 (4) of the Companies and Allied Matters Act No. 3 of 2020 has stricken-off the names of the companies that have failed or refused to update the Annual returns.\nCompanies stricken-off the register are deemed to have been dissolved from the date of publication.It is illegal to enter into any transaction or deal with a company that has been dissolved.\nClick the below link to view the detailed list\nhttps://www.cac.gov.ng/wp-content/uploads/2024/11/ANNUAL_RETURNS-Complied-Defaulters.xlsx\nSigned\nManagement",
+    date: "25th November 2024",
   },
   {
     icon: "fa fa-television",
     caption: "CONGRATULATIONS TO THE NEWLY APPOINTED HONORABLE MINISTER INDUSTRY TRADE AND INVESTMENT",
     text: "The Corporate Affairs Commission (CAC) extends its heartfelt congratulations to Dr. Jumoke Oduwole on her appointment as the new Minister of Industry, Trade and Investment. We are confident that her wealth of experience and dedication to public service will greatly contribute to the growth and development of Nigeria's industrial and trade sectors. We look forward to working closely with her to achieve our shared goals of economic prosperity and sustainable development. Congratulations once again, Dr. Oduwole!",
+    date: "20th November 2024",
   },
   // {
   //   icon: "fa fa-diamond",
