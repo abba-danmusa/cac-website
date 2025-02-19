@@ -7,38 +7,37 @@ import NewsSlider from "./NewsSlider";
 const newsItems = [
   {
     icon: "fa fa-codepen",
-    caption: "codepen",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!",
+    caption: "CodePen",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
   },
   {
     icon: "fa fa-newspaper-o",
-    caption: "newspaper-o",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!",
+    caption: "News",
+    text: "Stay updated with the latest headlines and breaking news.",
   },
   {
     icon: "fa fa-television",
-    caption: "television",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!",
+    caption: "TV",
+    text: "Watch the latest broadcasts and shows from around the world.",
   },
   {
     icon: "fa fa-diamond",
-    caption: "diamond",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!",
+    caption: "Premium",
+    text: "Unlock exclusive premium content with our special subscription.",
   },
 ];
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-primary px-6 min-h-screen relative overflow-hidden">
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-20">
-        {/* <div className="bg-secondary align-middle rounded-lg z-1 overflow-hidden md:w-auto relative">
-        </div> */}
-        <>
-          <NigeriaMap />
-        </>
-        <div className="flex-1 w-full md:w-auto">
-          <NewsSlider items={newsItems} />
-        </div>
+    <section className="bg-primary px-6 min-h-screen flex flex-col md:flex-row items-start md:items-center gap-10">
+      {/* Map Container */}
+      <div className="w-full md:w-1/2 lg:w-2/4 flex justify-center">
+        <NigeriaMap />
+      </div>
+
+      {/* News Slider Container */}
+      <div className="w-full md:w-1/2 lg:w-2/4 pr-0 md:pr-6 flex flex-col items-center">
+        <NewsSlider items={newsItems} />
       </div>
     </section>
   );

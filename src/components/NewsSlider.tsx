@@ -17,11 +17,13 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    const slide = () => {
-      setActiveIndex((prev) => (prev + 1) % items.length);
+    const startAutoSlide = () => {
+      intervalRef.current = setInterval(() => {
+        setActiveIndex((prev) => (prev + 1) % items.length);
+      }, 4000);
     };
 
-    intervalRef.current = setInterval(slide, 4000); // Change slide every 4 seconds
+    startAutoSlide();
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
@@ -38,21 +40,33 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
     }
   }, [activeIndex]);
 
+  const handleMouseEnter = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  };
+
+  const handleMouseLeave = () => {
+    intervalRef.current = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % items.length);
+    }, 4000);
+  };
+
   return (
-    <div className="relative w-full max-w-3xl mx-auto overflow-hidden bg-white rounded-xl shadow-lg">
+    <div className="relative w-full flex flex-col items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {/* Slider Container */}
-      <div ref={sliderRef} className="flex w-full transition-none">
-        {items.map((item, index) => (
-          <div key={index} className="w-full min-w-full flex flex-col items-center justify-center p-8 text-center">
-            <i className={`text-5xl text-blue-600 ${item.icon}`}></i>
-            <h2 className="mt-6 text-2xl font-semibold text-gray-800 uppercase">{item.caption}</h2>
-            <p className="mt-3 text-gray-600 max-w-md">{item.text}</p>
-          </div>
-        ))}
+      <div className="w-full overflow-hidden">
+        <div ref={sliderRef} className="flex w-full transition-none">
+          {items.map((item, index) => (
+            <div key={index} className="w-full min-w-full flex flex-col items-center justify-center p-6 text-center">
+              <i className={`text-5xl text-blue-600 ${item.icon}`}></i>
+              <h2 className="mt-6 text-xl font-semibold text-gray-800 uppercase">{item.caption}</h2>
+              <p className="mt-3 text-gray-600 max-w-md">{item.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* Navigation Dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      {/* Navigation Dots (Placed Well Below the Slider) */}
+      <div className="mt-10 flex space-x-3">
         {items.map((_, index) => (
           <button
             key={index}
@@ -65,7 +79,7 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
                 }, 4000);
               }
             }}
-            className={`w-4 h-4 rounded-full transition-all ${
+            className={`w-3 h-3 rounded-full transition-all ${
               activeIndex === index ? "bg-blue-600 scale-110" : "bg-gray-400 hover:bg-gray-500"
             }`}
           />
@@ -75,4 +89,4 @@ const NewsSlider: React.FC<NewsSliderProps> = ({ items }) => {
   );
 };
 
-export default NewsSlider
+export default NewsSlider;
