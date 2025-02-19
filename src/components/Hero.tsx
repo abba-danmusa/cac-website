@@ -3,6 +3,7 @@
 import React from "react";
 import NigeriaMap from "./Maps";
 import NewsSlider from "./NewsSlider";
+import SocialMediaBar from "./SocialMediaBar";
 
 const newsItems = [
   {
@@ -33,13 +34,14 @@ const newsItems = [
 const HeroSection: React.FC = () => {
   return (
     <section className="bg-primary px-6 min-h-screen flex flex-col md:flex-row items-start md:items-center gap-10">
+      <SocialMediaBar />
       {/* Map Container */}
       <div className="w-full md:w-1/2 lg:w-2/4 flex justify-center">
         <NigeriaMap />
       </div>
 
       {/* News Slider Container */}
-      <div className="w-full md:w-1/2 lg:w-2/4 pr-0 md:pr-6 flex flex-col items-center">
+      <div className="w-full md:w-1/3 lg:w-2/5">
         <NewsSlider items={newsItems} />
       </div>
     </section>

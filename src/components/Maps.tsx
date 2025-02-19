@@ -93,7 +93,7 @@ const NigeriaMap = () => {
         // Create a new tooltip element
         const tooltip = document.createElement("div");
         tooltip.className =
-          "tooltip absolute max-w-[150px] bg-white text-gray-800 p-2 rounded-lg shadow-lg text-center text-xs border border-gray-200 transform -translate-y-2 opacity-0";
+          "tooltip absolute max-w-[150px] bg-gradient-to-r from-complimentary to-secondary text-white-800 p-2 rounded-lg shadow-lg text-center text-xs border border-gray-200 transform -translate-y-2 opacity-0";
         tooltip.innerHTML = `<div className="tooltip-content">${tooltipContent}</div>`;
         document.body.appendChild(tooltip);
 
@@ -201,7 +201,7 @@ const NigeriaMap = () => {
       {/* Hover Tooltip */}
       <div
         ref={hoverTooltipRef}
-        className="tooltip absolute max-w-[150px] bg-white text-gray-800 p-2 rounded-lg shadow-lg text-center text-xs border border-gray-200 transform -translate-y-2 opacity-0"
+        className="tooltip absolute max-w-[150px] bg-complimentary text-gray-800 p-2 rounded-lg shadow-lg text-center text-xs border border-gray-200 transform -translate-y-2 opacity-0"
         style={{ zIndex: 20 }}
       ></div>
 
@@ -214,8 +214,8 @@ const NigeriaMap = () => {
             data-state="Borno State" 
             data-address="No.1, NHIS Building, Damboa Road, Maiduguri, Borno State"
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }}
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGBO" 
             opacity="1" 
             strokeOpacity="1" 
@@ -233,8 +233,8 @@ const NigeriaMap = () => {
             data-state="Delta State"
             data-address="6M3R+MFV, Central Core Area, Asaba 320108, Delta" 
             style={{opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1}}
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGDE" 
             opacity="1" 
             strokeOpacity="1" 
@@ -251,8 +251,8 @@ const NigeriaMap = () => {
             data-state="Bauchi State"
             data-address="11A,Mohammed Bello, Kirfi Road, Bauchi" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1}} 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGBA" 
             opacity="1" strokeOpacity="1" 
             strokeWidth="1.25" 
@@ -268,8 +268,8 @@ const NigeriaMap = () => {
             data-state="Benue State"
             data-address="Plot BNA 5366, Abu King Shuluwa Road, Makurdi" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGBE" 
             opacity="1" 
             strokeOpacity="1" 
@@ -287,8 +287,8 @@ const NigeriaMap = () => {
             data-state="Yobe State"
             data-address="Beside Oasis bakery, opposite Phase 1 Secretariat, Maiduguri Road, Damaturu" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGYO" 
             opacity="1" 
             strokeOpacity="1" 
@@ -306,8 +306,8 @@ const NigeriaMap = () => {
             data-state="Bayelsa State"
             data-address="444,Chief Melford Okilo Express Way Yenezue-Gene, Yenagoa" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGBY" 
             opacity="1" 
             strokeOpacity="1" 
@@ -325,8 +325,8 @@ const NigeriaMap = () => {
             data-state="Niger State"
             data-address="3 Bosso Road, Minna, 920101, Niger" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGNI" 
             opacity="1" 
             strokeOpacity="1" 
@@ -344,8 +344,8 @@ const NigeriaMap = () => {
             data-state="FCT"
             data-address="Plot 420, Tigris Crescent off Aguiyi Ironsi Street, Maitama, Abuja" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGFC" 
             opacity="1" 
             strokeOpacity="1" 
@@ -363,8 +363,8 @@ const NigeriaMap = () => {
             data-state="Nasarawa"
             data-address="Ta’al Model E-Library, Nasarawa State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGNA" 
             opacity="1" 
             strokeOpacity="1" 
@@ -382,8 +382,8 @@ const NigeriaMap = () => {
             data-state="Lagos State"
             data-address="Plot 7 Otunba Jobi Fele Way, behind MKO GARDENS, Alausa, Ikeja 101233, Lagos" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGLA" 
             opacity="1" strokeOpacity="1" 
             strokeWidth="1.25" 
@@ -400,8 +400,8 @@ const NigeriaMap = () => {
             data-state="Jigawa State"
             data-address="SMEDAN, Dutse" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGJI" 
             opacity="1" 
             strokeOpacity="1" 
@@ -419,8 +419,8 @@ const NigeriaMap = () => {
             data-state="Rivers State"
             data-address="Plot 30 Danjuma Drive, Rivers, Port Harcourt 500101, Rivers State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGRI" 
             opacity="1" strokeOpacity="1" 
             strokeWidth="1.25" 
@@ -438,8 +438,8 @@ const NigeriaMap = () => {
             data-address="Plot 4, Commercial Block 'c' Extension to GRA Ado Ekiti, Ekiti State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGEK" 
             opacity="1" 
             strokeOpacity="1" 
@@ -458,8 +458,8 @@ const NigeriaMap = () => {
             data-address="No.13, Hammaruwa Way, Brothers Filling Station, Adjacent MTN Head Office, Jalingo" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGTA" 
             opacity="1" strokeOpacity="1" 
             strokeWidth="1.25" 
@@ -477,8 +477,8 @@ const NigeriaMap = () => {
             data-address="13 Ogoja Road, Abakaliki 480106, Ebonyi State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGEB" 
             opacity="1" 
             strokeOpacity="1" 
@@ -497,8 +497,8 @@ const NigeriaMap = () => {
             data-address="Sakin Bolari Street, Gombe, Gombe State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGGO" 
             opacity="1" 
             strokeOpacity="1" 
@@ -516,8 +516,8 @@ const NigeriaMap = () => {
             data-state="Oyo State"
             data-address="Yemetu, Alhaji Oladosu Adeoye St, Ibadan, Oyo State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-
-            fill="#88a4bc" stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGOY" 
             opacity="1" 
             strokeOpacity="1" 
@@ -536,8 +536,8 @@ const NigeriaMap = () => {
             data-address="44 Godwin Abbe Way, Oka, Hill 300102, Benin City, Edo State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGED" 
             opacity="1" 
             strokeOpacity="1" 
@@ -555,7 +555,8 @@ const NigeriaMap = () => {
             data-state="Enugu State"
             data-address="No. 31B Okpara Avenue, By EcoBank Plc, Enugu, Enugu State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
-            fill="#88a4bc" stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGEN" 
             opacity="1" 
             strokeOpacity="1" 
@@ -574,8 +575,8 @@ const NigeriaMap = () => {
             data-address="10, Ahmadu Bello Way, Ilorin, Kwara State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGKW" 
             opacity="1" 
             strokeOpacity="1" 
@@ -594,8 +595,8 @@ const NigeriaMap = () => {
             data-address="119 Moh'd Mustapha Way, Jimeta, Yola 640001, Adamawa State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGAD" 
             opacity="1" 
             strokeOpacity="1" 
@@ -614,8 +615,8 @@ const NigeriaMap = () => {
             data-address="7 Beach Road, Jos 930105, Plateau State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             d="M643.2,376.2L644.8000000000001,379.9L645.3000000000001,383.9L644.8000000000001,388.79999999999995L645.6,394.59999999999997L646.2,396.79999999999995L647.5,398.9L649.7,406.2L649.7,408.5L649.1,410.8L650.1,415.6L650.2,418.5L647.6,423.5L635.6,429.4L618.1,433.7L614.4,438.09999999999997L612.6999999999999,440.79999999999995L608.6999999999999,445.59999999999997L606.5999999999999,447.49999999999994L601.1999999999999,450.49999999999994L596.1999999999999,454.09999999999997L591.8,458.59999999999997L586.9,462.29999999999995L581.4,463.9L575.6999999999999,464.29999999999995L571.5999999999999,463.99999999999994L568.8,459.99999999999994L564.6999999999999,457.3999999999999L555.9,453.5999999999999L551.1,453.4999999999999L546.3000000000001,454.89999999999986L539.4000000000001,456.1999999999999L532.2,456.09999999999985L527.6,454.79999999999984L521.3000000000001,451.49999999999983L519.6,448.29999999999984L520.1,444.59999999999985L519.5,441.49999999999983L517.7,438.8999999999998L516.2,435.1999999999998L517.5,431.99999999999983L519.4,429.59999999999985L521.1999999999999,426.89999999999986L523.9999999999999,425.9999999999999L525.7999999999998,424.2999999999999L528.9999999999999,419.8999999999999L530.0999999999999,417.2999999999999L530.4999999999999,415.0999999999999L529.0999999999999,413.2999999999999L527.0999999999999,411.9999999999999L524.6999999999999,412.5999999999999L523.4999999999999,413.0999999999999L522.1999999999999,413.2999999999999L517.0999999999999,413.3999999999999L512.0999999999999,412.3999999999999L508.4999999999999,408.69999999999993L507.2999999999999,403.49999999999994L503.5999999999999,400.69999999999993L499.19999999999993,398.5999999999999L500.79999999999995,394.19999999999993L501.09999999999997,389.49999999999994L498.2,385.3999999999999L494.59999999999997,381.5999999999999L491.59999999999997,377.0999999999999L491.59999999999997,366.19999999999993L493.7,364.5999999999999L493.9,363.19999999999993L493.9,361.8999999999999L497,357.5999999999999L496.4,354.9999999999999L496.79999999999995,351.9999999999999L496.79999999999995,346.0999999999999L499.79999999999995,335.9999999999999L497.79999999999995,330.1999999999999L499.19999999999993,324.39999999999986L502.99999999999994,320.09999999999985L505.69999999999993,318.79999999999984L507.5999999999999,316.39999999999986L507.9999999999999,313.79999999999984L508.6999999999999,311.59999999999985L512.9999999999999,310.89999999999986L517.4999999999999,311.9999999999999L520.1999999999999,315.39999999999986L521.6999999999999,319.59999999999985L522.0999999999999,323.39999999999986L521.9999999999999,335.6999999999999L524.7999999999998,337.59999999999985L533.4999999999999,335.99999999999983L538.3999999999999,337.79999999999984L539.9999999999999,342.99999999999983L540.2999999999998,349.29999999999984L539.7999999999998,351.59999999999985L538.3999999999999,353.6999999999999L537.3999999999999,355.89999999999986L537.0999999999999,358.29999999999984L538.8999999999999,360.09999999999985L541.5999999999999,360.99999999999983L544.9999999999999,364.99999999999983L547.5999999999999,369.59999999999985L552.3,371.09999999999985L563,373.09999999999985L575,372.49999999999983L578,371.8999999999998L580.7,370.6999999999998L582.9000000000001,365.99999999999983L584.9000000000001,364.29999999999984L589.8000000000001,362.39999999999986L590.5000000000001,359.89999999999986L589.5000000000001,357.1999999999999L586.6000000000001,352.9999999999999L587.6000000000001,351.1999999999999L588.7000000000002,350.4999999999999L591.1000000000001,349.9999999999999L628.2000000000002,367.2999999999999L640.8000000000002,375.1999999999999L643.2000000000002,376.1999999999999Z" 
             className="sm_state sm_state_NGPL" 
             opacity="1" 
@@ -634,8 +635,8 @@ const NigeriaMap = () => {
             data-address="Klm 4 Ogo Oluwa Gbongan Road, beside Sterling Bank, Osogbo 230284, Osun State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGOS" 
             opacity="1" 
             strokeOpacity="1" 
@@ -654,8 +655,8 @@ const NigeriaMap = () => {
             data-address="Canteen Area, opposite CSC, J.B. Yakubu Road, Gusau, Zamfara State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGZA" 
             opacity="1" 
             strokeOpacity="1" 
@@ -674,8 +675,8 @@ const NigeriaMap = () => {
             data-address="plot 111B, Elegheim layout, along BCA Road, Umuahia, Abia State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGAB" 
             opacity="1" 
             strokeOpacity="1" 
@@ -694,8 +695,8 @@ const NigeriaMap = () => {
             data-address="Plot 26, Old Okey Anuenyi Avenue, INEC Road, beside Cosmila Hotel, Okpuno Awka" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGAN" 
             opacity="1" 
             strokeOpacity="1" 
@@ -714,8 +715,8 @@ const NigeriaMap = () => {
             data-address="Arch Bishop Joseph Edra, Plot 1, By Ukpo Street, Lemna Junction, off Murtala Mohammed Highway, Calabar" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGCR" 
             opacity="1" 
             strokeOpacity="1" 
@@ -734,8 +735,8 @@ const NigeriaMap = () => {
             data-address=" 48GR+5J4, Ibara Housing Estate Rd, GRA, Abeokuta 111102, Ogun State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGOG" 
             opacity="1" 
             strokeOpacity="1" 
@@ -754,8 +755,8 @@ const NigeriaMap = () => {
             data-address="No. 4 Ubi Inyang Street, off Abak Road, Uyo, Akwa Ibom" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGAK" 
             opacity="1" 
             strokeOpacity="1" 
@@ -774,8 +775,8 @@ const NigeriaMap = () => {
             data-address="F294+22F, Port Harcourt Rd, New Owerri, Owerri 460281, Imo" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGIM" 
             opacity="1" 
             strokeOpacity="1" 
@@ -794,8 +795,8 @@ const NigeriaMap = () => {
             data-address="22, Bida Road Kaduna, Kaduna" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGKD" 
             opacity="1" 
             strokeOpacity="1" 
@@ -814,8 +815,8 @@ const NigeriaMap = () => {
             data-address="No. 14 Sultan Abubakar Road, opposite Sharia Court of Appeal, Birnin Kebbi" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             opacity="1" 
             strokeOpacity="1" 
             strokeWidth="1.25" 
@@ -833,8 +834,8 @@ const NigeriaMap = () => {
             data-address="151 Oyemekun Rd, Akure 340110, Ondo" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGON" 
             opacity="1" 
             strokeOpacity="1" 
@@ -852,8 +853,8 @@ const NigeriaMap = () => {
             data-state="Kano State"
             data-address="No. 52, Unity Road, Off Ibrahim Taiwo Road, Kano, Kano State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }}
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGKN" 
             opacity="1" 
             strokeOpacity="1" 
@@ -872,8 +873,8 @@ const NigeriaMap = () => {
             data-address="1 Beach/Marine Road, Lokoja, Kogi State" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGKO" 
             opacity="1" 
             strokeOpacity="1" 
@@ -892,8 +893,8 @@ const NigeriaMap = () => {
             data-address="XJ5J+HMJ, Katsina 820101, Katsina" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff" 
+            fill="#4D6C4A" 
+            stroke="#ADF702" 
             className="sm_state sm_state_NGKT" 
             opacity="1" 
             strokeOpacity="1" 
@@ -912,8 +913,8 @@ const NigeriaMap = () => {
             data-address="3 Sultan Abubakar Rd, Caatin Danji, Sokoto 840283, Sokoto" 
             style={{ opacity: 1, cursor: 'pointer', strokeOpacity: 1, strokeLinejoin: 'round', fillOpacity: 1 }} 
 
-            fill="#88a4bc" 
-            stroke="#ffffff"
+            fill="#4D6C4A" 
+            stroke="#ADF702"
             className="sm_state sm_state_NGSO" 
             opacity="1" strokeOpacity="1" 
             strokeWidth="1.25" 
