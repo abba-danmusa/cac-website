@@ -207,7 +207,7 @@ const NigeriaMap = () => {
 
       {/* SVG Map */}
 
-      <svg ref={mapRef} className="" height="550.00000000000006" version="1.1" width="654.1871921182267" xmlns="http://www.w3.org/2000/svg" style={{ overflow: 'hidden', position: 'relative', left: '-0.150024px' }} viewBox="0 0 554.1871921182267 450.00000000000006" preserveAspectRatio="xMinYMin">
+      <svg ref={mapRef} className="" height="450.00000000000006" version="1.1" width="654.1871921182267" xmlns="http://www.w3.org/2000/svg" style={{ overflow: 'hidden', position: 'relative', left: '-0.150024px' }} viewBox="0 0 554.1871921182267 450.00000000000006" preserveAspectRatio="xMinYMin">
         {/* <!-- Borno State --> */}
         <g className="state-group"> 
           <path

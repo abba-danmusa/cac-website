@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
     <section className="bg-primary px-6 min-h-screen flex flex-col md:flex-row items-start md:items-center gap-10">
       <SocialMediaBar />
       {/* Map Container */}
-      <div className="w-full md:w-1/2 lg:w-2/4 flex justify-center">
+      <div className="w-full md:w-1/2 lg:w-2/4 flex justify-center mt-6 h-fit">
         <NigeriaMap />
       </div>
 
