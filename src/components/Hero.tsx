@@ -4,6 +4,7 @@ import React from "react";
 import NigeriaMap from "./Maps";
 import NewsSlider from "./NewsSlider";
 import SocialMediaBar from "./SocialMediaBar";
+import CorporateRegistry from "./CorporateRegistry";
 
 const newsItems = [
   {
@@ -42,7 +43,8 @@ const HeroSection: React.FC = () => {
 
       {/* News Slider Container */}
       <div className="w-full md:w-1/3 lg:w-2/5">
-        <NewsSlider items={newsItems} />
+        <CorporateRegistry />
+        {/* <NewsSlider items={newsItems} /> */}
       </div>
     </section>
   );

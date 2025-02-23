@@ -101,7 +101,7 @@ const Header: React.FC = () => {
           </Link>
           <a
             href="https://reportgov.ng"
-            className="bg-green-600 text-white px-5 py-2 rounded-md hover:bg-green-700"
+            className="text-white px-5 py-2 rounded-md text-sm bg-gradient-to-r from-secondary to-complimentary hover:bg-gradient-to-r hover:from-complimentary hover:to-secondary"
           >
             ReportGov.ng
           </a>
