@@ -20,11 +20,13 @@ import build1 from './build1.svg'
 import build2 from './biuld2.svg'
 import people1 from './people1.svg'
 import people2 from './people2.svg'
+import servicesSVG from './Services.svg'
 
 import person1 from './person1.svg'
 import person2 from './person2.svg'
 
 export {
+    servicesSVG,
     clip,
     group,
     like,

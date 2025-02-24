@@ -1,12 +1,10 @@
 "use client"
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { clip2 } from "../../public/assests";
-// import background from '../../public/svg/services.svg';
+import { servicesSVG } from "../../public/assests";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,8 +15,8 @@ const services = [
     icon: "/images/business-registration.png",
   },
   {
-    title: "Post  Incorporation  Services",
-    description: "Change of names, conversion of private companies to public, e.t.c.",
+    title: "Post Incorporation",
+    description: "Change of Name, Company Conversion, etc.",
     icon: "/images/post-incorporation.png",
   },
 ];
@@ -28,153 +26,108 @@ const ServicesSection: React.FC = () => {
   const leftBoxRef = useRef(null);
   const rightBoxRef = useRef(null);
 
-  useGSAP(() => {
+  useEffect(() => {
     // Header animation
     gsap.fromTo(headerRef.current,
-      { 
-        opacity: 0, 
-        y: 50 
-      },
+      { opacity: 0, y: 50 },
       {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 1.5,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: headerRef.current,
           start: "top 80%",
           end: "bottom 20%",
-          toggleActions: "play reverse play reverse"
+          toggleActions: "play none none none"
         }
       }
     );
 
-    // Left box animation
-    gsap.fromTo(leftBoxRef.current,
-      { 
-        opacity: 0, 
-        x: -100 
-      },
+    // Boxes animation
+    gsap.fromTo([leftBoxRef.current, rightBoxRef.current],
+      { opacity: 0, y: 50 },
       {
         opacity: 1,
-        x: 0,
-        duration: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power3.out",
+        stagger: 0.3,
         scrollTrigger: {
           trigger: leftBoxRef.current,
           start: "top 75%",
           end: "bottom 25%",
-          toggleActions: "play reverse play reverse"
+          toggleActions: "play none none none"
         }
       }
     );
-
-    // Right box animation
-    gsap.fromTo(rightBoxRef.current,
-      { 
-        opacity: 0, 
-        x: 100 
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: rightBoxRef.current,
-          start: "top 75%",
-          end: "bottom 25%",
-          toggleActions: "play reverse play reverse"
-        }
-      }
-    );
-  });
-
+  }, []);
 
   return (
-    <section id="services" className="bg-primary relative  ">
-     <Image src={clip2} 
-     alt="as"
-     className="absolute top-8 -left-[2rem] z-0"
-     />
+    <section id="services" className="bg-primary relative px-4">
+      <Image src={servicesSVG} alt="as" className="absolute top-8 -left-[2rem] z-0" />
       <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
-          className="text-2xl font-merriweather font-bold text-center text-black z-10"
+          className="text-5xl font-merriweather font-bold text-center text-black z-10"
         >
           Services We Offer
         </h2>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-[8rem] lg:gap-[10rem] z-20">
-          <div 
-          ref={leftBoxRef}
-          className="flex flex-col items-start hover:border-none h-[284] w-[308px] p-5 pt-3  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">
+        <div className="flex flex-col md:flex-row justify-center gap-40 mt-10 z-10">
+          <div
+            ref={leftBoxRef}
+            className="flex flex-col items-start hover:border-none h-[280px] w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
+          >
             <Image
-              src={'/assests/tools2.svg'} 
-              alt={services[0].title} 
-              width={48}
-              height={48}
-              className="h-[101px] w-[105px] hidden group-hover:block self-start text-white mb-4"
+              src={'/assests/tools2.svg'}
+              alt={services[0].title}
+              width={30}
+              height={30}
+              className="h-[80px] w-[80px] hidden group-hover:block self-start text-white mb-4"
             />
             <Image
-              src={'/assests/tools1.svg'} 
-              alt={services[0].title} 
-              width={48}
-              height={48}
-              className="h-[101px] w-[105px] self-start block group-hover:hidden text-white mb-4"
+              src={'/assests/tools1.svg'}
+              alt={services[0].title}
+              width={30}
+              height={30}
+              className="h-[80px] w-[80px] self-start block group-hover:hidden text-white mb-4"
             />
             <div className="hover:cursor-pointer">
-              <h3 className="text-[27px] leading-8 font-merriweather group-hover:text-white font-bold text-black">
+              <h4 className="text-3xl leading-8 group-hover:text-white font-bold w-full mb-3">
                 {services[0].title}
-              </h3>
-              <p className="text-black leading-6 group-hover:text-white font-roboto text-[20px]">
+              </h4>
+              <p className="leading-6 group-hover:text-white text-lg">
                 {services[0].description}
               </p>
             </div>
           </div>
-          <div 
-          ref={rightBoxRef}
-          className="flex flex-col items-start h-[284] w-[308px] p-5 pt-3 hover:border-none  border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10">
-             <Image
-              src={'/assests/hand2.svg'} 
-              alt={services[1].title} 
-              width={48}
-              height={48}
-              className="h-[101px] w-[105px] self-start hidden group-hover:block text-white mb-4"
+          <div
+            ref={rightBoxRef}
+            className="flex flex-col items-start hover:border-none h-[280px] w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
+          >
+            <Image
+              src={'/assests/hand2.svg'}
+              alt={services[1].title}
+              width={30}
+              height={30}
+              className="h-[80px] w-[80px] self-start hidden group-hover:block text-white mb-4"
             />
-             <Image
-              src={'/assests/hand1.svg'} 
-              alt={services[1].title} 
-              width={48}
-              height={48}
-              className="h-[101px] w-[105px] self-start block group-hover:hidden text-white mb-4"
+            <Image
+              src={'/assests/hand1.svg'}
+              alt={services[1].title}
+              width={30}
+              height={30}
+              className="h-[80px] w-[80px] self-start block group-hover:hidden text-white mb-4"
             />
             <div className="hover:cursor-pointer">
-            <h3 className="text-[27px] leading-8 font-merriweather group-hover:text-white font-bold text-black">
+              <h3 className="text-3xl leading-8 group-hover:text-primary font-bold w-full mb-3">
                 {services[1].title}
               </h3>
-              <p className="text-black leading-6 group-hover:text-white font-roboto text-[20px]">
+              <p className="leading-6 group-hover:text-white text-lg">
                 {services[1].description}
               </p>
             </div>
           </div>
-        
-          {/* <div
-            ref={rightBoxRef}
-            className=" h-56 rounded border-2 cursor-pointer group gradient-hover border-secondary  hover:shadow-lg transition duration-300 z-10"
-          >
-            <Image
-              src={services[1].icon} 
-              alt={services[1].title} 
-              width={48}
-              height={48}
-              className="h-12 w-14 align-middle mx-auto mb-4"
-            />
-            <div className="hover:cursor-pointer">
-              <h3 className="text-lg mb-6 font-sans group-hover:text-white font-semibold text-black">
-                {services[1].title}
-              </h3>
-              <p className="text-black group-hover:text-white font-sans text-sm">
-                {services[1].description}
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
