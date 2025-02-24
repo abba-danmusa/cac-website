@@ -4,7 +4,6 @@ import HeroSection from "@/components/Hero";
 import ProcessSection from "@/components/Processes";
 import ServicesSection from "@/components/Services";
 import AdditionalInfo from "@/components/AdditionalInfo"
-import Image from "next/image";
 
 export default function Home() {
   return (

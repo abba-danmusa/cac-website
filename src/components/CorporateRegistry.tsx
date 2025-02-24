@@ -17,7 +17,7 @@ const CorporateRegistry: React.FC = () => {
       textRef.current.innerHTML = ""; // Clear previous text
 
       // Create individual spans for each letter
-      text.split("").forEach((char, index) => {
+      text.split("").forEach((char) => {
         const span = document.createElement("span");
         span.textContent = char;
         span.style.opacity = "0"; // Hide initially

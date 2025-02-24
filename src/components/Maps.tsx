@@ -56,7 +56,7 @@ const NigeriaMap = () => {
       ) => {
         const mapRect = map.getBoundingClientRect();
         const tooltipRect = tooltip.getBoundingClientRect();
-        const padding = 10; // Minimum space between tooltips
+        // const padding = 10; // Minimum space between tooltips
 
         let attempts = 0;
         let adjustedX, adjustedY;
