@@ -82,7 +82,7 @@ const CorporateRegistry: React.FC = () => {
   return (
     <section className="hero-section pt-20 md:py-20">
       <div className="md:mx-auto text-left max-w-xl">
-        <h1 className="text-2xl md:text-6xl h-[7rem] md:h-[11rem] w-[4rem] md:w-full font-bold mb-2 md:mb-4 flex gap-2 text-secondary">
+        <h1 className="text-3xl md:text-6xl h-[7rem] md:h-[11rem] w-[4rem] md:w-full font-bold mb-2 md:mb-4 flex gap-2 text-secondary">
           <div ref={textRef} className="inline-block"></div>
         </h1>
         <p ref={paragraphRef} className="text-sm mb-4 md:mb-8 max-w-md text-black">
