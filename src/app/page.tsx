@@ -8,13 +8,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col bg-white">
       <Header />
       <HeroSection />
       <ServicesSection />
       <ProcessSection />
       <AdditionalInfo />
       <Footer />
-    </>
+    </div>
   );
 }

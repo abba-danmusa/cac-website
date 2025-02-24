@@ -25,7 +25,7 @@ const ServiceButton: React.FC<ServiceButtonProps> = ({ icon, title, to, img }) =
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-2 gap-4  py-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4  py-4">
       <ServiceButton
         to="/business"
         icon={'/assests/build1.svg'}

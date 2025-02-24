@@ -34,15 +34,15 @@ const newsItems = [
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-primary px-6 min-h-screen flex flex-col md:flex-row items-start md:items-center gap-10">
+    <section className="bg-primary w-full  min-h-screen flex flex-col md:flex-row gap-4 md:items-center ">
       <SocialMediaBar />
       {/* Map Container */}
-      <div className="w-full md:w-1/2 lg:w-2/4 flex justify-center mt-6 h-fit">
+      <div className="mt-[3rem]  md:mt-0 flex-1 flex  ">
         <NigeriaMap />
       </div>
 
       {/* News Slider Container */}
-      <div className="w-full md:w-1/3 lg:w-2/5">
+      <div className=" w-full  md:w-1/2 lg:pr-[8rem] px-4">
         <CorporateRegistry />
         {/* <NewsSlider items={newsItems} /> */}
       </div>

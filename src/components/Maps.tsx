@@ -196,18 +196,27 @@ const NigeriaMap = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       
       {/* Hover Tooltip */}
       <div
         ref={hoverTooltipRef}
-        className="tooltip absolute max-w-[150px] bg-primary p-2 rounded-lg shadow-xl text-center text-xs border transform -translate-y-2 opacity-0"
+        className="tooltip absolute max-w-[150px] text-black bg-primary p-2 rounded-lg shadow-xl text-center text-xs border transform -translate-y-2 opacity-0"
         style={{ zIndex: 20 }}
       ></div>
 
       {/* SVG Map */}
 
-      <svg ref={mapRef} className="" height="450.00000000000006" version="1.1" width="654.1871921182267" xmlns="http://www.w3.org/2000/svg" style={{ overflow: 'hidden', position: 'relative', left: '-0.150024px' }} viewBox="0 0 554.1871921182267 450.00000000000006" preserveAspectRatio="xMinYMin">
+      <svg 
+  ref={mapRef} 
+  className="w-full h-[450px]" 
+  height="450" 
+  version="1.1"  
+  xmlns="http://www.w3.org/2000/svg" 
+  style={{ overflow: 'hidden', position: 'relative' }} 
+  viewBox="0 0 554.187 450" 
+  preserveAspectRatio="none"
+>
         {/* <!-- Borno State --> */}
         <g className="state-group"> 
           <path

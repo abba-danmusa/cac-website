@@ -81,11 +81,11 @@ const CorporateRegistry: React.FC = () => {
 
   return (
     <section className="hero-section py-20">
-      <div className="mx-auto text-left max-w-xl">
-        <h1 className="text-6xl font-bold mb-4 flex gap-2 text-secondary">
+      <div className="md:mx-auto text-left max-w-xl">
+        <h1 className="text-4xl md:text-6xl h-[7rem] md:h-[11rem] w-[4rem] md:w-full font-bold mb-4 flex gap-2 text-secondary">
           <div ref={textRef} className="inline-block"></div>
         </h1>
-        <p ref={paragraphRef} className="text-sm mb-8 max-w-md">
+        <p ref={paragraphRef} className="text-sm mb-8 max-w-md text-black">
           The Commission is responsible for managing all aspects of company operations, including formation, incorporation, management, and winding up. It maintains company registries across all states, ensuring they are well-equipped to handle their duties.
         </p>
         <button

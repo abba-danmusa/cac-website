@@ -65,15 +65,15 @@ const ServicesSection: React.FC = () => {
 
   return (
     <section id="services" className="bg-primary relative px-4">
-      <Image src={servicesSVG} alt="as" className="absolute top-8 -left-[2rem] z-0" />
+      <Image src={servicesSVG} alt="as" className="absolute top-8 left-0 z-0" />
       <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
-          className="text-5xl font-merriweather font-bold text-center text-black z-10"
+          className="text-3xl lg:text-5xl font-merriweather font-bold text-center text-black z-10"
         >
           Services We Offer
         </h2>
-        <div className="flex flex-col md:flex-row justify-center gap-40 mt-10 z-10">
+        <div className="flex flex-col sm:flex-row justify-center gap-[4rem] md:gap-40 mt-10 z-10">
           <div
             ref={leftBoxRef}
             className="flex flex-col items-start hover:border-none h-[280px] w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"

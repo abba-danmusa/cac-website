@@ -4,8 +4,8 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-secondary text-white md:pt-6 flex flex-col items-center">
-      <div className="px-4 md:px-[4rem] flex flex-col md:flex-row mb-[4rem] justify-between items-center w-full max-w-screen-xl">
+    <footer className="bg-secondary pt-4 text-white md:pt-6 flex flex-col items-center">
+      <div className="px-4 md:px-[4rem] flex flex-col md:flex-row mb-[2rem] justify-between items-center w-full max-w-screen-xl">
       <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
         <Image src={'/svg/coat-of-arms.svg'} alt="Coat of Arms" width={100} height={100} />
         <h3 className="mt-4 text-lg text-white md:text-xl lg:text-2xl font-bold">Corporate Headquarters</h3>
