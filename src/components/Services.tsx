@@ -69,7 +69,7 @@ const ServicesSection: React.FC = () => {
       <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
-          className="text-3xl lg:text-5xl font-merriweather font-bold text-center text-black z-10"
+          className="text-2xl md:text-3xl lg:text-5xl font-merriweather font-bold text-center text-black z-10"
         >
           Services We Offer
         </h2>
