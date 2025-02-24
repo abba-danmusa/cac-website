@@ -33,10 +33,10 @@ import CorporateRegistry from "./CorporateRegistry";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-primary w-full  min-h-screen flex flex-col-reverse md:flex-row gap-4 md:items-center ">
+    <section className="bg-primary w-full  min-h-screen flex flex-col-reverse md:flex-row gap-3.5 md:gap-0 md:items-center ">
       <SocialMediaBar />
       {/* Map Container */}
-      <div className="mt-[3rem]  md:mt-0 flex-1 flex  ">
+      <div className=" flex-1 flex  ">
         <NigeriaMap />
       </div>
 

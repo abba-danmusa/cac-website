@@ -7,7 +7,7 @@ import React from 'react'
 
 const Who = () => {
   return (
-    <div className='bg-primary flex flex-col overflow-hidden'>
+    <div className='bg-primary flex flex-col overflow-hidden md:pt-[4rem]'>
         <Header />
         <section className='flex flex-col mt-[10rem] gap-4 mx-8  items-center py-4'>
             <div className="relative  ml-[-5rem] md:ml-0 ">
@@ -17,9 +17,9 @@ const Who = () => {
                 </div>
                 <DoubleCycles   />
             </div>
-            <div className="flex flex-col md:flex-row gap-6 mt-[7rem] w-full">
+            <div className="flex flex-col md:flex-row items-start gap-6 mt-[7rem] w-full">
               <div className="">
-              <svg className='md:w-[651px]  md:h-[439] h-full w-full'  viewBox="0 0 651 439" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='md:w-[451px]  md:h-[439] h-full w-full'  viewBox="0 0 651 439" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.45" d="M4 2H2V4V435V437H4H647H649V435V4V2H647H4Z" fill="#4D6C4A" stroke="#04E824" strokeWidth="4"/>
             </svg>
               </div>
@@ -46,7 +46,7 @@ const Who = () => {
               </ul>
             </div>
 
-            <div className="relative mt-[1px] md:mt-8 flex flex-col md:flex-row flex-1 justify-center mx-8 md:mx-[15rem] gap-14">
+            <div className="relative mt-[1px] md:mt-8 flex flex-col md:flex-row flex-1 justify-center px-8 md:px-0 gap-14">
             <div className="absolute top-[2rem] md:-top-8 right-[-4rem] md:right-[-20rem]">
             <Image src={group} alt='group' />
           </div>

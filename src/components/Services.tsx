@@ -64,7 +64,7 @@ const ServicesSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="services" className="bg-primary relative px-4">
+    <section id="services" className="bg-primary relative px-4 mt-[2rem] md:mt-0">
       <Image src={servicesSVG} alt="as" className="absolute top-8 left-0 z-0" />
       <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2

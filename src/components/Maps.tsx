@@ -201,7 +201,7 @@ const NigeriaMap = () => {
       {/* Hover Tooltip */}
       <div
         ref={hoverTooltipRef}
-        className="tooltip absolute max-w-[150px] text-black bg-primary p-2 rounded-lg shadow-xl text-center text-xs border transform -translate-y-2 opacity-0"
+        className="tooltip absolute max-w-[80px] md:max-w-[150px] text-black bg-primary p-2 rounded-lg shadow-xl text-center text-xs border transform -translate-y-2 opacity-0"
         style={{ zIndex: 20 }}
       ></div>
 
@@ -209,8 +209,8 @@ const NigeriaMap = () => {
 
       <svg 
   ref={mapRef} 
-  className="w-full h-[450px]" 
-  height="450" 
+  className="w-full  h-fit" 
+  // height="450" 
   version="1.1"  
   xmlns="http://www.w3.org/2000/svg" 
   style={{ overflow: 'hidden', position: 'relative' }} 
