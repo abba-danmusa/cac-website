@@ -13,6 +13,7 @@ import map from './map.svg'
 import rg from './rg1.png'
 import tools1 from './tools1.svg'
 import tools2 from './tools2.svg'
+import cacd1 from './cacd1.png'
 
 import hand1 from './hand1.svg'
 import hand2 from './hand2.svg'
@@ -45,4 +46,5 @@ export {
     people2,
     person1,
     person2,
+    cacd1,
 }

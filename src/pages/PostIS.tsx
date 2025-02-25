@@ -8,15 +8,15 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 
-interface TableRowData {
-    id: number;
-    column1: string;
-    column2: string;
-    column3: string;
-  }
+// interface TableRowData {
+//     id: number;
+//     column1: string;
+//     column2: string;
+//     column3: string;
+//   }
 
 interface TableRowProps {
-  item: TableRowData;
+  item: any;
   index: number;
   show: number,
   setShow: React.Dispatch<React.SetStateAction<number>>
@@ -45,9 +45,9 @@ const TableRow = ({ item, index, show, setShow }: TableRowProps) => (
   </tr>
 )
 
-const TOTAL_ROWS = 10;
+// const TOTAL_ROWS = 10;
 const PostIS = () => {
-    const data = generateTableData(TOTAL_ROWS);
+    const data = generateTableData;
     const [show, setShow] = useState(0)
   return (
 <div className='bg-primary flex flex-col'>
@@ -64,8 +64,8 @@ const PostIS = () => {
                    
                     <table className="w-full border-collapse">
                     <tbody>
-                        {data.map((item, index) => (
-                            <TableRow key={item.id} show={show} setShow={setShow} item={item} index={index} />
+                        {data.map((item: any, index) => (
+                            <TableRow key={item} show={show} setShow={setShow} item={item} index={index} />
                         ))}
                         </tbody>
                     </table>

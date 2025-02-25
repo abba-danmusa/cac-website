@@ -1,4 +1,4 @@
-import { adminster, clip, effort, group, like, morale } from '../../public/assests'
+import { adminster, cacd1, clip, effort, group, like, morale } from '../../public/assests'
 import DoubleCycles from '@/components/DoubleCycles'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -10,34 +10,37 @@ const Who = () => {
     <div className='bg-primary flex flex-col overflow-hidden md:pt-[4rem]'>
         <Header />
         <section className='flex flex-col mt-[10rem] gap-4 mx-8  items-center py-4'>
-            <div className="relative  ml-[-5rem] md:ml-0 ">
+            <div className="relative   ">
                 <div className="flex flex-col  items-center ">
                     <p className="md:text-[2.5rem] text-[25px]  z-30 text-black">Welcome to <span className=" text-secondary">CAC</span></p>
                     <p className="text-black z-30 font-normal text-base md:text-[20px]">Nigeria&apos;s Corporate Registry</p>
                 </div>
                 <DoubleCycles   />
             </div>
-            <div className="flex flex-col md:flex-row items-start gap-6 mt-[7rem] w-full">
+
+            
+            <div className="flex flex-col md:flex-row items-start gap-6 mt-[8rem] w-full">
               <div className="">
-              <svg className='md:w-[451px]  md:h-[439] h-full w-full'  viewBox="0 0 651 439" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.45" d="M4 2H2V4V435V437H4H647H649V435V4V2H647H4Z" fill="#4D6C4A" stroke="#04E824" strokeWidth="4"/>
-            </svg>
+             <Image alt='who' src={cacd1} className='md:w-[843px] md:h-[331px]' />
               </div>
-              <div className="flex flex-col w-full pr-14">
+              <div className="flex flex-col w-full ">
                 <p className="md:text-3xl text-[20px] font-normal  text-center mb-3 md:mb-[5rem] text-black">Who we are </p>
                 <p className="md:text-[20px] pl-8 md:pl-0 text-[13px] font-normal text-black">the corporate affairs commission was </p>
               </div>
             </div>
+
+
+
         </section>
 
-        <section className='relative mt-14 flex flex-col ml-8 md:ml-[7rem] mr-8 md:mr-[5rem] gap-14'>
+        <section className='relative mt-14 flex flex-col ml-8 md:px-[2rem] mr-8  gap-14'>
           <div className="absolute -top-16 md:top-2 left-[-9rem]">
             <Image src={clip} alt='clip' />
           </div>
             <div className="flex flex-col">
               <p className="md:text-[2.5rem] z-10 text-[25px] mb-4 text-black font-semibold text-center">Functions of the Commission</p>
               <p className="text-[13px] md:text-[18px] text-black z-10"> The functions of the Commission as set out in section 7 of the Companies and Allied Matters Act, includes the following:</p>
-              <ul className=' ml-10 md:ml-16 list-disc pl-5 z-10'>
+              <ul className=' ml-10 md:ml-14 list-disc pl-5 z-10'>
                 <li className="text-[13px] md:text-[18px] text-black ">To administer the Act, including the regulation and supervision of the formation, incorporation, management and winding up of companies</li>
                 <li className="text-[13px] md:text-[18px] text-black ">To establish and maintain companies registry and offices in all the states of the Federation suitably and adequately equipped to discharge its functions under the Act or any law in respect of which it is charged with responsibility</li>
                 <li className="text-[13px] md:text-[18px] text-black ">Arrange and conduct an investigation into the affairs of any company where the interests of the shareholders and the public so demand</li>
@@ -89,7 +92,6 @@ const Who = () => {
               </ul>
             </div>
         </section>
-
         <Footer />
     </div>
   )

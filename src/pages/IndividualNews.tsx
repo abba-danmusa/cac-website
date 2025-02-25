@@ -7,15 +7,15 @@ import Image from 'next/image'
 import React from 'react'
 
 
-interface TableRowData {
-    id: number;
-    column1: string;
-    column2: string;
-    column3: string;
-  }
+// interface TableRowData {
+//     id: number;
+//     column1: string;
+//     column2: string;
+//     column3: string;
+//   }
 
 interface TableRowProps {
-  item: TableRowData;
+  item: any;
   index: number;
 }
 
@@ -38,10 +38,10 @@ const TableRow = ({ item, index,  }: TableRowProps) => (
 )
 
 
-const TOTAL_ROWS = 4;
+// const TOTAL_ROWS = 4;
 
 const IndividualNews = () => {
-    const data = generateTableData(TOTAL_ROWS);
+    const data = generateTableData;
 
   return (
     <div className='bg-primary flex flex-col '>
@@ -90,8 +90,8 @@ const IndividualNews = () => {
                             <div className="w-full mt-1 bg-white  overflow-hidden">
                             <table className="w-full border-collapse">
                             <tbody>
-                                {data.map((item, index) => (
-                                    <TableRow key={item.id}  item={item} index={index} />
+                                {data.map((item: any, index: number) => (
+                                    <TableRow key={index}  item={item} index={index} />
                                 ))}
                                     </tbody>
                                         </table>

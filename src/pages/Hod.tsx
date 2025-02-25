@@ -12,7 +12,7 @@ const TOTAL_ROWS = 10;
 const Hod = () => {
 
     const [visibleRows, setVisibleRows] = useState(ROWS_PER_PAGE);
-    const data = generateTableData(TOTAL_ROWS);
+    const data = generateTableData;
 
     const handleShowMore = () => {
         setVisibleRows((prev) => Math.min(prev + ROWS_PER_PAGE, TOTAL_ROWS));

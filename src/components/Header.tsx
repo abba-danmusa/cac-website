@@ -9,7 +9,8 @@ import { gsap } from "gsap";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [dropdownAboutVisible, setDropdownAboutVisible] = useState(false);
+  const [dropdownServicesVisible, setDropdownServicesVisible] = useState(false);
   const location = usePathname();
 
   useEffect(() => {
@@ -18,10 +19,8 @@ const Header: React.FC = () => {
 
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        // Scrolling down
         gsap.to(header, { boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", duration: 0.3 });
       } else {
-        // Scrolling up
         gsap.to(header, { boxShadow: "none", duration: 0.3 });
       }
       lastScrollY = window.scrollY;
@@ -34,10 +33,25 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  const isAboutActive = [
+    "/who",
+    "/board-member",
+    "/head-of-department",
+    "/head-of-section"
+  ].includes(location || '');
+
+  const isServicesActive = [
+    "/companies",
+    "/business-names",
+    "/incorporated-trustees",
+    "/summary-of-fees",
+    "/service-timeline",
+    "/timeline"
+  ].includes(location || '');
+
   return (
     <header className="fixed top-0 left-0 w-full bg-white z-50">
-      <div className=" mx-auto md:mx-0 md:w-full px-6 md:px-[1rem] lg:px-12 flex justify-between items-center py-4">
-        {/* Logo */}
+      <div className="mx-auto md:mx-0 md:w-full px-6 md:px-[1rem] lg:px-12 flex justify-between items-center py-4">
         <Link href="/">
           <Image
             src="/images/logo.png"
@@ -48,7 +62,6 @@ const Header: React.FC = () => {
           />
         </Link>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -56,49 +69,144 @@ const Header: React.FC = () => {
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Navigation Menu */}
         <nav
           className={`${
             isMenuOpen ? "flex" : "hidden"
           } absolute md:relative px-4 md:px-0 top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:flex md:items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 py-6 md:py-0 shadow-lg md:shadow-none`}
         >
-          <Link href="/" className={`nav-link text-sm text-black ${location === "/" && " border-b-2 font-bold border-secondary"}`}>
+          <Link 
+            href="/" 
+            className={`nav-link text-sm text-black ${location === "/" && " border-b-2 font-bold border-secondary"}`}
+            onClick={() => isMenuOpen && setIsMenuOpen(false)}
+          >
             Home
           </Link>
-          <Link href="/news" className={`nav-link text-sm text-black ${location === "/news" && " border-b-2 font-bold border-secondary"}`}>
-            News
-          </Link>
-          <Link href="/who" className={`nav-link text-sm text-black ${location === "/who" && " border-b-2 font-bold border-secondary"}`}>
-            About Us
-          </Link>
 
-          {/* Services Dropdown */}
+         
+
+          {/* About Dropdown */}
           <div
             className="relative group"
-            onMouseEnter={() => setDropdownVisible(true)}
-            onMouseLeave={() => setDropdownVisible(false)}
+            onMouseEnter={() => !isMenuOpen && setDropdownAboutVisible(true)}
+            onMouseLeave={() => !isMenuOpen && setDropdownAboutVisible(false)}
           >
-            <button className="flex  items-center nav-link text-sm text-black">
-              Services <ChevronDown size={16} className="ml-1" />
+            <button 
+              className={`flex w-full items-center nav-link text-sm text-black ${isAboutActive && " border-b-2 font-bold border-secondary"}`}
+              onClick={() => isMenuOpen && setDropdownAboutVisible(!dropdownAboutVisible)}
+            >
+              About Us <ChevronDown size={16} className="ml-1" />
             </button>
-            {dropdownVisible && (
-              <div className="absolute border px-1 left-0 mt-1 flex flex-col gap-2 w-48 bg-white shadow-md rounded-md py-2">
-                <Link href="/companies" className="dropdown-item text-black hover:bg-gray-100 rounded cursor-pointer w-full px-3">
-                  Companies
+            {dropdownAboutVisible && (
+              <div className={`${isMenuOpen ? 'relative w-full' : 'absolute left-0 mt-1 w-48'} bg-white border flex-col flex rounded-md shadow-md py-2`}>
+                <Link 
+                  href="/who" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Who we are
                 </Link>
-                <Link href="/business-names" className="dropdown-item text-black hover:bg-gray-100 rounded cursor-pointer w-full px-3">
-                  Business Names
+                <Link 
+                  href="/board-member" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Board member
                 </Link>
-                <Link href="/incorporated-trustees" className="dropdown-item hover:bg-gray-100 rounded cursor-pointer w-full px-3 text-black">
-                  Incorporated Trustees
+                <Link 
+                  href="/hod" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Head of department/ Units and State Office
+                </Link>
+                <Link 
+                  href="/video" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Organizational Structure
                 </Link>
               </div>
             )}
           </div>
 
-          <Link href="/resources" className={`nav-link text-black text-sm ${location === "/resources" && " border-b-2 font-bold border-secondary"}`}>
+
+          <Link 
+            href="/news" 
+            className={`nav-link text-sm text-black ${location === "/news" && " border-b-2 font-bold border-secondary"}`}
+            onClick={() => isMenuOpen && setIsMenuOpen(false)}
+          >
+            News
+          </Link>
+
+          {/* Services Dropdown */}
+          <div
+            className="relative group"
+            onMouseEnter={() => !isMenuOpen && setDropdownServicesVisible(true)}
+            onMouseLeave={() => !isMenuOpen && setDropdownServicesVisible(false)}
+          >
+            <button 
+              className={`flex items-center w-full nav-link text-sm text-black ${isServicesActive && " border-b-2 font-bold border-secondary"}`}
+              onClick={() => isMenuOpen && setDropdownServicesVisible(!dropdownServicesVisible)}
+            >
+              Services <ChevronDown size={16} className="ml-1" />
+            </button>
+            {dropdownServicesVisible && (
+              <div className={`${isMenuOpen ? 'relative w-full' : 'absolute left-0 mt-1 w-48'} bg-white border flex-col flex rounded-md shadow-md py-2`}>
+                <Link 
+                  href="/companies" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Companies
+                </Link>
+                <Link 
+                  href="/business" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Business Names
+                </Link>
+                <Link 
+                  href="/tr" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Incorporated Trustees
+                </Link>
+                <Link 
+                  href="/fees" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Summary of fees
+                </Link>
+                <Link 
+                  href="/revised" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Service Timeline
+                </Link>
+                <Link 
+                  href="/timeline" 
+                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                >
+                  Timeline
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <Link 
+            href="/resources" 
+            className={`nav-link text-black text-sm ${location === "/resources" && " border-b-2 font-bold border-secondary"}`}
+            onClick={() => isMenuOpen && setIsMenuOpen(false)}
+          >
             Resources
           </Link>
+          
           <a
             href="https://reportgov.ng"
             className="text-white px-5 py-2 rounded-md text-sm bg-gradient-to-r from-secondary to-complimentary hover:bg-gradient-to-r hover:from-complimentary hover:to-secondary"
@@ -112,8 +220,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
-/* Tailwind classes used:
-  - nav-link: "text-gray-700 hover:text-green-600 font-medium border-b-2 border-transparent hover:border-green-600 transition-all"
-  - dropdown-item: "block px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
-*/
