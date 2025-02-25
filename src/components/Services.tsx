@@ -10,14 +10,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
-    title: "Business Registration",
+    title: "Pre Incorporation",
     description: "Register your Company, Business name, and incorporated Trustees.",
     icon: "/images/business-registration.png",
+    steps: {
+      title: "Registration steps",
+      description: "Registration on the COMPANY REGISTRATION PORTAL (CRP) is now end-to-end, with electronic certificates and certified extracts available.",
+      steps: [
+        "Check for availability of the Business Name on the CRP",
+        "Complete pre-registration form",
+        "Pay filing fee",
+        "Submit application",
+        "Print certificate",
+      ]
+    }
   },
   {
     title: "Post Incorporation",
     description: "Change of Name, Company Conversion, etc.",
     icon: "/images/post-incorporation.png",
+    steps: {
+      title: "Post Incorporation steps",
+      description: "Post Incorporation services include Change of Name, Conversion and Re-registration, Filing of Annual Returns, Increase in Share Capital, etc.",
+      steps: [
+        "Check for availability of proposed Incorporated Trustee name",
+        "Complete pre-registration form and upload trelevant registration documents– CAC-IT01",
+        "Pay filing fee",
+      ]
+    }
   },
 ];
 
@@ -65,18 +85,21 @@ const ServicesSection: React.FC = () => {
 
   return (
     <section id="services" className="bg-primary relative px-4 mt-[2rem] md:mt-0">
-      <Image src={servicesSVG} alt="as" className="absolute top-8 left-0 z-0" />
+      {/* <Image src={servicesSVG} alt="as" className="absolute top-8 left-0 z-0" /> */}
       <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
-          className="text-2xl md:text-3xl lg:text-5xl font-merriweather font-bold text-center text-black z-10"
+          className="text-2xl md:text-3xl lg:text-4xl font-merriweather font-semibold text-center text-black z-10"
         >
           Services We Offer
         </h2>
-        <div className="flex flex-col sm:flex-row justify-center gap-[4rem] md:gap-40 mt-10 z-10">
+        <p className="text-center text-base max-w-screen-md mt-4 z-10 mx-auto">
+          We offer a wide range of services to help you start and grow your business. Individuals and proprietors can register business names without needing a legal practitioner, chartered accountant, or secretary.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-[4rem] md:gap-40 mt-32 z-10">
           <div
             ref={leftBoxRef}
-            className="flex flex-col items-start hover:border-none h-[280px] w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
+            className="flex flex-col items-start hover:border-none h-full w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
           >
             <Image
               src={'/assests/tools2.svg'}
@@ -101,9 +124,41 @@ const ServicesSection: React.FC = () => {
               </p>
             </div>
           </div>
+          <div className="flex flex-col items-start gap-4 max-w-md">
+            <h1 className="text-8xl leading-8 font-extrabold w-full mb-10 mx-auto">
+              01
+            </h1>
+            <h3 className="text-3xl leading-8 font-bold w-full mb-3">
+              {services[0].steps.title}
+            </h3>
+            <p className="leading-6 text-sm">
+              {services[0].steps.description}
+            </p>
+            <ul className="list-disc list-inside mt-4">
+              {services[0].steps.steps.map((step, index) => (
+                <li key={index} className="text-sm">{step}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row justify-center gap-[4rem] md:gap-40 mt-32 z-10">
+          <div className="flex flex-col items-start gap-4 max-w-md">
+            <h1 className="text-8xl leading-8 font-extrabold w-full mb-10 mx-auto"> 02 </h1>
+            <h3 className="text-3xl leading-8 font-bold w-full mb-3">
+              {services[1].steps.title}
+            </h3>
+            <p className="leading-6 text-sm">
+              {services[1].steps.description}
+            </p>
+            <ul className="list-disc list-inside mt-4">
+              {services[1].steps.steps.map((step, index) => (
+                <li key={index} className="text-sm">{step}</li>
+              ))}
+            </ul>
+          </div>
           <div
             ref={rightBoxRef}
-            className="flex flex-col items-start hover:border-none h-[280px] w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
+            className="flex flex-col items-start hover:border-none h-full w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
           >
             <Image
               src={'/assests/hand2.svg'}
