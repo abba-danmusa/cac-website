@@ -5,15 +5,9 @@ import {
   Building2,
   FileText,
   Users,
-  CheckCircle,
   ArrowRight,
   Menu,
   X,
-  Phone,
-  Mail,
-  Clock,
-  ChevronRight,
-  Shield,
   Award,
   Target,
   Landmark
@@ -211,7 +205,7 @@ function HomePage() {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl font-bold text-black mb-4">About CAC Nigeria</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              The Corporate Affairs Commission (CAC) is Nigeria's premier regulatory body for company registration and business administration.
+              The Corporate Affairs Commission (CAC) is Nigeria&lsquo;s premier regulatory body for company registration and business administration.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-children">
