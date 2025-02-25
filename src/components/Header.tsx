@@ -97,31 +97,31 @@ const Header: React.FC = () => {
               About Us <ChevronDown size={16} className="ml-1" />
             </button>
             {dropdownAboutVisible && (
-              <div className={`${isMenuOpen ? 'relative w-full' : 'absolute left-0 mt-1 w-48'} bg-white border flex-col flex rounded-md shadow-md py-2`}>
+              <div className={`${isMenuOpen ? 'relative w-full' : 'absolute left-0 mt-1 w-48'} bg-white md:border md:shadow-md  flex-col flex rounded-md  py-2`}>
                 <Link 
                   href="/who" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Who we are
                 </Link>
                 <Link 
                   href="/board-member" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Board member
                 </Link>
                 <Link 
                   href="/hod" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Head of department/ Units and State Office
                 </Link>
                 <Link 
                   href="/video" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Organizational Structure
@@ -152,45 +152,45 @@ const Header: React.FC = () => {
               Services <ChevronDown size={16} className="ml-1" />
             </button>
             {dropdownServicesVisible && (
-              <div className={`${isMenuOpen ? 'relative w-full' : 'absolute left-0 mt-1 w-48'} bg-white border flex-col flex rounded-md shadow-md py-2`}>
+              <div className={`${isMenuOpen ? 'relative w-full' : 'absolute left-0 mt-1 w-48'} bg-white md:border md:shadow-md flex-col flex rounded-md  py-2`}>
                 <Link 
                   href="/companies" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Companies
                 </Link>
                 <Link 
                   href="/business" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Business Names
                 </Link>
                 <Link 
                   href="/tr" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Incorporated Trustees
                 </Link>
                 <Link 
                   href="/fees" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Summary of fees
                 </Link>
                 <Link 
                   href="/revised" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Service Timeline
                 </Link>
                 <Link 
                   href="/timeline" 
-                  className="dropdown-item text-black hover:bg-gray-100 px-4 py-2"
+                  className="dropdown-item text-sm md:text-base text-black hover:bg-gray-100 px-4 py-2"
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Timeline
