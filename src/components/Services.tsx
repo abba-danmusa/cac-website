@@ -10,14 +10,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
-    title: "Registration steps for Business Names",
+    title: "Business Registration",
     description: "Register your Company, Business name, and incorporated Trustees.",
     icon: "/images/business-registration.png",
+    steps: {
+      title: "Registration steps",
+      description: "Registration on the COMPANY REGISTRATION PORTAL (CRP) is now end-to-end, with electronic certificates and certified extracts available.",
+      steps: [
+        "Check for availability of the Business Name on the CRP",
+        "Complete pre-registration form",
+        "Pay filing fee",
+        "Submit application",
+        "Print certificate",
+      ]
+    }
   },
   {
     title: "Registration steps for registration of Incorportated Trustee",
     description: "Change of Name, Company Conversion, etc.",
     icon: "/images/post-incorporation.png",
+    steps: {
+      title: "Post Incorporation steps",
+      description: "Post Incorporation services include Change of Name, Conversion and Re-registration, Filing of Annual Returns, Increase in Share Capital, etc.",
+      steps: [
+        "Check for availability of proposed Incorporated Trustee name",
+        "Complete pre-registration form and upload trelevant registration documents– CAC-IT01",
+        "Pay filing fee",
+      ]
+    }
   },
 ];
 
@@ -64,19 +84,19 @@ const ServicesSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="services" className="bg-primary relative md:px-4 mt-[2rem] md:mt-0">
+    <section id="services" className="bg-primary relative px-4 mt-[2rem] md:mt-0">
       <Image src={servicesSVG} alt="as" className="absolute top-8 left-0 z-0" />
-      <div className=" overflow-hidden z-10 mx-0 md:mx-auto md:p-10 pt-0 justify-items-center">
+      <div className="container overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
         <h2
           ref={headerRef}
-          className="text-2xl md:text-3xl lg:text-5xl font-merriweather font-bold text-center text-black z-10"
+          className="text-2xl md:text-3xl lg:text-4xl font-merriweather font-semibold text-center text-black z-10"
         >
           Services We Offer
         </h2>
-        <div className="flex flex-col w-full gap-[4rem]   mt-10 z-10">
+        <div className="flex flex-col sm:flex-row justify-center gap-[4rem] md:gap-40 mt-10 z-10">
           <div
             ref={leftBoxRef}
-            className="flex md:grid grid-cols-2 gap-8 rounded-xl flex-col justify-between items-center hover:border-none  w-full p-5 pt-8 cursor-pointer group gradient-hover bg-secondary  hover:shadow-lg transition duration-300 z-10"
+            className="flex flex-col items-start hover:border-none h-[280px] w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
           >
             <Image
               src={'/assests/tools2.svg'}
@@ -120,33 +140,42 @@ const ServicesSection: React.FC = () => {
              </div>
             </div>
           </div>
+          <div className="flex flex-col items-start gap-4 max-w-md">
+            <h1 className="text-8xl leading-8 font-extrabold w-full mb-10 mx-auto">
+              01
+            </h1>
+            <h3 className="text-3xl leading-8 font-bold w-full mb-3">
+              {services[0].steps.title}
+            </h3>
+            <p className="leading-6 text-sm">
+              {services[0].steps.description}
+            </p>
+            <ul className="list-disc list-inside mt-4">
+              {services[0].steps.steps.map((step, index) => (
+                <li key={index} className="text-sm">{step}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row justify-center gap-[4rem] md:gap-40 mt-32 z-10">
+          <div className="flex flex-col items-start gap-4 max-w-md">
+            <h1 className="text-8xl leading-8 font-extrabold w-full mb-10 mx-auto"> 02 </h1>
+            <h3 className="text-3xl leading-8 font-bold w-full mb-3">
+              {services[1].steps.title}
+            </h3>
+            <p className="leading-6 text-sm">
+              {services[1].steps.description}
+            </p>
+            <ul className="list-disc list-inside mt-4">
+              {services[1].steps.steps.map((step, index) => (
+                <li key={index} className="text-sm">{step}</li>
+              ))}
+            </ul>
+          </div>
           <div
             ref={rightBoxRef}
-            className="flex md:grid grid-cols-2 gap-8 md:h-[40rem] rounded-xl flex-col justify-between items-center hover:border-none  w-full p-5 pt-3 cursor-pointer group gradient-hover bg-secondary  hover:shadow-lg transition duration-300 z-10"
+            className="flex flex-col items-start hover:border-none h-[280px] w-[250px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
           >
-            
-            <div className="hover:cursor-pointer">
-            <h4 className="text-3xl leading-8 text-center group-hover:text-white font-bold w-full mb-3">
-                {services[1].title}
-              </h4>
-              <div className="flex flex-col gap-2 my-2">
-             <p className="leading-6 group-hover:text-white text-base">
-               1-Check for availability of proposed Incorporated Trustee name (click here). Read more about name reservation and Reserve a new Name   (click here)
-              </p>
-              <p className="leading-6 group-hover:text-white text-base">
-               2-Complete pre-registration form and upload trelevant registration documents– CAC-IT01 (Online using Company Registration Portal)
-              </p>
-              <p className="leading-6 group-hover:text-white text-base">
-               3-Pay filing fee  Check the Fees for our Services here
-              </p>
-              <p className="leading-6  group-hover:text-white text-base">
-              Registration is now end-to-end with electronic Certificate of Incorporation and Certified Extract of Registration Information.
-              </p>
-             </div>
-             <div className="">
-              <button className="px-4 py-2 border mt-[2rem]  rounded-xl">Register</button>
-             </div>
-            </div>
             <Image
               src={'/assests/hand2.svg'}
               alt={services[1].title}
