@@ -68,13 +68,13 @@ function HeroSection() {
                   isMenuOpen ? "flex" : "hidden"
                 } absolute md:relative px-4 md:px-0 top-full left-0 w-full md:w-auto ${isScrolled ? 'bg-white' : 'bg-white md:bg-transparent'} md:flex md:items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 py-6 md:py-0 shadow-lg md:shadow-none`}
               >
-                <a 
+                <Link 
                   href="/" 
                   className={`nav-link text-sm ${isScrolled ? 'text-gray-700 hover:text-green-700' : 'text-gray-700 md:text-white hover:text-green-700 md:hover:text-gray-200'}`}
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
                 >
                   Home
-                </a>
+                </Link>
 
                 {/* About Dropdown */}
                 <div
