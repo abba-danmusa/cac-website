@@ -1,10 +1,10 @@
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import HeroSection from "@/components/Hero";
 import ProcessSection from "@/components/Processes";
 import ServicesSection from "@/components/Services";
 import AdditionalInfo from "@/components/AdditionalInfo"
-import HomePage from "@/components/HomePage";
+// import HomePage from "@/components/HomePage";
 
 export default function Home() {
   return (
