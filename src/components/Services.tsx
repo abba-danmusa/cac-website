@@ -1,187 +1,148 @@
-"use client"
+'use client';
 
-import React, { useRef, useEffect } from "react";
-import Image from "next/image";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { servicesSVG } from "../../public/assests";
+import { useState } from 'react';
 
-gsap.registerPlugin(ScrollTrigger);
+const ServicesSection = () => {
+    const [activeTab, setActiveTab] = useState("services-item-1");
 
-const services = [
-  {
-    title: "Business Registration",
-    description: "Register your Company, Business name, and incorporated Trustees.",
-    icon: "/images/business-registration.png",
-    steps: {
-      title: "Registration steps",
-      description: "Registration on the COMPANY REGISTRATION PORTAL (CRP) is now end-to-end, with electronic certificates and certified extracts available.",
-      steps: [
-        "Check for availability of the Business Name on the CRP",
-        "Complete pre-registration form",
-        "Pay filing fee",
-        "Submit application",
-        "Print certificate",  
-      ]
-    }
-  },
-  {
-    title: "Registration steps for registration of Incorportated Trustee",
-    description: "Change of Name, Company Conversion, etc.",
-    icon: "/images/post-incorporation.png",
-    steps: {
-      title: "Post Incorporation steps",
-      description: "Post Incorporation services include Change of Name, Conversion and Re-registration, Filing of Annual Returns, Increase in Share Capital, etc.",
-      steps: [
-        "Check for availability of proposed Incorporated Trustee name",
-        "Complete pre-registration form and upload trelevant registration documents– CAC-IT01",
-        "Pay filing fee",
-      ]
-    }
-  },
-];
-
-const ServicesSection: React.FC = () => {
-  const headerRef = useRef(null);
-  const leftBoxRef = useRef(null);
-  const rightBoxRef = useRef(null);
-
-  useEffect(() => {
-    // Header animation
-    gsap.fromTo(headerRef.current,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.5,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: headerRef.current,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none none"
-        }
-      }
-    );
-
-    // Boxes animation
-    gsap.fromTo([leftBoxRef.current, rightBoxRef.current],
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.5,
-        ease: "power3.out",
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: leftBoxRef.current,
-          start: "top 75%",
-          end: "bottom 25%",
-          toggleActions: "play none none none"
-        }
-      }
-    );
-  }, []);
-
-  return (
-    <section id="services" className="bg-primary relative px-4 mt-[2rem] md:mt-0">
-      <Image src={servicesSVG} alt="as" className="absolute top-8 left-0 z-0" />
-      <div className=" overflow-hidden z-10 mx-auto p-10 pt-0 justify-items-center">
-        <h2
-          ref={headerRef}
-          className="text-2xl md:text-3xl  lg:text-4xl font-merriweather font-semibold text-center text-black z-10"
-        >
-          Services We Offer
-        </h2>
-        <div className="flex flex-col mt-[4rem] sm:flex-row justify-center gap-[4rem] md:gap-40  z-10">
-          <div
-            ref={leftBoxRef}
-            className="flex flex-col items-start hover:border-none h-fit gap-4 w-[350px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
-          >
-            <Image
-              src={'/assests/tools2.svg'}
-              alt={services[0].title}
-              width={30}
-              height={30}
-              className=" h-fit object-cover w-full hidden group-hover:block  text-white "
-            />
-            <Image
-              src={'/assests/tools1.svg'}
-              alt={services[0].title}
-              width={30}
-              height={30}
-              className=" h-fit object-cover w-full  block group-hover:hidden text-white "
-            />
-            <div className="hover:cursor-pointer">
-              <h4 className="text-3xl leading-8 text-center group-hover:text-white font-bold w-full mb-3">
-                {services[0].title}
-              </h4>
-             {/* <div className="">
-              <button className="px-4 py-2 border mt-[2rem] rounded-xl">Register</button>
-             </div> */}
+    return (
+        <section className="page-section" id="services">
+            <div className="container position-relative">
+                <div className="row">
+                    <div className="col-lg-6 mb-md-60 mb-sm-30">
+                        <h2 className="section-caption mb-xs-10">Our Services</h2>
+                        <h3 className="section-title mb-30">
+                            <span className="wow charsAnimIn" data-splitting="chars">
+                                All the services you need, in one place
+                            </span>
+                        </h3>
+                        <div className="row">
+                            <div className="col-lg-10">
+                                <p className="section-descr mb-50 mb-sm-30 wow fadeInUp" data-wow-delay="0.4s">
+                                    From registration to compliance, we simplify every step of your business journey.
+                                </p>
+                            </div>
+                        </div>
+                        <ul className="nav nav-tabs services-tabs wow fadeInUp" data-wow-delay="0.55s" role="tablist">
+                            {[
+                                { id: "services-item-1", label: "Business Names", number: "01" },
+                                { id: "services-item-2", label: "Companies", number: "02" },
+                                { id: "services-item-3", label: "Inc. Trustees", number: "03" },
+                                { id: "services-item-4", label: "Pre-Incorporation", number: "04" },
+                                { id: "services-item-5", label: "Post-Inc.", number: "05" }
+                            ].map((tab) => (
+                                <li role="presentation" key={tab.id}>
+                                    <a
+                                        href={`#${tab.id}`}
+                                        className={activeTab === tab.id ? "active" : ""}
+                                        aria-controls={tab.id}
+                                        role="tab"
+                                        aria-selected={activeTab === tab.id}
+                                        data-bs-toggle="tab"
+                                        onClick={() => setActiveTab(tab.id)}
+                                    >
+                                        {tab.label} <span className="number">{tab.number}</span>
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="col-lg-6 d-flex wow fadeInLeft" data-wow-delay="0.55s" data-wow-offset="275">
+                        <div className="tab-content services-content">
+                            {[
+                                {
+                                    id: "services-item-1",
+                                    title: "Business Name Reg. Steps",
+                                    steps: [
+                                        "Check Name Availability.",
+                                        "Complete Registration Form.",
+                                        "Upload Required Documents.",
+                                        "Make Payment Online.",
+                                        "Get Registration Certificate."
+                                    ],
+                                    image: "images/cac.png",
+                                    alt: "Head Office, Corporate Affairs Commission"
+                                },
+                                {
+                                    id: "services-item-2",
+                                    title: "Company Registration Steps",
+                                    steps: [
+                                        "Check Name Availability.",
+                                        "Reserve the Company Name.",
+                                        "Complete the Pre-Registration Form (CAC1.1).",
+                                        "Upload Required Documents.",
+                                        "Pay the Applicable Filing Fee.",
+                                        "Get Certificate of Incorporation."
+                                    ],
+                                    image: "images/services-company.png",
+                                    alt: "A Warm Business Handshake"
+                                },
+                                {
+                                    id: "services-item-3",
+                                    title: "Incorporated Trustee Steps",
+                                    steps: [
+                                        "Check Name Availability.",
+                                        "Reserve the Name.",
+                                        "Complete the Application Form.",
+                                        "Upload Required Documents.",
+                                        "Pay the Applicable Filing Fee.",
+                                        "Get Certificate of Incorporation."
+                                    ],
+                                    image: "images/services-incorporation.png",
+                                    alt: "Image Description"
+                                },
+                                {
+                                    id: "services-item-4",
+                                    title: "Pre-Incorporation Services",
+                                    steps: [
+                                        "Business Advisory & Consultation.",
+                                        "Name Availability Search.",
+                                        "Drafting Legal Documents.",
+                                        "Obtaining Necessary Approvals."
+                                    ],
+                                    image: "images/services-preincorporation.png",
+                                    alt: "Image Description"
+                                },
+                                {
+                                    id: "services-item-5",
+                                    title: "Post-Incorporation Services",
+                                    steps: [
+                                        "Tax Identification Number (TIN) Registration.",
+                                        "Business Bank Account Opening.",
+                                        "Regulatory & Compliance Filings.",
+                                        "Licensing & Permits Acquisition.",
+                                        "Corporate Governance & Secretarial Services."
+                                    ],
+                                    image: "images/services-postincorporation.png",
+                                    alt: "Image Description"
+                                }
+                            ].map((content) => (
+                                <div
+                                    key={content.id}
+                                    className={`tab-pane services-content-item fade ${activeTab === content.id ? 'show active' : ''}`}
+                                    id={content.id}
+                                    role="tabpanel"
+                                >
+                                    <div className="services-text">
+                                        <div className="services-text-container">
+                                            <h4 className="services-title">{content.title}</h4>
+                                            <p className="text-gray mb-0">
+                                                {content.steps.map((step, index) => (
+                                                    <span key={index}>{step}<br /></span>
+                                                ))}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <img className="services-image" src={content.image} alt={content.alt} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div className="flex flex-col text-black z-10 items-start gap-4 max-w-md">
-            <h1 className="text-8xl leading-8 font-extrabold w-full mb-10 mx-auto">
-              01
-            </h1>
-            <h3 className="text-3xl leading-8 font-bold w-full mb-3">
-              {services[0].steps.title}
-            </h3>
-            <p className="leading-6 text-sm">
-              {services[0].steps.description}
-            </p>
-            <ul className="list-disc list-inside mt-4">
-              {services[0].steps.steps.map((step, index) => (
-                <li key={index} className="text-sm">{step}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <div className="flex flex-col sm:flex-row justify-center gap-[4rem] md:gap-40 mt-32 z-10">
-          <div className="flex flex-col items-start gap-4 max-w-md text-black z-10">
-            <h1 className="text-8xl leading-8 font-extrabold w-full mb-10 mx-auto"> 02 </h1>
-            <h3 className="text-3xl leading-8 font-bold w-full mb-3">
-              {services[1].steps.title}
-            </h3>
-            <p className="leading-6 text-sm">
-              {services[1].steps.description}
-            </p>
-            <ul className="list-disc list-inside mt-4">
-              {services[1].steps.steps.map((step, index) => (
-                <li key={index} className="text-sm">{step}</li>
-              ))}
-            </ul>
-          </div>
-          <div
-            ref={rightBoxRef}
-            className="flex flex-col items-start hover:border-none gap-4 h-fit w-[350px] p-5 pt-3 border-2 cursor-pointer group gradient-hover bg-secondary border-secondary hover:shadow-lg transition duration-300 z-10"
-          >
-            <Image
-              src={'/assests/hand2.svg'}
-              alt={services[1].title}
-              width={30}
-              height={30}
-              className=" h-fit object-cover w-full hidden group-hover:block  text-white "
-              
-              />
-            <Image
-              src={'/assests/hand1.svg'}
-              alt={services[1].title}
-              width={30}
-              height={30}
-              className=" h-fit object-cover w-full  block group-hover:hidden text-white "
-            />
-             <div className="hover:cursor-pointer">
-              <h4 className="text-3xl leading-8 text-center group-hover:text-white font-bold w-full mb-3">
-                {services[1].title}
-              </h4>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default ServicesSection;
+  

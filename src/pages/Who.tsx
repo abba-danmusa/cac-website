@@ -1,109 +1,171 @@
-import { adminster, cacd1, clip, effort, group, like, morale } from '../../public/assests'
-import DoubleCycles from '@/components/DoubleCycles'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import Image from 'next/image'
+import AboutSection from '@/components/AboutSection'
+import FAQSection from '@/components/FAQSection'
+import KeyAdvantages from '@/components/KeyAdvantages'
+import TestimonialsSection from '@/components/TestimonialsSection'
 import React from 'react'
 
 const Who = () => {
   return (
-    <div className='bg-primary flex flex-col overflow-hidden md:pt-[4rem]'>
-        <Header />
-        <section className='flex flex-col mt-[10rem] gap-4 mx-8  items-center py-4'>
-            <div className="relative   ">
-                <div className="flex flex-col  items-center ">
-                    <p className="md:text-[2.5rem] text-[25px]  z-30 text-black">Welcome to <span className=" text-secondary">CAC</span></p>
-                    <p className="text-black z-30 font-normal text-base md:text-[20px]">Nigeria&apos;s Corporate Registry</p>
+   <div className="flex flex-col">
+    <section className="page-section pt-0 pb-0" id="about">
+        <div className="page-section bg-gray-light-1 parallax-5" style={{ backgroundImage: 'url(images/hero.png)' }}>
+          <div className="container position-relative pt-50 pb-100 pb-sm-20">
+            {/* Section Content */}
+            <div className="text-center">
+              <div className="row">
+                {/* Page Title */}
+                <div className="col-md-8 offset-md-2">
+                  <h2 className="section-caption-border mb-30 mb-xs-20 wow fadeInUp" data-wow-duration="1.2s">
+                    About the CAC
+                  </h2>
+                  <h1 className="hs-title-1 mb-30">
+                    <span className="wow charsAnimIn" data-splitting="chars">
+                      Welcome to Corporate Affairs Commission
+                    </span>
+                  </h1>
+                  <div className="row">
+                    <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                      <p className="section-descr mb-0 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1.2s">
+                        Where business registration is seamless, transparent, and efficient.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <DoubleCycles   />
-            </div>
-
-            
-            <div className="flex flex-col md:flex-row items-start gap-6 mt-[8rem] w-full">
-              <div className="">
-             <Image alt='who' src={cacd1} className='md:w-[843px] md:h-[331px]' />
-              </div>
-              <div className="flex flex-col w-full ">
-                <p className="md:text-3xl text-[20px] font-normal  text-center mb-3 md:mb-[5rem] text-black">Who we are </p>
-                <p className="md:text-[20px] pl-8 md:pl-0 text-[13px] font-normal text-black">the corporate affairs commission was </p>
+                {/* End Page Title */}
               </div>
             </div>
-
-
-
-        </section>
-
-        <section className='relative mt-14 flex flex-col ml-8 md:px-[2rem] mr-8  gap-14'>
-          <div className="absolute -top-16 md:top-2 left-[-9rem]">
-            <Image src={clip} alt='clip' />
+            {/* End Section Content */}
           </div>
-            <div className="flex flex-col">
-              <p className="md:text-[2.5rem] z-10 text-[25px] mb-4 text-black font-semibold text-center">Functions of the Commission</p>
-              <p className="text-[13px] md:text-[18px] text-black z-10"> The functions of the Commission as set out in section 7 of the Companies and Allied Matters Act, includes the following:</p>
-              <ul className=' ml-10 md:ml-14 list-disc pl-5 z-10'>
-                <li className="text-[13px] md:text-[18px] text-black ">To administer the Act, including the regulation and supervision of the formation, incorporation, management and winding up of companies</li>
-                <li className="text-[13px] md:text-[18px] text-black ">To establish and maintain companies registry and offices in all the states of the Federation suitably and adequately equipped to discharge its functions under the Act or any law in respect of which it is charged with responsibility</li>
-                <li className="text-[13px] md:text-[18px] text-black ">Arrange and conduct an investigation into the affairs of any company where the interests of the shareholders and the public so demand</li>
-                <li className="text-[13px] md:text-[18px] text-black ">To undertake such other activities as are necessary or expedient for giving full effect to the provisions of the Act.</li>
-                <li className="text-[13px] md:text-[18px] text-black ">The Commission also registers Business Names, and Incorporated Trustees as well as provides a wide range of ancillary services</li>
-              </ul>
-            </div>
+        </div>
 
-            <div className="relative mt-[1px] md:mt-8 flex flex-col md:flex-row flex-1 justify-center px-8 md:px-0 gap-14">
-            <div className="absolute top-[2rem] md:-top-8 right-[-4rem] md:right-[-20rem]">
-            <Image src={group} alt='group' />
+        <div className="page-section pt-0">
+          <div className="container">
+            <div className="mt-n120 mt-sm-n60 overflow-hidden">
+              <img
+                src="images/about-us-hero-2.png"
+                style={{ width: '100%', height: '35rem' }}
+                alt="Image Description"
+                className="wow scaleOutIn"
+                data-wow-duration="1.2s"
+                data-wow-offset="0"
+              />
+            </div>
           </div>
-              <div className="border text-center gradient-hover group z-20 w-[17.625rem] border-secondary rounded-md pt-8 pb-4 px-4 flex flex-col gap-8 ">
-                <p className="text-xl text-secondary group-hover:text-white">Our Vision</p>
-                <p className="text-base text-black text-center  group-hover:text-white">To be a world-class company’s registry providing excellent registration and regulatory services.</p>
+        </div>
+      </section>
+        <hr className="mt-0 mb-0"/>
+    <AboutSection />
+    <KeyAdvantages />
+    <TestimonialsSection />
+    <FAQSection   />
+      <hr className="mt-0 mb-0"/>
+      <section className="page-section">
+      <div className="container position-relative">
+        {/* Decoration */}
+        <div className="decoration-4 d-none d-md-block" data-rellax-y data-rellax-speed="-0.5" data-rellax-percentage=".7">
+          <img src="images/decoration-2.svg" alt="" />
+        </div>
+
+        <div className="row">
+          {/* Left Column */}
+          <div className="col-lg-6 mb-md-60 mb-xs-30 d-flex align-items-center">
+            <div className="wow fadeInUp" data-wow-duration="1.2s" data-wow-offset="205">
+              <div className="row">
+                <div className="col-lg-10">
+                  <h2 className="section-title mb-60 mb-sm-30">Seamless Registration</h2>
+                </div>
               </div>
-              <div className="border text-center gradient-hover group z-20 w-[17.625rem] border-secondary rounded-md pt-8 pb-4 px-4 flex flex-col gap-8 ">
-                <p className="text-xl text-secondary z-10 group-hover:text-white">Our Mission </p>
-                <p className="text-base text-black text-center z-10 group-hover:text-white ">Delivering reliable registration and regulatory services to meet stakeholder expectations and drive economic growth.</p>
+
+              {/* Features Grid */}
+              <div className="row alt-features-grid">
+                {[
+                  {
+                    icon: (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                      </svg>
+                    ),
+                    title: "Fast and Efficient",
+                    description: "Complete your CAC registration quickly and without unnecessary delays.",
+                  },
+                  {
+                    icon: (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l2.59-2.58L14 13l-4 4z" />
+                      </svg>
+                    ),
+                    title: "Expert Guidance",
+                    description: "Receive professional support and guidance throughout the entire registration process.",
+                  },
+                  {
+                    icon: (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd">
+                        <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+                      </svg>
+                    ),
+                    title: "Document Assistance",
+                    description: "We assist with the preparation and submission of all necessary documents.",
+                  },
+                  {
+                    icon: (
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                      </svg>
+                    ),
+                    title: "Complete Compliance",
+                    description: "Ensure your business is fully compliant with all CAC regulations.",
+                  },
+                ].map((feature, index) => (
+                  <div className="col-lg-6" key={index}>
+                    <div className="alt-features-item">
+                      <div className="alt-features-icon">{feature.icon}</div>
+                      <h3 className="alt-features-title">{feature.title}</h3>
+                      <div className="alt-features-descr">{feature.description}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="flex flex-col justify-center w-full mb-[8rem] ">
-            <p className="text-[32px] md:text-[2.5rem] mb-4 text-black font-semibold text-center">Our core Values</p>
-              <ul className="md:flex grid grid-cols-2 gap-4 md:gap-[0.5rem] justify-center z-10 mx-[1rem] md:mx-0">
-                <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] gradient-hover h-[4.75rem] flex justify-center items-center rounded-full border border-secondary">
-                    <Image src={effort} alt='#' />
-                  </div>
-                  <p className="text-[23px] md:text-[2.5rem] text-black">Dedication</p>
-                </li>
-                <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] h-[4.75rem] gradient-hover gradient-hover flex justify-center items-center rounded-full border border-secondary">
-                    <Image src={like} alt='#' />
-                  </div>
-                  <p className="text-[23px] md:text-[2.5rem] text-black">Courtesy</p>
-                </li>
-                <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] h-[4.75rem] gradient-hover flex justify-center items-center rounded-full border border-secondary">
-                    <Image src={morale} alt='#' />
-                  </div>
-                  <p className="text-[23px] md:text-[2.5rem] text-black">Integrity </p>
-                </li>
-                <li className="flex flex-col gap-4 items-center ">
-                  <div className="w-[4.75rem] h-[4.75rem] gradient-hover flex justify-center items-center rounded-full border border-secondary">
-                    <Image src={adminster} alt='#' />
-                  </div>
-                  <p className="text-[23px] md:text-[2.5rem] text-black">Efficiency</p>
-                </li>
-              </ul>
+          </div>
+
+          {/* Right Column */}
+          <div className="col-lg-6 d-flex align-items-start">
+            <div className="call-action-3-images mt-xs-0 text-end">
+              {/* Image 1 */}
+              <div className="call-action-3-image-1">
+                <img
+                  src="images/pathway-2.png"
+                  style={{ width: '100%', objectFit: 'contain' }}
+                  alt="Business Growth"
+                  className="wow scaleOutIn"
+                  data-wow-duration="1.2s"
+                />
+              </div>
+
+              {/* Image 2 */}
+              <div className="call-action-3-image-2-wrap d-flex align-items-center">
+                <div className="call-action-3-image-2" data-rellax-y data-rellax-speed="0.85" data-rellax-percentage="0.5">
+                  <img
+                    src="images/pathway-1.png"
+                    style={{ width: '100%', objectFit: 'contain' }}
+                    alt="CAC Registration Process"
+                    className="wow scaleOutIn"
+                    data-wow-duration="1.2s"
+                    data-wow-offset="205"
+                  />
+                </div>
+              </div>
             </div>
-        </section>
-        <Footer />
-    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+   </div>
   )
 }
 
 export default Who
-
-
-// The functions of the Commission as set out in section 7 of the Companies and Allied Matters Act, includes the following:
-//
-//
-//
-//
-//
-//

@@ -1,21 +1,28 @@
-import Footer from "@/components/Footer";
-// import Header from "@/components/Header";
 import HeroSection from "@/components/Hero";
-import ProcessSection from "@/components/Processes";
 import ServicesSection from "@/components/Services";
-import AdditionalInfo from "@/components/AdditionalInfo"
-// import HomePage from "@/components/HomePage";
+import KeyAdvantages from "@/components/KeyAdvantages";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import AboutSection from "@/components/AboutSection";
+import BoardMembers from "./BoardMembers";
+import Achievements from "@/components/Achievements";
+import FAQSection from "@/components/FAQSection";
+import BlogSection from "@/components/BlogSection";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-white">
-      {/* <Header /> */}
+    <>
       <HeroSection />
       <ServicesSection />
-      <ProcessSection />
-      <AdditionalInfo />
-      <Footer />
-    </div>
-    // <HomePage />
+      <KeyAdvantages />
+      <TestimonialsSection />
+      <AboutSection />
+      <BoardMembers />
+      <Achievements />
+      <FAQSection   />
+      <BlogSection />
+      <ContactSection />
+    </>
+  
   );
 }
