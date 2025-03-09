@@ -76,12 +76,12 @@ function Footer() {
           </div>
           <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
             <b>CAC Corporate Affairs Commission</b>
-            <div className="local-scroll float-end mt-n20 mt-sm-10">
+            {/* <div className="local-scroll float-end mt-n20 mt-sm-10">
               <a href="#top" className="link-to-top">
                 <i className="mi-arrow-up size-24"></i>
                 <span className="visually-hidden">Scroll to top</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
