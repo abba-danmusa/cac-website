@@ -47,7 +47,7 @@ const ServicesSection = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="col-lg-6 d-flex wow fadeInLeft" data-wow-delay="0.55s" data-wow-offset="275"  data-aos="fade-up-left">
+                    <div className="col-lg-6 d-flex "  data-aos="fade-up-left">
                         <div className="tab-content services-content">
                             {[
                                 {

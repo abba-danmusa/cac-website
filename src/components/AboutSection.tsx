@@ -2,14 +2,13 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="page-section" id="about">
+    <section className="page-section" >
                     <div className="container position-relative">
-                    
-                        <div className="row mb-60 mb-xs-30" >
+                        <div className="row mb-60 mb-xs-30" data-aos="fade-left" >
                             
-                            <div className="col-md-6" data-aos="fade-left">
+                            <div className="col-md-6" >
                                 <h2 className="section-caption mb-xs-10">Our Story</h2>
-                                <h3 className="section-title mb-0"><span className="wow charsAnimIn" data-splitting="chars">Shaping a transparent, business-friendly nigeria</span></h3>
+                                <h3 className="section-title mb-0"><span  data-splitting="chars">Shaping a transparent, business-friendly nigeria</span></h3>
                             </div>
                             
                             <div className="col-md-5 offset-md-1 relative text-start text-md-end pt-40 pt-sm-20 local-scroll">
@@ -24,9 +23,9 @@ const AboutSection = () => {
                             
                         </div>
                         
-                        <div className="row wow fadeInUp" data-wow-delay="0.5s" >
+                        <div className="row " data-aos="zoom-in">
                             
-                            <div className="col-lg-6 mb-md-60" data-aos="zoom-in">
+                            <div className="col-lg-6 mb-md-60" >
                                 <div className="position-relative">
                                     
                                     <div className="position-relative overflow-hidden">

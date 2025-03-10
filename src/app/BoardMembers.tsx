@@ -2,7 +2,7 @@
 const BoardMembers = () => {
 
   return (
-    <section className="page-section" id="portfolio">
+    <section className="page-section" >
     <div className="container">
         
         <div className="row mb-60 mb-md-40">
@@ -11,7 +11,7 @@ const BoardMembers = () => {
                                            
                 <h2 className="section-caption mb-xs-10">Board Members</h2>
                 
-                <h3 className="section-title mb-0"><span className="wow charsAnimIn" data-splitting="chars">Meet Our Board</span></h3>                                
+                <h3 className="section-title mb-0"><span  data-splitting="chars">Meet Our Board</span></h3>                                
             
             </div>                            
             

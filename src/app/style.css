@@ -168,7 +168,18 @@ Primary use: Multipurpose Template
 /* ==============================
    Variables
    ============================== */
-   
+   [data-aos] {
+    visibility: hidden;
+}
+
+[data-aos].aos-animate {
+    visibility: visible;
+}
+
+.no-js .wow,
+.wow.visible-fallback {
+    visibility: visible;
+}
   
 :root{
     --font-global: 'DM Sans', sans-serif;

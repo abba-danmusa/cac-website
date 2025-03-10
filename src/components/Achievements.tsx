@@ -13,13 +13,13 @@ const Achievements = () => {
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
                 
-                <h2 className="section-title mb-20 wow fadeInUp">Let&apos;s Guide You Through The Processes</h2>
+                <h2 className="section-title mb-20 ">Let&apos;s Guide You Through The Processes</h2>
                 
-                <p className="section-descr mb-40 wow fadeInUp" data-wow-delay="0.1s">
+                <p className="section-descr mb-40 " >
                     We provide the effective ideas that grow businesses of our clients.
                 </p>
                 
-                <div className="local-scroll wow fadeInUp" data-wow-delay="0.2s">
+                <div className="local-scroll ">
                     <a href="#contact" className="btn btn-mod btn-w btn-large btn-round btn-hover-anim"><span>Learn more</span></a>
                 </div>
                 
@@ -32,7 +32,7 @@ const Achievements = () => {
      data-aos-easing="ease-in-sine"
      >
                     
-                    <div className="col-sm-6 col-lg-5 mt-50 mt-xs-30 wow fadeScaleIn" data-wow-delay="0.4s">
+                    <div className="col-sm-6 col-lg-5 mt-50 mt-xs-30 ">
                         <div className="number-title mb-10">
                             88.9%
                         </div>
@@ -41,7 +41,7 @@ const Achievements = () => {
                         </div>
                     </div>
                     
-                    <div className="col-sm-6 col-lg-5 offset-lg-2 mt-50 mt-xs-30 wow fadeScaleIn" data-wow-delay="0.6s">
+                    <div className="col-sm-6 col-lg-5 offset-lg-2 mt-50 mt-xs-30 ">
                         <div className="number-title mb-10">
                             384k+
                         </div>
@@ -50,7 +50,7 @@ const Achievements = () => {
                         </div>
                     </div>
                     
-                    <div className="col-sm-6 col-lg-5 mt-50 mt-xs-30 wow fadeScaleIn" data-wow-delay="0.8s">
+                    <div className="col-sm-6 col-lg-5 mt-50 mt-xs-30 ">
                         <div className="number-title mb-10">
                             100%
                         </div>
@@ -59,7 +59,7 @@ const Achievements = () => {
                         </div>
                     </div>
                     
-                    <div className="col-sm-6 col-lg-5 offset-lg-2 mt-50 mt-xs-30 wow fadeScaleIn" data-wow-delay="1s">
+                    <div className="col-sm-6 col-lg-5 offset-lg-2 mt-50 mt-xs-30 ">
                         <div className="number-title mb-10">
                             48hrs
                         </div>

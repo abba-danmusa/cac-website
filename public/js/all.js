@@ -1205,7 +1205,7 @@ function init_work_filter(){
                 boxClass: "wow-p",
                 animateClass: "animated",
                 offset: 100,
-                mobile: true,
+                mobile: false,
                 live: true,
                 callback: function(box){
                     setInterval(function(){
@@ -1373,7 +1373,7 @@ function init_wow(){
                 mobile: false, 
                 live: true,
                 callback: function(box){                
-                    setInterval(function(){ $(box).removeClass("no-animate"); }, 1500);
+                    setInterval(function(){ $(box).removeClass("visible-fallback"); }, 1500);
                 }
             });
             
@@ -1395,7 +1395,7 @@ function init_wow(){
                 mobile: false, 
                 live: true,
                 callback: function(box){                
-                    setInterval(function(){ $(box).removeClass("no-animate"); }, 1500);
+                    setInterval(function(){ $(box).removeClass("visible-fallback"); }, 1500);
                 }
             });
             

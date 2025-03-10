@@ -7,16 +7,17 @@ const AosConfig = ({children}: {
     children: JSX.Element
 }) => {
     useEffect(() => {
-        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-            navigator.userAgent
-        );
+        // const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        //     navigator.userAgent
+        // );
 
-        if (isMobile) {
+        // if (isMobile) {
             AOS.init({
                 duration: 800,
                 once: true,
+                offset: 50,
             });
-        }
+        // }
     }, []);
   return (
     
