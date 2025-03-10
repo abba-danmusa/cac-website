@@ -7,21 +7,21 @@ const BlogSection = () => {
       text: "The General Public is hereby informed that the Commission has compiled, for striking off, a list of 100,000 (one hundred thousand) companies which it has reasonable cause to believe are not carrying on business...",
       author: "Management",
       date: "August 3",
-      link: "/news",
+      link: "/singleNews",
     },
     {
       title: "CONGRATULATIONS TO THE NEWLY APPOINTED HONORABLE MINISTER INDUSTRY TRADE AND INVESTMENT",
       text: "On behalf of the Corporate Affairs Commission, we extend our heartfelt congratulations on your appointment as the Minister of Trade...",
       author: "Management",
       date: "October 25",
-      link: "/news",
+      link: "/singleNews",
     },
     {
       title: "Visually Identity and Branding for Mexican Restaurant",
       text: "Anta Petrenco shared a beautiful visual identity, branding and packaging design project on their Behance profile...",
       author: "Thomas Johnson",
       date: "August 1",
-      link: "/news",
+      link: "/singleNews",
     },
   ];
 

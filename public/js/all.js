@@ -4,89 +4,76 @@
     /* ---------------------------------------------
      Scripts initialization
      --------------------------------------------- */
-    
-    $(window).on("load", function(){
+  $(window).on("load", function() {
         setTimeout(() => {
             $(window).trigger("scroll");
         }, "10");
         $(window).trigger("resize");
-        init_parallax_scroll();  
-    });    
-    
-    $(document).ready(function(){  
+        init_parallax_scroll();
+    });
+
+    $(document).ready(function() {
         $(window).trigger("resize");
         init_parallax();
         init_text_outline();
-        init_btn_animation();          
+        init_btn_animation();
         init_classic_menu();
-        init_scroll_navigate();        
+        init_scroll_navigate();
         init_lightbox();
         init_team();
         init_services_2();
         init_map();
-        init_bg_video();        
+        init_bg_video();
         init_shortcodes();
-        init_tooltips();        
+        init_tooltips();
         init_text_rotator();
         init_work_filter();
-        init_masonry();       
-        init_wow();
+        init_masonry();
+        init_wow(); // Initialize WOW.js
         Splitting();
-        init_page_sliders();        
+        init_page_sliders();
         init_parallax_mousemove();
-        init_lazyload();        
+        init_lazyload();
         init_loader();
-    });    
-    
-    $(window).resize(function(){        
+    });
+
+    $(window).resize(function() {
         init_classic_menu_resize();
         init_split_section();
     });
-    
-   
-   /* --------------------------------------------
+
+    /* --------------------------------------------
      Page loader
      --------------------------------------------- */
-    function init_loader(){   
+    function init_loader() {
         $(".page-loader div").fadeOut();
         $(".page-loader").delay(250).fadeOut("slow");
     }
-    
-    
+
     /* --------------------------------------------
      Platform detect
      --------------------------------------------- */
-    
-    // var mobileTest;
-    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    //     mobileTest = true;
-    //     $("html").addClass("mobile");
-    // }
-    // else {
-    //     mobileTest = false;
-    //     $("html").addClass("no-mobile");
-    // }    
     var mozillaTest;
     if (/mozilla/.test(navigator.userAgent)) {
         mozillaTest = true;
-    }
-    else {
+    } else {
         mozillaTest = false;
     }
+
     var safariTest;
     if (/safari/.test(navigator.userAgent)) {
         safariTest = true;
-    }
-    else {
+    } else {
         safariTest = false;
     }
-    
-    // Detect touch devices    
+
+    // Detect touch devices
     if (!("ontouchstart" in document.documentElement)) {
         document.documentElement.className += " no-touch";
     } else {
         document.documentElement.className += " touch";
     }
+
     if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
         $("html").addClass("mobile");
         console.log("Mobile class added.");
@@ -661,7 +648,7 @@
      Text Rotator
      --------------------------------------------- */
     
-    function init_text_rotator(){
+    function init_text_rotator(){.0
         
         $(".text-rotate").each(function(){            
             var text_rotator = $(this);

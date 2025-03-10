@@ -168,6 +168,7 @@ Primary use: Multipurpose Template
 /* ==============================
    Variables
    ============================== */
+   
   
 :root{
     --font-global: 'DM Sans', sans-serif;
@@ -3289,13 +3290,13 @@ a.bg-video-button-pause{
     transform: translateZ(0);
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .wow,
     .wow-menubar,
     .wow-p {
         will-change: opacity, transform;
     }
-}
+} */
 
 .appear-animate .wow.scaleOutIn {
     opacity: 1;

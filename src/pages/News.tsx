@@ -84,7 +84,7 @@ const News = () => {
                   <div className="post-prev col-lg-6 mt-30" key={index}>
                     <div className="post-prev-container">
                       <h4 className="post-prev-title">
-                        <a href="/news">{post.title}</a>
+                        <a href="/singleNews">{post.title}</a>
                       </h4>
                       <div className="post-prev-text">{post.content}</div>
                       <div className="post-prev-info clearfix">
