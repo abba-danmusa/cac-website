@@ -1370,7 +1370,7 @@ function init_wow(){
                 boxClass: 'wow',
                 animateClass: 'animated',
                 offset: 100,
-                mobile: true, 
+                mobile: false, 
                 live: true,
                 callback: function(box){                
                     setInterval(function(){ $(box).removeClass("no-animate"); }, 1500);
@@ -1392,7 +1392,7 @@ function init_wow(){
                 boxClass: 'wow-p',
                 animateClass: 'animated',
                 offset: 100,
-                mobile: true, 
+                mobile: false, 
                 live: true,
                 callback: function(box){                
                     setInterval(function(){ $(box).removeClass("no-animate"); }, 1500);

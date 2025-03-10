@@ -1,6 +1,6 @@
 const TestimonialsSection = () => {
     return (
-        <section className="page-section pt-0 pb-0">
+        <section className="page-section pt-0 pb-0" data-aos="zoom-in">
         <div className="container position-relative">
           <div className="pt-80 pb-80 pt-sm-70 pb-sm-70 px-4 bg-gray-light-1">
             <div className="row">

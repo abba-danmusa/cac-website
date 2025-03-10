@@ -9,7 +9,9 @@ const Achievements = () => {
         
         <div className="row">
             
-            <div className="col-lg-4 mb-md-60 mb-xs-50">
+            <div className="col-lg-4 mb-md-60 mb-xs-50" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                 
                 <h2 className="section-title mb-20 wow fadeInUp">Let&apos;s Guide You Through The Processes</h2>
                 
@@ -25,7 +27,10 @@ const Achievements = () => {
             
             <div className="col-lg-7 offset-lg-1">
                 
-                <div className="row mt-n50 mt-xs-n30">
+                <div className="row mt-n50 mt-xs-n30" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     >
                     
                     <div className="col-sm-6 col-lg-5 mt-50 mt-xs-30 wow fadeScaleIn" data-wow-delay="0.4s">
                         <div className="number-title mb-10">

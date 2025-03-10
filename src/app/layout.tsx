@@ -11,6 +11,7 @@ import "./splitting.css";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AosConfig from "@/components/AosConfig";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+//   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+//     navigator.userAgent
+// );
   return (
     <html lang="en">
       <head>
@@ -47,6 +52,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} appear-animate antialiased max-w-[1500px] mx-auto `}
       >
+        <AosConfig>
+         <>
          <div className="page-loader">
             <div className="loader">Loading...</div>
         </div>
@@ -59,6 +66,8 @@ export default function RootLayout({
             </main>
           <Footer />
         </div>
+         </>
+        </AosConfig>
       </body>
     </html>
   );

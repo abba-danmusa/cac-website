@@ -7,7 +7,7 @@ const BoardMembers = () => {
         
         <div className="row mb-60 mb-md-40">
             
-            <div className="col-lg-5"> 
+            <div className="col-lg-5" data-aos="zoom-in-left"> 
                                            
                 <h2 className="section-caption mb-xs-10">Board Members</h2>
                 
@@ -28,9 +28,9 @@ const BoardMembers = () => {
             
         </div>                       
         
-        <ul className="works-grid work-grid-3 work-grid-gut-lg masonry" id="work-grid">
+        <ul className="works-grid work-grid-3 work-grid-gut-lg masonry" id="work-grid" >
             
-            <li className="work-item mt-90 mt-md-0 mix development">
+            <li className="work-item mt-90 mt-md-0 mix development" data-aos="zoom-in-right">
                 <a href="images/portfolio/masonry/full-project-1.jpg" className="work-lightbox-link mfp-image">
                     <div className="work-img">
                         <div className="work-img-bg wow-p scalexIn"></div>
@@ -45,7 +45,7 @@ const BoardMembers = () => {
                 </a>
             </li>
             
-            <li className="work-item mix branding design">
+            <li className="work-item mix branding design" data-aos="zoom-in-right">
                 <a href="main-portfolio-single-1.html" className="work-ext-link">
                     <div className="work-img">
                         <div className="work-img-bg wow-p scalexIn"></div>
@@ -60,7 +60,7 @@ const BoardMembers = () => {
                 </a>
             </li>
             
-            <li className="work-item mt-90 mt-md-0 mix branding">
+            <li className="work-item mt-90 mt-md-0 mix branding" data-aos="zoom-in-right">
                 <a href="main-portfolio-single-1.html" className="work-ext-link">
                     <div className="work-img">
                         <div className="work-img-bg wow-p scalexIn"></div>
@@ -75,7 +75,7 @@ const BoardMembers = () => {
                 </a>
             </li>
             
-            <li className="work-item mix design development">
+            <li className="work-item mix design development" data-aos="zoom-in-right">
                 <a href="main-portfolio-single-1.html" className="work-ext-link">
                     <div className="work-img">
                         <div className="work-img-bg wow-p scalexIn"></div>

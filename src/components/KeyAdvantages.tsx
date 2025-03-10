@@ -3,7 +3,7 @@ const KeyAdvantages = () => {
       <section className="page-section">
         <div className="container position-relative">
           <div className="row">
-            <div className="col-md-12 col-lg-3 mb-md-50">
+            <div className="col-md-12 col-lg-3 mb-md-50" data-aos="fade-left">
               <h2 className="section-caption mb-xs-10">Key Advantages</h2>
               <h3 className="section-title-small mb-40">Why Register with Us?</h3>
               <div className="section-line"></div>
@@ -14,7 +14,7 @@ const KeyAdvantages = () => {
               { title: "Compliance", description: "Ensure your business operates legally and transparently with official registration through the Corporate Affairs Commission." },
               { title: "Business Legitimacy", description: "Gain credibility and trust with customers, partners, and investors by having your business officially registered." }
             ].map((item, index) => (
-              <div key={index} className="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30">
+              <div data-aos="fade-right" key={index} className="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30">
                 <div className="alt-features-item border-left mt-0">
                   <div className="alt-features-icon">
                     <svg

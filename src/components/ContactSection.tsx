@@ -4,7 +4,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="page-section">
       <div className="container position-relative">
-        <div className="row">
+        <div className="row"  data-aos="fade-right">
           <div className="col-lg-6">
             <div className="row mb-50">
               <div className="col-lg-10">
@@ -41,7 +41,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row"  data-aos="fade-right">
           <div className="col-md-6 mb-sm-50">
           <form className="form contact-form pe-lg-5" id="contact_form">
             <div className="row">

@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="home-content text-start">
         <div className="row">
           <div className="col-md-6 d-flex align-items-center mb-sm-60">
-            <div>
+            <div data-aos="fade-right">
               <h2 className="section-caption mb-30 mb-xs-10 wow fadeInUp" data-wow-duration="1.2s">
                 Corporate Affairs Commission
               </h2>
@@ -35,7 +35,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-5 offset-md-1 d-flex align-items-center">
+          <div className="col-md-5 offset-md-1 d-flex align-items-center" data-aos="fade-left">
             <div className="stack-images">
               <div className="stack-images-1 parallax-mousemove" data-offset="30">
                 <div className="wow clipRightIn" data-wow-delay="1.2s" data-wow-duration="1.75s">

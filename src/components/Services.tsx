@@ -9,7 +9,7 @@ const ServicesSection = () => {
         <section className="page-section" id="services">
             <div className="container position-relative">
                 <div className="row">
-                    <div className="col-lg-6 mb-md-60 mb-sm-30">
+                    <div className="col-lg-6 mb-md-60 mb-sm-30" data-aos="fade-up-right">
                         <h2 className="section-caption mb-xs-10">Our Services</h2>
                         <h3 className="section-title mb-30">
                             <span className="wow charsAnimIn" data-splitting="chars">
@@ -47,7 +47,7 @@ const ServicesSection = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="col-lg-6 d-flex wow fadeInLeft" data-wow-delay="0.55s" data-wow-offset="275">
+                    <div className="col-lg-6 d-flex wow fadeInLeft" data-wow-delay="0.55s" data-wow-offset="275"  data-aos="fade-up-left">
                         <div className="tab-content services-content">
                             {[
                                 {

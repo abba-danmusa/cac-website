@@ -29,7 +29,7 @@ const BlogSection = () => {
     <section id="blog" className="page-section">
       <div className="container position-relative">
         <div className="row mb-60 mb-xs-30">
-          <div className="col-md-6">
+          <div className="col-md-6" data-aos="fade-left">
             <h2 className="section-caption mb-xs-10">Our Blog</h2>
             <h3 className="section-title mb-0">The latest news</h3>
           </div>
@@ -39,7 +39,7 @@ const BlogSection = () => {
             </a>
           </div>
         </div>
-        <div className="row mt-n50">
+        <div className="row mt-n50"  data-aos="fade-right">
           {posts.map((post, index) => (
             <div key={index} className={`post-prev col-md-6 col-lg-4 mt-50 wow fadeInLeft`}>
               <div className="post-prev-container">
