@@ -1,6 +1,10 @@
+'use client'
+import { useStore } from "@/utils/store";
 import React from "react";
 
 const BlogSection = () => {
+      const setNews = useStore((set: any) => set.setNews)
+  
   const posts = [
     {
       title: "Commencement of Striking off 100,000 Companies from the Register of Companies",
@@ -25,6 +29,11 @@ const BlogSection = () => {
     },
   ];
 
+
+  const handleClick = (data: any) => {
+    setNews(data)
+    localStorage.setItem('news', JSON.stringify(data))
+  }
   return (
     <section id="blog" className="page-section">
       <div className="container position-relative">
@@ -44,7 +53,7 @@ const BlogSection = () => {
             <div key={index} className={`post-prev col-md-6 col-lg-4 mt-50 wow fadeInLeft`}>
               <div className="post-prev-container">
                 <h4 className="post-prev-title">
-                  <a href={post.link}>{post.title}</a>
+                  <a href={'/dnews'} onClick={() => handleClick(post)}>{post.title}</a>
                 </h4>
                 <div className="post-prev-text">{post.text}</div>
                 <div className="post-prev-info clearfix">

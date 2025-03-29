@@ -11,7 +11,7 @@ const Header = () => {
     <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
       <div className="main-nav-sub full-wrapper">
         {/* Logo */}
-        <div className="nav-logo-wrap local-scroll" data-aos="fade-down">
+        <div className="nav-logo-wrap local-scroll" >
           <Link href="/" className="logo">
             <Image
               src="/images/logo.png"
@@ -24,7 +24,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <div className="mobile-nav" role="button"  tabIndex={0}>
-          <i className="mobile-nav-icon" data-aos="fade-down"></i>
+          <i className="mobile-nav-icon" ></i>
           <span className="visually-hidden">Menu</span>
         </div>
 

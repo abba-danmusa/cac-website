@@ -2,99 +2,152 @@
 const BoardMembers = () => {
 
   return (
-    <section className="page-section" >
-    <div className="container">
-        
-        <div className="row mb-60 mb-md-40">
-            
-            <div className="col-lg-5" data-aos="zoom-in-left"> 
-                                           
-                <h2 className="section-caption mb-xs-10">Board Members</h2>
-                
-                <h3 className="section-title mb-0"><span  data-splitting="chars">Meet Our Board</span></h3>                                
-            
-            </div>                            
-            
-            <div className="col-lg-7">
-                
-                {/* <div className="works-filter text-md-left text-lg-end mt-50 mt-md-30">
-                    <a href="#" className="filter active" role="button" aria-pressed="true" data-filter="*">All Members</a>
-                    <a href="#branding" className="filter" role="button" aria-pressed="false" data-filter=".branding">RG</a>
-                    <a href="#design" className="filter" role="button" aria-pressed="false" data-filter=".design">Chairman</a>
-                    <a href="#development" className="filter" role="button" aria-pressed="false" data-filter=".development">Minister</a>
-                </div>                                 */}
-                                             
+    <section className="page-section bg-gray-light-1" id="team">
+    <div className="container position-relative">
+      <div className="row">
+        {/* Quote */}
+        <div className="col-md-6 mb-sm-60 mb-xs-40 d-flex align-items-center">
+          <blockquote className="testimonial mb-0 wow fadeInUp">
+            <div className="blockquote-icon" aria-hidden="true">“</div>
+            <p>We are a strong team who brings innovative ideas into production.</p>
+            <footer>
+              <div className="section-line mb-10"></div>
+              SAN.Ishaq Hussaini Magaji
+              <div className="small">Registrar General, CAC</div>
+            </footer>
+          </blockquote>
+        </div>
+        {/* End Quote */}
+
+        {/* Team Carousel */}
+        <div className="col-md-6">
+          <div>
+            <div className="team-carousel">
+              {/* Team item */}
+              <div className="team-carousel-item">
+                <div className="team-item">
+                  <div className="team-item-image">
+                    <img src="images/rg-cac-1.jpg" className="wow scaleOutIn" alt="Image Description" />
+                    <div className="team-item-detail">
+                      <div className="team-social-links">
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Facebook</div>
+                          <i className="fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Twitter</div>
+                          <i className="fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Instagram</div>
+                          <i className="fa-instagram-i"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="team-item-descr">
+                    <div className="team-item-name">SAN.Ishaq Hussaini Magaji, SAN</div>
+                    <div className="team-item-role">Registrar General, CAC</div>
+                  </div>
+                </div>
+              </div>
+              {/* End Team item */}
+
+              {/* Repeat for other team members */}
+              <div className="team-carousel-item">
+                <div className="team-item">
+                  <div className="team-item-image">
+                    <img src="images/rg-cac-2.jpg" className="wow scaleOutIn" alt="Image Description" />
+                    <div className="team-item-detail">
+                      <div className="team-social-links">
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Facebook</div>
+                          <i className="fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Twitter</div>
+                          <i className="fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Instagram</div>
+                          <i className="fa-instagram-p"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="team-item-descr">
+                    <div className="team-item-name">SAN.Ishaq Hussaini Magaji</div>
+                    <div className="team-item-role">Registrar General, CAC</div>
+                  </div>
+                </div>
+              </div>
+              {/* End Team item */}
+
+              {/* More team items */}
+              <div className="team-carousel-item">
+                <div className="team-item">
+                  <div className="team-item-image">
+                    <img src="images/rg-cac-3.jpg" alt="Image Description" />
+                    <div className="team-item-detail">
+                      <div className="team-social-links">
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Facebook</div>
+                          <i className="fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Twitter</div>
+                          <i className="fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Instagram</div>
+                          <i className="fa-instagram-i"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="team-item-descr">
+                    <div className="team-item-name">SAN.Ishaq Hussaini Magaji</div>
+                    <div className="team-item-role">Registrar General, CAC</div>
+                  </div>
+                </div>
+              </div>
+              {/* End Team item */}
+
+              <div className="team-carousel-item">
+                <div className="team-item">
+                  <div className="team-item-image">
+                    <img src="images/rg-cac-4.jpg" alt="Image Description" />
+                    <div className="team-item-detail">
+                      <div className="team-social-links">
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Facebook</div>
+                          <i className="fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Twitter</div>
+                          <i className="fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener nofollow">
+                          <div className="visually-hidden">Instagram</div>
+                          <i className="fa-instagram-t"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="team-item-descr">
+                    <div className="team-item-name">SAN.Ishaq Hussaini Magaji</div>
+                    <div className="team-item-role">Registrar General, CAC</div>
+                  </div>
+                </div>
+              </div>
+              {/* End Team item */}
             </div>
-            
-        </div>                       
-        
-        <ul className="works-grid work-grid-3 work-grid-gut-lg masonry" id="work-grid" >
-            
-            <li className="work-item mt-90 mt-md-0 mix development" data-aos="zoom-in-right">
-                <a href="images/portfolio/masonry/full-project-1.jpg" className="work-lightbox-link mfp-image">
-                    <div className="work-img">
-                        <div className="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/chief-of-staff.png" alt="Work Description" className="wow-p fadeIn" data-wow-delay="1s" />
-                    </div>
-                    <div className="work-intro text-start">
-                        <h3 className="work-title">Chief Of Staff</h3>
-                        <div className="work-descr">
-                            Muhammad Sadiq Ali 
-                        </div>
-                    </div>
-                </a>
-            </li>
-            
-            <li className="work-item mix branding design" data-aos="zoom-in-right">
-                <a href="main-portfolio-single-1.html" className="work-ext-link">
-                    <div className="work-img">
-                        <div className="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/rg-cac.png" alt="Work Description" className="wow-p fadeIn" data-wow-delay="1s" />
-                    </div>
-                    <div className="work-intro text-start">
-                        <h3 className="work-title">Registrar General/CEO</h3>
-                        <div className="work-descr">
-                            Ishaq Hussaini Magaji SAN
-                        </div>
-                    </div>
-                </a>
-            </li>
-            
-            <li className="work-item mt-90 mt-md-0 mix branding" data-aos="zoom-in-right">
-                <a href="main-portfolio-single-1.html" className="work-ext-link">
-                    <div className="work-img">
-                        <div className="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/minister-of-trade.png" alt="Work Description" className="wow-p fadeIn" data-wow-delay="1s" />
-                    </div>
-                    <div className="work-intro text-start">
-                        <h3 className="work-title">Minister Of Trade FMITI</h3>
-                        <div className="work-descr">
-                            Dr. Jumoke Oduwole
-                        </div>
-                    </div>
-                </a>
-            </li>
-            
-            <li className="work-item mix design development" data-aos="zoom-in-right">
-                <a href="main-portfolio-single-1.html" className="work-ext-link">
-                    <div className="work-img">
-                        <div className="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/chairman-cac.png" alt="Work Description" className="wow-p fadeIn" data-wow-delay="1s" />
-                    </div>
-                    <div className="work-intro text-start">
-                        <h3 className="work-title">Chairman</h3>
-                        <div className="work-descr">
-                            Hon. Ademola Seriki
-                        </div>
-                    </div>
-                </a>
-            </li>
-          
-            
-        </ul>
-        
+          </div>
+        </div>
+        {/* End Team Carousel */}
+      </div>
     </div>
-</section>
+  </section>
   );
 };
 

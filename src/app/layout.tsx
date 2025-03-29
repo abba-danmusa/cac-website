@@ -11,7 +11,7 @@ import "./splitting.css";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AosConfig from "@/components/AosConfig";
+// import AosConfig from "@/components/AosConfig";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -52,7 +52,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} appear-animate antialiased max-w-[1500px] mx-auto `}
       >
-        <AosConfig>
+        {/* <AosConfig> */}
          <>
          <div className="page-loader">
             <div className="loader">Loading...</div>
@@ -67,7 +67,7 @@ export default function RootLayout({
           <Footer />
         </div>
          </>
-        </AosConfig>
+        {/* </AosConfig> */}
       </body>
     </html>
   );

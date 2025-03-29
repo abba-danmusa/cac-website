@@ -190,7 +190,7 @@ Primary use: Multipurpose Template
     --section-padding-y: 120px;
     --menu-bar-height: 85px;
     --menu-bar-height-scrolled: 65px;
-    --color-dark-1: #4D6C4A;
+    --color-dark-1: #055902;
     /* --color-dark-1: #010101; */
     --color-dark-2: #171717;
     --color-dark-3: #272727;
@@ -12469,3 +12469,8 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .works-grid.grid-intro-2 .work-item .work-descr{
     font-size: 16px;
 }
+
+
+
+
+
