@@ -67,19 +67,19 @@
         safariTest = false;
     }
 
-    // Detect touch devices
-    if (!("ontouchstart" in document.documentElement)) {
-        document.documentElement.className += " no-touch";
-    } else {
-        document.documentElement.className += " touch";
-    }
+    // // Detect touch devices
+    // if (!("ontouchstart" in document.documentElement)) {
+    //     document.documentElement.className += " no-touch";
+    // } else {
+    //     document.documentElement.className += " touch";
+    // }
 
-    if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
-        $("html").addClass("mobile");
-        console.log("Mobile class added.");
-    } else {
-        $("html").addClass("no-mobile");
-    }
+    // if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
+    //     $("html").addClass("mobile");
+    //     console.log("Mobile class added.");
+    // } else {
+    //     $("html").addClass("no-mobile");
+    // }
 
     
     /* ---------------------------------------------
@@ -1370,7 +1370,7 @@ function init_wow(){
                 boxClass: 'wow',
                 animateClass: 'animated',
                 offset: 100,
-                mobile: false, 
+                mobile: true, 
                 live: true,
                 callback: function(box){                
                     setInterval(function(){ $(box).removeClass("visible-fallback"); }, 1500);
