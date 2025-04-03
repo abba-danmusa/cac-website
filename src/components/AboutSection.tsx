@@ -27,7 +27,7 @@ const AboutSection = () => {
           {/* End Decorative Dots */}
   
           <a
-            href="/main-pages-about.html"
+            href="/who"
             className="link-hover-anim underline align-middle"
             data-link-animate="y"
           >

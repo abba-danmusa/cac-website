@@ -46,7 +46,7 @@ const Header = () => {
               <li key={item.path}>
                 <a
                   href={item.path}
-                  className={pathname === item.path ? "text-[#055902] active opacity-100" : ""}
+                  className={pathname === item.path ? "font-bold opacity-100" : ""}
                 >
                   {item.name}
                 </a>

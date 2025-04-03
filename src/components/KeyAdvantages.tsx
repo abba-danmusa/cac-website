@@ -3,13 +3,13 @@ const KeyAdvantages = () => {
       <section className="page-section">
       <div className="container position-relative">
         <div className="row">
-          <div className="col-md-12 col-lg-3 mb-md-50">
+          <div className="col-md-12 col-lg-3 mb-md-50 wow fadeInUp">
             <h2 className="section-caption mb-xs-10">Key Advantages</h2>
             <h3 className="section-title-small mb-40">Why Register with Us?</h3>
             <div className="section-line"></div>
           </div>
     
-          <div className="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30">
+          <div className="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30 wow fadeInLeft">
             <div className="alt-features-item border-left mt-0">
               <div className="alt-features-icon">
                 <svg
@@ -33,7 +33,7 @@ const KeyAdvantages = () => {
             </div>
           </div>
     
-          <div className="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30">
+          <div className="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30 wow fadeInLeft">
             <div className="alt-features-item border-left mt-0">
               <div className="alt-features-icon">
                 <svg
@@ -57,7 +57,7 @@ const KeyAdvantages = () => {
             </div>
           </div>
     
-          <div className="col-md-4 col-lg-3 d-flex align-items-stretch">
+          <div className="col-md-4 col-lg-3 d-flex align-items-stretch wow fadeInLeft">
             <div className="alt-features-item border-left mt-0">
               <div className="alt-features-icon">
                 <svg

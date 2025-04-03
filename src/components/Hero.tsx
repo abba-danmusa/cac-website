@@ -40,7 +40,7 @@ const HeroSection = () => {
                     <span>Start Your Application</span>
                   </a>
                   <a
-                    href="/news.html"
+                    href="/news"
                     className="link-hover-anim align-middle lightbox mfp-iframe mt-10"
                     data-link-animate="y"
                   >
