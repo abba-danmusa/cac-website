@@ -6,6 +6,8 @@ import Link from "next/link";
 
 const Header = () => {
   const pathname = usePathname(); // Get current route
+  console.log(pathname);
+  
 
   return (
     <nav className="main-nav transparent stick-fixed wow-menubar wch-unset">
@@ -40,10 +42,11 @@ const Header = () => {
               { name: "FOI", path: "/foi" },
               { name: "FAQs", path: "/fqs" },
             ].map((item) => (
+
               <li key={item.path}>
                 <a
                   href={item.path}
-                  className={pathname === item.path ? "active" : ""}
+                  className={pathname === item.path ? "text-[#055902] active opacity-100" : ""}
                 >
                   {item.name}
                 </a>
